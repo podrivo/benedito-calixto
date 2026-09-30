@@ -533,6 +533,9 @@
   }, { rootMargin: "-45% 0px -50% 0px" });
   document.querySelectorAll("main section[id]").forEach((s) => spy.observe(s));
 
+  const toTop = $(".to-top");
+  new IntersectionObserver(([en]) => toTop.classList.toggle("is-on", !en.isIntersecting)).observe($(".hero"));
+
   /* ---------------- Zoom viewer (plan + photos) ---------------- */
   const zoom = $("#zoom"), stage = $("#zoom-stage"), zImg = $("#zoom-img"), zLevel = $("#zoom-level");
   const zTitle = $("#zoom-title"), zCount = $("#zoom-count"), zHelp = $("#zoom-help");
