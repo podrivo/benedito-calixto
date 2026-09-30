@@ -13,9 +13,10 @@
   const now = new Date();
   const pct = Math.min(1, Math.max(0, (now - START) / (END - START)));
   const fill = $("#progress-fill"), marker = $("#progress-today"), label = $("#progress-today-label");
+  const today = `${now.getDate()} ${["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"][now.getMonth()]}`;
   const drawProgress = (p) => {
     fill.style.width = marker.style.left = p * 100 + "%";
-    label.textContent = `hoje · ${Math.round(p * 100)}%`;
+    label.textContent = `hoje, ${today} · ${Math.round(p * 100)}%`;
     label.style.transform = `translateX(${-p * 100}%)`;
   };
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) drawProgress(pct);
@@ -473,8 +474,12 @@
 
   /* ---------------- Document search (⌘K) ---------------- */
   const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  const isMac = /Mac|iPhone|iPad/.test(navigator.platform);
-  document.querySelectorAll(".kbd-mod").forEach((k) => (k.textContent = isMac ? "⌘K" : "Ctrl K"));
+  const isMac = /mac|iphone|ipad|ipod/i.test(navigator.userAgentData?.platform || navigator.platform || navigator.userAgent);
+  const shortcut = isMac ? "⌘K" : "Ctrl K";
+  document.querySelectorAll(".kbd-mod").forEach((k) => (k.textContent = shortcut));
+  const tocSearch = $(".toc__search");
+  tocSearch.setAttribute("aria-keyshortcuts", isMac ? "Meta+K" : "Control+K");
+  if (matchMedia("(hover: hover)").matches) tocSearch.title = `Buscar documentos (${shortcut})`;
   const docsLead = $("#docs-lead");
   docsLead.innerHTML = docsLead.innerHTML.replace(/Os \d+ documentos/, `Os ${DOCS.length} documentos`);
   $("#doc-cats").innerHTML = Object.entries(C).map(([k, l]) =>
@@ -618,6 +623,24 @@
     t.innerHTML = esc(n.data).replace(abbrRe, (m, k) => `<abbr title="${ABBR[k]}">${m}</abbr>`);
     n.replaceWith(t.content);
   });
+
+  // Native title tooltips never show on touch screens, so a tap opens this one instead.
+  const tip = Object.assign(document.createElement("div"), { className: "abbr-tip", role: "tooltip", hidden: true });
+  document.body.append(tip);
+  let tipFor = null;
+  const hideTip = () => { tip.hidden = true; tipFor = null; };
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("abbr[title]");
+    if (!a || a === tipFor) return hideTip();
+    tipFor = a;
+    tip.textContent = a.title;
+    tip.hidden = false;
+    const r = a.getBoundingClientRect(), w = tip.offsetWidth;
+    tip.style.left = scrollX + Math.max(8, Math.min(innerWidth - w - 8, r.left + r.width / 2 - w / 2)) + "px";
+    tip.style.top = scrollY + r.bottom + 6 + "px";
+  });
+  document.addEventListener("keydown", (e) => e.key === "Escape" && hideTip());
+  addEventListener("resize", hideTip);
 
   /* ---------------- Zoom viewer (plan + photos) ---------------- */
   const zoom = $("#zoom"), stage = $("#zoom-stage"), zImg = $("#zoom-img"), zLevel = $("#zoom-level");
