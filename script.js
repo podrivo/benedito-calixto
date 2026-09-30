@@ -314,8 +314,7 @@
   mqs.forEach((m) => m.addEventListener("change", layoutPeople));
   document.fonts.ready.then(layoutPeople);
 
-  /* dev:start */
-  /* ---------------- Flags (only in development; stripped by tools/build-prod.sh) ---------------- */
+  /* ---------------- Flags ---------------- */
   const FLAGS = [
     ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026. A confusão chegou às propostas: a Progredior e a Stein ofereceram 120 dias, a Dekton e a DPT, 180.",
       [["Memorial", D.memorial], ["TR", D.tr], ["Edital", D.edital], ["Contrato", D.contrato], ["Ordem de início", D.ordem], ["Proposta Dekton", "proposta-de-preco-dekton.pdf"], ["Proposta DPT", "dtp-engenharia-proposta-de-preco.pdf"]]],
@@ -343,7 +342,6 @@
       [["Portaria 30", "arquip-dosp-165388683-portaria.pdf"]]],
   ];
   $("#flags").innerHTML = FLAGS.map(([t, p, ls]) => `<article class="flag"><h3>${esc(t)}</h3><p>${esc(p)}</p><div class="src">Compare nos documentos:</div>${docLinks(ls)}</article>`).join("");
-  /* dev:end */
 
   /* ---------------- Library ---------------- */
   const C = { p: "Planejamento", o: "Orçamento", l: "Licitação", e: "Propostas das empresas", c: "Contrato e execução", b: "Bancas (TPUs)", x: "Contexto" };

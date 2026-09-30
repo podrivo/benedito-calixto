@@ -337,6 +337,13 @@ tfoot th { font-family: var(--f-display); border-bottom: 0; border-top: 2px soli
 .flag p { margin: 0 0 14px; font-size: .96rem; }
 .flag .src { font-size: .82rem; color: var(--muted); }
 
+.alert { display: flex; gap: 16px; align-items: flex-start; margin-top: 24px; padding: 20px 24px; background: #fdf3d0; border: 1px solid #e8c957; border-left: 6px solid var(--yellow); border-radius: var(--r); }
+.alert__icon { flex: none; margin-top: 2px; color: #8a6a00; }
+.alert__title { margin: 0 0 6px; font: 700 .8rem/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: .12em; color: #6b5200; }
+.alert p { margin: 0 0 10px; }
+.alert p:last-child { margin-bottom: 0; }
+.alert a { color: inherit; }
+
 /* ---------- Library ---------- */
 .doc-search { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; margin: 26px 0 12px; padding: 14px 14px 14px 20px; font: 1rem var(--f-body); color: var(--muted); text-align: left; border: 1px solid var(--line); border-radius: 99px; background: #fff; cursor: text; }
 .doc-search:hover { border-color: var(--ink); }
