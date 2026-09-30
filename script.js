@@ -199,7 +199,7 @@
   const TL = [
     { phase: "Origem" },
     { d: "15/10/2025", t: "Vistoria técnica na praça", x: "A Supervisão Técnica de Projetos e Obras fotografa pisos quebrados, bancos soltos, canteiros e a quadra.", docs: [["Relatório de vistoria", "relatorio-de-vistoria.pdf"], ["Solicitação", "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf"]] },
-    { d: "06/11/2025", t: "Reunião do Conselho Participativo Municipal", x: "A praça entra na pauta do orçamento participativo. Participam representantes de associações de moradores, entre elas a AMJA.", docs: [["Ata", "pdf-6050-2023-0007906-9.pdf"]] },
+    { d: "06/11/2025", t: "Reunião do Conselho Participativo Municipal", x: "A praça não está na pauta. Maria Emília Carvalho aparece na lista de presença como “AMJA – Praça Benedito Calixto”. A ata marca para 26/11 a reunião de validação das propostas do Orçamento Participativo 2026, mas a ata dessa reunião não está entre os documentos.", docs: [["Ata", "pdf-6050-2023-0007906-9.pdf"]] },
     { d: "s/d", t: "Proposta da comunidade: Orçamento Participativo 2026", x: "Prancha com o projeto em duas fases, uma estrutural e outra de paisagismo.", docs: [["Projeto", "projeto-pc-bc-subpi-1.pdf"]] },
     { phase: "Preparação" },
     { d: "19/05/2026", t: "Comissão de licitação nomeada", x: "A Portaria 23/SUB-PI/GAB/2026 designa os agentes de contratação e a equipe de apoio.", docs: [["Portaria", "portaria-licitacao-2026.pdf"]] },
@@ -207,7 +207,7 @@
     { d: "23/06/2026", t: "Estudo técnico, termo de referência e orçamento", x: "A área técnica fecha o pacote: orçamento de R$ 1.502.407,93 e prazo de 120 dias.", docs: [["ETP", "sei-pmsp-159491882-estudo-tecnico-preliminar-etp.pdf"], ["TR", "sei-pmsp-159492184-termo-de-referencia.pdf"], ["Planilha", "orcamento-final-praca-benedito-calixto-4-xls.pdf"]] },
     { d: "24/06/2026", t: "Dinheiro reservado", x: "Nota de reserva 47.637/2026, da verba do Orçamento Cidadão da Subprefeitura.", docs: [["Nota de reserva", "scanned-document-2.pdf"]] },
     { d: "26/06/2026", t: "Parecer jurídico favorável", x: "A Assessoria Jurídica aprova a fase preparatória.", docs: [["Parecer", "sei-pmsp-160111990-manifestacao.pdf"]] },
-    { d: "27/06/2026", t: "Subprefeito autoriza a licitação", x: "O despacho de Ygor Lucas Gomes da Costa autoriza a concorrência presencial.", docs: [["Despacho (DO)", "arquip-dosp-160141757-despacho-deferido.pdf"]], key: true },
+    { d: "27/06/2026", t: "Subprefeito autoriza a licitação", x: "O despacho de Ygor Lucas Gomes da Costa autoriza a concorrência presencial e dispensa a consulta pública, com base no Decreto Municipal 62.100/2022.", docs: [["Despacho (DO)", "arquip-dosp-160141757-despacho-deferido.pdf"]], key: true },
     { d: "30/06/2026", t: "Edital publicado", x: "Concorrência Presencial 90002/SUB-PI/2026, registrada também no PNCP e no Compras.gov.", docs: [["Edital", "sei-pmsp-160252510-edital.pdf"], ["Aviso (DO)", "arquip-dosp-160265181-abertura-np.pdf"], ["Estadão", "cad-b-br-8-estado-economia-paginas-b08-02-07-26.pdf"]] },
     { phase: "Licitação" },
     { d: "12/08/2026", t: "1ª sessão pública: abertura dos envelopes", x: "Nove empresas entregam documentos. A Macor é excluída. A sessão foi gravada.", docs: [["Ata", "ata-sessao-publica-12082026.pdf"], ["Vídeo", "https://youtu.be/XsBawk9-Krc"]], key: true },
@@ -219,8 +219,8 @@
     { d: "31/08/2026", t: "Seguro-garantia de 5%", x: "O Ofício 022 pede a garantia à Progredior, e a Pottencial Seguradora emite a apólice de R$ 71.994,34, válida até 30/06/2027. A Secretaria da Fazenda registra o recebimento em 02/09, no processo 6050.2026/0016583-1.", docs: [["Ofício 022", "scan-2026-08-28-161909006.pdf"], ["Apólice", "cto-14-sub-pi-26-apolice.pdf"], ["Formulário de caução", "72416.pdf"]] },
     { d: "01/09/2026", t: "Contrato assinado e ordem de início", x: "Contrato 014/SUB-PI/2026 e Ordem de Início 013/SUB-PI/CPO/STPO/2026. Começam a contar os 120 dias.", docs: [["Contrato", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"], ["Ordem de início", "ordem-de-inicio.pdf"]], key: true },
     { d: "04/09/2026", t: "Extrato do contrato no Diário Oficial", x: "Publicado na p. 501.", docs: [["Extrato (DO)", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]] },
-    { d: "17/09/2026", t: "Bancas atrapalham a obra", x: "O fiscal relata que estruturas de permissionários ocupam as áreas de trabalho. A Assessoria Jurídica dá parecer favorável à suspensão das permissões.", docs: [["Relato", "sei-pmsp-165312590-encaminhamento.pdf"], ["Parecer", "sei-pmsp-165323457-manifestacao.pdf"]] },
-    { d: "24/09/2026", t: "Portaria 30: permissões de uso suspensas", x: "Os Termos de Permissão de Uso (TPUs) nas áreas da obra ficam suspensos só durante o período da obra, sem serem cancelados.", docs: [["Portaria (DO)", "arquip-dosp-165388683-portaria.pdf"]], key: true },
+    { d: "17/09/2026", t: "Obra e bancas no mesmo espaço", x: "O fiscal relata que a empresa encontra dificuldades porque estruturas de permissionários ocupam as áreas de trabalho. Ele sugere realocar as bancas provisoriamente ou suspender as permissões. A Assessoria Jurídica dá parecer favorável à suspensão.", docs: [["Relato", "sei-pmsp-165312590-encaminhamento.pdf"], ["Parecer", "sei-pmsp-165323457-manifestacao.pdf"]] },
+    { d: "24/09/2026", t: "Portaria 30: permissões de uso suspensas", x: "Os Termos de Permissão de Uso (TPUs) nas áreas da obra ficam suspensos só durante o período da obra, sem serem cancelados. A portaria não diz quais áreas são essas nem se a feira de sábado continua.", docs: [["Portaria (DO)", "arquip-dosp-165388683-portaria.pdf"]], key: true },
     { today: true },
     { d: "31/12/2026", t: "Fim do prazo contratual", x: "Término previsto na ordem de início.", future: true },
   ];
@@ -383,7 +383,7 @@
     ["Comunidade", [
       ["Conselho Participativo Municipal", "Indicou a obra, segundo a CAF. Reúne-se na primeira quinta-feira do mês, com reuniões abertas ao público.", "",
         [["Página oficial", CPM], ["Ata de 06/11/2025", "pdf-6050-2023-0007906-9.pdf"], ["Informação da CAF", "sei-pmsp-159995135-informacao.pdf"]]],
-      ["AMJA", "Associação Amigos da Joaquim Antunes. Na reunião de 06/11/2025, Maria Emília Carvalho assinou como “AMJA – Praça Benedito Calixto”.", "",
+      ["AMJA", "Associação Amigos da Joaquim Antunes. Na reunião de 06/11/2025, Maria Emília Carvalho aparece na lista de presença como “AMJA – Praça Benedito Calixto”.", "",
         [["Ata de 06/11/2025", "pdf-6050-2023-0007906-9.pdf"]]],
     ]],
   ];
@@ -403,6 +403,8 @@
 
   /* ---------------- Flags ---------------- */
   const FLAGS = [
+    ["Acessibilidade: R$ 4 mil e corrimãos retirados", "O objeto do contrato fala em “correção de acessibilidade”, mas o item custa R$ 4.048,04, 0,3% do orçamento: 32 m de broca de concreto, 3 m² de piso podotátil e 48 grelhas de 100 mm. Não há rampa nem corrimão novo na planilha, embora o memorial prometa “piso podotátil e corrimão conforme NBR”. Na seção de demolições, 97,5 kg de “ferro trabalhado” aparecem na memória de cálculo como “retirada de corrimãos”, cerca de 44 m. A praça tem escadas de 3, 4 e 5 degraus.",
+      [["Memorial", D.memorial], ["Planilha final", D.planilha], ["Memória de cálculo", "memoria-calculo-ben-calixto.pdf"], ["Projeto", "projeto-pc-bc-subpi-1.pdf"]]],
     ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026. A confusão chegou às propostas: a Progredior e a Stein ofereceram 120 dias, a Dekton e a DPT, 180.",
       [["Memorial", D.memorial], ["TR", D.tr], ["Edital", D.edital], ["Contrato", D.contrato], ["Ordem de início", D.ordem], ["Proposta Dekton", "proposta-de-preco-dekton.pdf"], ["Proposta DPT", "dtp-engenharia-proposta-de-preco.pdf"]]],
     ["Itens de outro projeto no Estudo Técnico", "O ETP cita playground, cachorródromo e academia ao ar livre, com totais de R$ 476.863,04 e R$ 490.396,55. Nada disso está na planilha de R$ 1,5 milhão da praça.",
@@ -413,9 +415,9 @@
       [["TR", D.tr]]],
     ["Duas origens para o dinheiro", "A CAF e as notas de reserva e de empenho falam em Orçamento Cidadão, por indicação do Conselho Participativo Municipal. O ETP e o TR falam em “recursos obtidos por emenda parlamentar”.",
       [["Informação da CAF", "sei-pmsp-159995135-informacao.pdf"], ["Nota de reserva", "scanned-document-2.pdf"], ["Nota de empenho", D.empenho], ["ETP", D.etp], ["TR", D.tr]]],
-    ["Pedidos da comunidade que não estão no orçamento", "Iluminação com braços duplos, novas lixeiras, retirada do orelhão e aumento da mureta da quadra não aparecem na planilha. O corrimão citado no memorial também não.",
-      [["Projeto OP 2026", "projeto-pc-bc-subpi-1.pdf"], ["Planilha final", D.planilha], ["Memorial", D.memorial]]],
-    ["A feira de sábado não aparece no planejamento", "Só a solicitação da obra e o projeto da comunidade falam da Feira de Arte, Cultura e Lazer e das bancas. O ETP, o TR, o memorial, a matriz de riscos e o edital não as mencionam. O item 4.3 do TR diz apenas, de forma genérica, que resolver interferências é responsabilidade da contratada. Em 17/09 as bancas travaram a obra e foi preciso editar a Portaria 30.",
+    ["Pedidos da comunidade que não estão no orçamento", "Iluminação com braços duplos, novas lixeiras, retirada do orelhão e aumento da mureta da quadra não aparecem na planilha.",
+      [["Projeto OP 2026", "projeto-pc-bc-subpi-1.pdf"], ["Planilha final", D.planilha]]],
+    ["A feira de sábado não aparece no planejamento", "Só a solicitação da obra e o projeto da comunidade falam da Feira de Arte, Cultura e Lazer e das bancas. O ETP, o TR, o memorial, a matriz de riscos e o edital não as mencionam. O item 4.3 do TR diz apenas, de forma genérica, que resolver interferências é responsabilidade da contratada. Em 17/09 o fiscal relatou dificuldades por causa das bancas nas áreas de trabalho, e a Subprefeitura editou a Portaria 30.",
       [["Solicitação", "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf"], ["Projeto OP 2026", "projeto-pc-bc-subpi-1.pdf"], ["TR", D.tr], ["Matriz de riscos", "documento-consulta-externa-php.pdf"], ["Relato do fiscal", "sei-pmsp-165312590-encaminhamento.pdf"]]],
     ["Dois endereços para entregar os envelopes", "O edital, o aviso no Diário Oficial e o anúncio no Estadão mandam entregar os envelopes e assistir à abertura na Rua Frederico Hermann Jr., 595, 2º andar. O cabeçalho do próprio edital e quase todos os documentos SEI usam a Av. Dra. Ruth Cardoso (antiga Nações Unidas), 7123. O preâmbulo do contrato também cita a Frederico Hermann, e o modelo de contrato anexo ao edital ainda diz “dois mil e vinte e quatro”. Nove empresas entregaram os envelopes, então na prática ninguém ficou de fora.",
       [["Edital", D.edital], ["Aviso (DO)", "arquip-dosp-160265181-abertura-np.pdf"], ["Estadão", "cad-b-br-8-estado-economia-paginas-b08-02-07-26.pdf"], ["Contrato", D.contrato]]],
@@ -425,8 +427,8 @@
       [["Formulário de caução", "72416.pdf"], ["Ofício 022", "scan-2026-08-28-161909006.pdf"], ["Apólice", "cto-14-sub-pi-26-apolice.pdf"]]],
     ["Número de empenho e de processo no contrato", "O quadro-resumo do contrato cita a nota de empenho 91608/2026, mas a cláusula 4.3 e a nota emitida são 91609/2026. O mesmo quadro traz o processo 6050.2026/0008794-6, que vem do modelo de contrato anexo ao edital, e não o 6050.2026/0010848-0.",
       [["Contrato", D.contrato], ["Nota de empenho", D.empenho], ["Edital (modelo de contrato)", D.edital]]],
-    ["Portaria 30 pula o Art. 3º", "A Portaria que suspende as permissões de uso passa do Art. 2º direto para o Art. 4º.",
-      [["Portaria 30", "arquip-dosp-165388683-portaria.pdf"]]],
+    ["Erros de numeração na Portaria 30", "A Portaria que suspende as permissões de uso passa do Art. 2º direto para o Art. 4º e cita o contrato como “014/SUB-PI/SUB-PI/2026”, erro que também aparece no relato do fiscal.",
+      [["Portaria 30", "arquip-dosp-165388683-portaria.pdf"], ["Relato do fiscal", "sei-pmsp-165312590-encaminhamento.pdf"]]],
   ];
   $("#flags").innerHTML = FLAGS.map(([t, p, ls]) => `<article class="flag"><h3>${esc(t)}</h3><p>${esc(p)}</p><div class="src">Compare nos documentos:</div>${docLinks(ls)}</article>`).join("");
 
