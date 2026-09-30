@@ -429,10 +429,10 @@
     `<button type="button" data-cmdk data-c="${k}">${l} <span>${DOCS.filter((d) => d[2] === k).length}</span></button>`).join("");
 
   const cmdk = $("#cmdk"), cInput = $("#cmdk-input"), cList = $("#cmdk-list"), cChips = $("#cmdk-chips"), cCount = $("#cmdk-count");
-  let cCat = "", cRows = [], cActive = 0;
+  let cCat = "", cRows = [], cActive = -1;
   cChips.innerHTML = [["", "Todos"], ...Object.entries(C)].map(([k, l]) => `<button type="button" data-c="${k}">${l}</button>`).join("");
   const setActive = (i, scroll = true) => {
-    cActive = Math.max(0, Math.min(cRows.length - 1, i));
+    cActive = Math.max(-1, Math.min(cRows.length - 1, i));
     cList.querySelectorAll(".cmdk__item").forEach((li, j) => li.setAttribute("aria-selected", String(j === cActive)));
     const li = cList.children[cActive];
     cInput.setAttribute("aria-activedescendant", li?.id || "");
@@ -458,7 +458,7 @@
           ${doKey ? `<a href="${DO}${doKey}" target="_blank" rel="noopener" tabindex="-1">Diário Oficial ↗</a>` : ""}
         </span>
       </li>`).join("") || `<li class="cmdk__empty">Nenhum documento encontrado.</li>`;
-    setActive(0, false);
+    setActive(-1, false);
     cList.scrollTop = 0;
   };
   const openCmdk = (c = "") => {
@@ -476,7 +476,7 @@
   });
   document.addEventListener("keydown", (e) => {
     const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName);
-    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k" && !zoom.open) {
       e.preventDefault();
       cmdk.open ? cmdk.close() : openCmdk();
     } else if (e.key === "/" && !typing && !zoom.open) {
@@ -491,7 +491,7 @@
       setActive(cActive + (e.key === "ArrowDown" ? 1 : -1));
     } else if (e.key === "Enter" && cRows.length) {
       e.preventDefault();
-      cList.children[cActive].querySelector(".cmdk__main").click();
+      cList.children[Math.max(0, cActive)].querySelector(".cmdk__main").click();
     }
   });
   cChips.addEventListener("click", (e) => {
@@ -500,6 +500,7 @@
     cRender();
     cInput.focus();
   });
+  cList.addEventListener("mouseleave", () => setActive(-1, false));
   cList.addEventListener("mousemove", (e) => {
     const li = e.target.closest(".cmdk__item");
     if (li && +li.dataset.i !== cActive) setActive(+li.dataset.i, false);
