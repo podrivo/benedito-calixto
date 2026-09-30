@@ -277,9 +277,9 @@ tfoot th { font-family: var(--f-display); border-bottom: 0; border-top: 2px soli
 .bid__track { position: relative; height: 22px; background: var(--concrete); border-radius: 4px; }
 .bid__bar { position: absolute; inset: 0 auto 0 0; background: #9aa19c; border-radius: 4px; width: 0; transition: width .8s cubic-bezier(.2,.8,.2,1); }
 .bid--win .bid__bar { background: var(--green); }
-.bid__ref { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--red); }
 .bid__note { font-family: var(--f-mono); font-size: .72rem; color: var(--muted); }
-.bids__legend { font-family: var(--f-mono); font-size: .72rem; color: var(--red); }
+.bid__note strong { color: var(--ink); }
+.bids__legend { font-family: var(--f-mono); font-size: .72rem; color: var(--muted); }
 
 /* ---------- Videos ---------- */
 .videos { display: grid; gap: 28px; margin-top: 28px; }

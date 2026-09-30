@@ -165,21 +165,22 @@
       <p class="bidder__why">${esc(w)}</p>
     </li>`).join("");
 
-  const REF = 1502407.93, MIN = 1400000;
+  const REF = 1502407.93;
   const BIDS = [
     ["Progredior", 1439886.76, "manteve a proposta inicial", true],
     ["Stein", 1444264.00, "inicial R$ 1.494.882,58"],
     ["Dekton", 1457335.25, "inicial R$ 1.502.407,93 (= orçamento)"],
     ["DPT", 1464895.21, "sem lances"],
   ];
-  const scale = (v) => ((v - MIN) / (REF + 10000 - MIN)) * 100;
+  // Bars show the discount against the budget; the bids themselves differ by under 2%, so absolute bars would look identical.
+  const pctOff = (v) => ((REF - v) / REF) * 100;
   $("#bids").innerHTML = BIDS.map(([n, v, note, win]) => `
     <div class="bid ${win ? "bid--win" : ""}">
       <div class="bid__top"><strong>${n}</strong><span class="num">${brl(v)}</span></div>
-      <div class="bid__track"><div class="bid__bar" data-w="${scale(v).toFixed(2)}"></div><i class="bid__ref" style="left:${scale(REF)}%"></i></div>
-      <span class="bid__note">${note}</span>
+      <div class="bid__track"><div class="bid__bar" data-w="${(pctOff(v) / 5 * 100).toFixed(2)}"></div></div>
+      <span class="bid__note"><strong class="num">${pctOff(v).toFixed(2).replace(".", ",")}% abaixo</strong> · ${brl(REF - v)} a menos · ${note}</span>
     </div>`).join("") +
-    `<span class="bids__legend">▎linha vermelha = orçamento da Prefeitura (R$ 1.502.407,93) · escala a partir de R$ 1,4 mi</span>`;
+    `<span class="bids__legend">Barra = desconto sobre o orçamento da Prefeitura (R$ 1.502.407,93). Escala de 0 a 5%.</span>`;
 
   /* ---------------- Videos (click-to-load) ---------------- */
   document.querySelectorAll(".video__facade").forEach((btn) => {
