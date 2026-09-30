@@ -11,16 +11,16 @@
   --yellow: #f2c230;
   --red: #c4492f;
 
-  --c-prelim: #3aa39a;
-  --c-demol: #6b5a4e;
-  --c-quadra: #2e8fc9;
-  --c-orla: #a8744a;
-  --c-calcada: #e06a4e;
-  --c-drenagem: #3f6f8f;
+  --c-calcada: #e5643f;
+  --c-demol: #c2457a;
+  --c-orla: #a8763f;
+  --c-paisagismo: #3f9a4b;
+  --c-quadra: #1fa9cc;
+  --c-prelim: #a4bf3a;
+  --c-adm: #178a82;
+  --c-drenagem: #2f5fb8;
+  --c-projeto: #8457c9;
   --c-acess: #f2c230;
-  --c-paisagismo: #2f7a4f;
-  --c-projeto: #9a6fb0;
-  --c-adm: #4a4f53;
 
   --f-display: "Archivo", system-ui, sans-serif;
   --f-body: "Source Serif 4", Georgia, serif;
@@ -186,8 +186,8 @@ tfoot th { font-family: var(--f-display); border-bottom: 0; border-top: 2px soli
 .wall {
   display: flex; flex-wrap: wrap; gap: 4px;
   padding: 14px; margin: 28px 0 16px;
-  background: #cfd3cd; border-radius: var(--r);
-  box-shadow: inset 0 2px 8px rgba(0,0,0,.12);
+  background: var(--granite); border-radius: var(--r);
+  box-shadow: inset 0 2px 8px rgba(0,0,0,.35);
 }
 .wall::after { content: ""; flex: 999 1 0; }
 .stone {
