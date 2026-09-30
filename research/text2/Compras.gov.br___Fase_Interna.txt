@@ -1,0 +1,121 @@
+
+===== PAGE 1 =====
+
+
+Execução das Contratações 
+Contratação: 928657-30/2026
+Dados Básicos da Contratação 
+Dados Adicionais da Contratação 
+Endereço do Processo Eletrônico
+Recurso orçamentário da Contratação
+Resumo da Contratação
+Visualize Os Dados De Uma Contratação
+Voltar
+Execução da Contratação: 928657 - 30/2026
+
+Número do Processo
+6050202600108480
+Tipo de Contratação
+Concorrência
+Compra SRP
+Não
+Modo de Disputa
+Aberto
+Fundamento Legal
+Lei 14.133/2021, Art. 28, II - concorrência: modalidade de licitação para contratação de bens e serviços especiais e de obras e serviços comuns e especiais de engenharia
+Internacional
+Não
+Categoria
+Obras e serviços especiais de engenharia
+Moeda
+Real
+Critério de Julgamento
+Menor Preço/Maior Desconto
+Forma de Realização
+Presencial
+Tipo de objeto
+Obras comuns
+Regime de Execução
+Empreitada por preço unitário
+Justificativa para realização presencial
+A necessidade de se optar pela forma presencial da respectiva licitação dá-se em razão de o sistema COMPRASGOV, não disponibilizar meios necessários para que seja aplicada a inversão de fases,
+ainda que haja previsão, conforme disposto no parágrafo 1º do artigo 17 da Lei Federal 14.133/21.
+Objeto
+CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO OBRAS DE REVITALIZAÇÃO EM ÁREA PÚBLICA, COM MANUTENÇÃO DE EQUIPAMENTOS E CORREÇÃO DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+Id contratação PNCP
+05649898000147-1-000029/2026
+Data início de recebimento de propostas
+01/07/2026 11:15
+Data fim de recebimento de propostas
+12/08/2026 11:15
+A instituição possui processo eletrônico?
+Sim
+Endereço eletrônico do processo
+https://sei.prefeitura.sp.gov.br/sei/controlador.php?
+acao=procedimento_trabalhar&acao_origem=procedimento_controlar&acao_retorno=procedimento_controlar&id_procedimento=159674900&infra_sistema=100000100&infra_unidade_atual=110014722&infra
+Tipo de Recurso
+Municipal
+PMSP - SUBPREFEITURA PINHEIROS | 928657 
+30/06/2026, 11:46
+Compras.gov.br - Fase Interna
+https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-artefatos-web/execucao/resume?id=494182
+1/2
+
+===== PAGE 2 =====
+Lista de Materiais e/ou Serviços Incluídos 
+Artefatos vinculados 
+
+Atenção. Nenhum artefato foi vinculado.
+Anexos 
+Responsáveis 
+Em caso de dúvidas, entre em contato com a Central de Atendimento - por meio do endereço eletrônico: https://portaldeservicos.economia.gov.br ou do telefone 0800.978.9001.
+Item: 1 Obras civis públicas ( construção )
+Código:  5622
+<apelido>
+Quantidade Total: 1
+Unidade Fornecimento:  UNIDADE
+Valor Estimado (unitário): R$ 1.502.407,9300
+Situação:  Em Andamento
+Possui benefício cadastrado
+
+Nome do arquivo
+Tipo
+Data
+Tamanho
+Publicado
+Ações
+_PROJETO___PC_BC_SUBPI_1.pdf
+Anteprojeto
+30/06/2026
+386.498 KB
+Sim
+
+SEI_159491882_Estudo_Tecnico_Preliminar___ETP.pdf
+Estudo Técnico Preliminar
+30/06/2026
+98.302 KB
+Sim
+
+_5_MATRIZ_DE_RISCO___PRACA_BENEDITO_CALIXTO.pdf
+Mapa de Riscos
+30/06/2026
+215.765 KB
+Sim
+
+SEI_160252510_Edital_CP_90002_2026.pdf
+Edital
+30/06/2026
+312.06 KB
+Sim 
+
+CPF
+Nome
+Cargo/Função
+125.810.308-79
+AILTON LOPES OMELCZUK
+Agente de contratação
+30/06/2026, 11:46
+Compras.gov.br - Fase Interna
+https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-artefatos-web/execucao/resume?id=494182
+2/2

@@ -1,0 +1,2865 @@
+
+===== PAGE 1 =====
+SUBPREFEITURA DE PINHEIROS
+Comissão Permanente de Licitações
+Av. Dra. Ruth Cardoso, 7123, - Bairro Pinheiros - São Paulo/SP - CEP 05425-070
+Telefone:
+Minuta
+* MINUTA DE DOCUMENTO   
+ 
+ 
+EDITAL
+CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+ 
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+VALOR TOTAL DE CONTRATAÇÃO: R$ 1.502.407,93 (um milhão, quinhentos e dois mil quatrocentos e sete reais e noventa e
+três centavos)
+OBRA -
+Entrega do envelope: XX/XX/XXXX ATÉ XhXX
+Abertura do certame: XX/XX/XXXX ÀS Xh
+PREFERÊNCIA ME/EPP/EQUIPARADAS: SIM
+ 
+PREÂMBULO
+A Subprefeitura de Pinheiros da Prefeitura do Município de São Paulo torna público, para conhecimento de quantos possam se interessar,
+que, em obediência ao que preceituam as Leis Municipais nº 13.278/2002 e nº 14.145/2006, Decreto Municipal nº 62.100/2022, a Lei
+Federal nº 14.133/2021, Portaria 016/2023 da Secretaria Municipal de Infraestrutura Urbana e Obras, Portaria 170/2020 da Secretaria
+Municipal da Fazenda, Lei Complementar nº 123/06, alterada pela Lei Complementar 147/14, e Decreto nº 56.475/2015, fará realizar
+licitação na modalidade CONCORRÊNCIA PRESENCIAL, do tipo MENOR PREÇO GLOBAL ofertado, pelo regime indireto de
+EMPREITADA POR PREÇO UNITÁRIO, de acordo com as DISPOSIÇÕES GERAIS E ESPECÍFICAS do EDITAL que se
+seguem:
+O edital de licitação e seus anexos poderão ser obtidos mediante “download” na página: https://diariooficial.prefeitura.sp.gov.br.
+Observação: no campo “BUSCA EM MATÉRIAS”, digitar o número do processo SEI.
+Os envelopes nº 1 (Habilitação) e nº 2 (Proposta) deverão ser entregues no Protocolo da Coordenadoria de Administração e Finanças –
+Prédio Sede da Subprefeitura de Pinheiros, à Rua Frederico Hermann Jr., 595 – 2º andar, até às XX:XX horas do dia XXX de
+XXXXXX de 2026.
+A Sessão de Abertura será realizada na sala de licitações do CAF, situada no Prédio Sede da Subprefeitura de Pinheiros, à Rua Frederico
+Hermann Jr., 595 – 2º andar, às XX:XX horas do dia xxx de xxxxxx de 2026, no endereço supra mencionado.
+ 
+As empresas deverão apresentar obrigatoriamente FORA dos envelopes 1 e 2, no ato da entrega, os documentos:
+ 
+a) Documento de Representação ou CREDENCIAMENTO da empresa, conforme modelo contido no ANEXO XI, na forma
+explicitada no subitem 10.1, expedido por quem de direito;
+b) DECLARAÇÃO DA LICITANTE QUE ATENDE ÀS CONDIÇÕES DE HABILITAÇÃO, conforme modelo contido
+no ANEXO VI, sob pena da não participação da interessada na presente licitação, com devolução imediata dos envelopes;
+c) DECLARAÇÃO DE MICROEMPRESA ou EMPRESA DE PEQUENO PORTE, juntamente com o Cadastro Nacional
+de Pessoas Jurídicas - CNPJ, assinada pelo contador e representante da empresa;
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+1/41
+
+===== PAGE 2 =====
+d) Contrato Social Consolidado ou Contrato Social com as demais alterações: objeto social, capital social, sócios e atribuições,
+ou Estatuto Social da Empresa e, no caso de Sociedade Anônima, devidamente acompanhada de documentos de eleição de seus
+administradores, no original ou cópia autenticada;
+e) Instrumento público ou particular de compromisso de constituição do consórcio, quando for o caso.
+f) Documento relativo ao item 8 do presente edital, comprovando a garantia para participação.
+ 
+Deverá ser rigorosamente observado o horário fixado para o protocolo dos envelopes, pois eventuais atrasos, ainda que mínimos, não serão
+tolerados.
+ 
+Os envelopes protocolados em outros locais serão desconsiderados.
+ 
+A Sessão de Abertura será realizada na sala de licitações do CAF, situada no Prédio Sede da Subprefeitura de Pinheiros, à Rua Frederico
+Hermann Jr., 595 – 2.º andar, às XX:XX horas do dia xx de xxxxxxxx de 2026, no endereço supra mencionado.
+ 
+1.  DO OBJETO E PRAZO DE EXECUÇÃO
+1.1. O objeto da presente licitação é a CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA
+EXECUÇÃO OBRAS DE REVITALIZAÇÃO EM ÁREA PÚBLICA, COM MANUTENÇÃO DE EQUIPAMENTOS E
+CORREÇÃO DE ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO
+PAULO/SP., conforme descrito abaixo e especificações constantes no TERMO DE REFERÊNCIA – Anexo I e as demais partes
+integrantes deste Edital, independentemente de transcrição.
+1.2. O prazo para execução do presente objeto é de 180 (cento e oitenta) dias corridos, contados a partir da data indicada na Ordem de
+Início, podendo ser prorrogado por igual período, na forma do artigo 111 da Lei nº 14.133/2021.
+ 
+2. DA DESPESA E DOS RECURSOS ORÇAMENTÁRIOS
+2.1. As despesas decorrentes da execução dos serviços e obras objeto do contrato oriundo desta licitação onerarão a dotação
+orçamentária nº 51.10.15.451.4020.1.170.4.4.90.51.00.00.1.500.9551.0, do orçamento vigente, observado, se for o caso, o princípio
+da anualidade.
+2.2. O valor global máximo estimado desta despesa importa em: R$ 1.502.407,93 (um milhão, quinhentos e dois mil quatrocentos
+e sete reais e noventa e três centavos).
+2.3. O valor máximo unitário estimado por item é aquele disposto na Planilha Orçamentária Referencial – Anexo I, parte integrante
+deste edital.
+ 
+3. CONDIÇÕES DE PARTICIPAÇÃO
+3.1. Somente poderão participar desta concorrência as empresas que atenderem às exigências deste edital.
+3.2. A(s) licitante(s) responsabiliza(m)-se exclusiva e formalmente pelas transações efetuadas em seu nome, assume como firme e
+verdadeira sua proposta, inclusive os atos praticados diretamente ou por seu representante, excluída, a responsabilidade da
+Subprefeitura de Pinheiros.
+3.3. Será aplicado tratamento diferenciado e favorecido às microempresas e empresas de pequeno porte, conforme Art. 1º Decreto nº
+56.475/2015.
+3.3.1. Nas licitações será assegurada, como critério de desempate, preferência de contratação para as microempresas e empresas
+de pequeno porte à luz do Art. 44 da Lei Complementar 123/2006, conforme abaixo:
+· §1º Entende-se por empate aquelas situações em que as propostas apresentadas pelas microempresas e empresas de
+pequeno porte sejam iguais ou até 10% (dez por cento) superiores à proposta mais bem classificada.
+3.3.2. Para efeito do disposto no art. 44 desta Lei Complementar, ocorrendo o empate, proceder-se-á conforme art. 45 da mesma:
+I – a microempresa ou empresa de pequeno porte mais bem classificada poderá apresentar proposta de preço inferior
+àquela considerada vencedora do certame, situação em que será adjudicado em seu favor o objeto licitado;
+II – não ocorrendo a contratação da microempresa ou empresa de pequeno porte, na forma do inciso I do caput deste
+artigo, serão convocadas as remanescentes que porventura se enquadrem na hipótese dos §§ 1o e 2o do art. 44 desta Lei
+Complementar, na ordem classificatória, para o exercício do mesmo direito;
+III – no caso de equivalência dos valores apresentados pelas microempresas e empresas de pequeno porte que se
+encontrem nos intervalos estabelecidos nos §§ 1o e 2o do art. 44 desta Lei Complementar, será realizado sorteio entre
+elas para que se identifique aquela que primeiro poderá apresentar melhor oferta.
+· §1º Na hipótese da não-contratação nos termos previstos no caput deste artigo, o objeto licitado será adjudicado
+em favor da proposta originalmente vencedora do certame.
+· §2º O disposto neste artigo somente se aplicará quando a melhor oferta inicial não tiver sido apresentada por
+microempresa ou empresa de pequeno porte.
+3.4. Não poderão disputar esta licitação:
+3.4.1. Aquele que não atenda às condições deste Edital e seu(s) anexo(s);
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+2/41
+
+===== PAGE 3 =====
+3.4.2. Pessoa física ou jurídica que se encontre, ao tempo da licitação, impossibilitada de participar da licitação em decorrência
+de sanção que lhe foi imposta;
+3.4.3. Agente público, seja a que título for, direta ou indiretamente, da Prefeitura Municipal de São Paulo;
+3.4.4. Que tenham sido condenadas por agressões ao meio ambiente, ou infrações à legislação sobre segurança e saúde no
+trabalho nos termos da Lei Municipal nº 11.091/91.
+3.4.5. Pessoa física ou jurídica que, nos 5 (cinco) anos anteriores à divulgação do edital, tenha sido condenada judicialmente,
+com trânsito em julgado, por exploração de trabalho infantil, por submissão de trabalhadores a condições análogas às de
+escravo ou por contratação de adolescentes nos casos vedados pela legislação trabalhista;
+3.4.6. Empresas controladoras, controladas ou coligadas, nos termos da Lei nº 6.404, de 15 de dezembro de 1976, concorrendo
+entre si;
+3.5. O impedimento de que trata o item 3.4.2 será também aplicado ao licitante que atue em substituição a outra pessoa, física ou
+jurídica, com o intuito de burlar a efetividade da sanção a ela aplicada, inclusive a sua controladora, controlada ou coligada, desde que
+devidamente comprovado o ilícito ou a utilização fraudulenta da personalidade jurídica do licitante.
+3.6. A vedação de que trata o item 3.4.3 estende-se a terceiro que auxilie a condução da contratação na qualidade de integrante de
+equipe de apoio, profissional especializado ou funcionário ou representante de empresa que preste assessoria técnica.
+3.6.1. Empresas cujos sócios sejam cônjuge, companheiro ou parente em linha reta, colateral ou por afinidade até o terceiro
+grau, inclusive, dos membros ocupantes de cargos de direção ou no exercício de funções administrativas, assim como de
+servidores ocupantes de cargos de direção, chefia e assessoramento vinculados direta ou indiretamente às unidades situadas na
+linha hierárquica da área encarregada da licitação, conforme dispõe o inciso II do art. 3º da Resolução nº 37, de 28 de abril de
+2009, do Conselho Nacional do Ministério Público;
+3.7. A participação nesta Concorrência implica o reconhecimento pela Licitante de que conhece, atende e se submete a todas as
+cláusulas e condições do presente edital, bem como as disposições legais que disciplinam a presente licitação e integrarão o ajuste
+correspondente, no que lhe for pertinente.
+ 
+4. ENVELOPE I – HABILITAÇÃO:
+4.1 Prova de HABILITAÇÃO JURÍDICA, por meio dos seguintes documentos:
+a) Registro Comercial, no caso de empresa individual;
+b) Ato Constitutivo, Estatuto ou Contrato Social em vigor, devidamente registrado, e alterações subsequentes, em se
+tratando de sociedades comerciais e, no caso de sociedades por ações, acompanhado de documentos de eleição de seus
+administradores;
+b.1) Inscrição do Ato Constitutivo, no caso de sociedades civis, acompanhada de prova da diretoria em exercício.
+b.2) Arquivamento na Junta Comercial da publicação oficial das Atas de Assembleias Gerais, que tenham aprovado
+ou alterado os estatutos em vigor, no caso de sociedades por ações, bem como Ata da Assembleia da última eleição
+de Diretoria;
+c) Decreto de autorização, em se tratando de empresa ou sociedade estrangeira em funcionamento no País, e ato de
+registro expedido pelo órgão competente, quando a atividade assim o exigir.
+d) Declaração Geral – Anexo VI.
+4.2. Prova de REGULARIDADE FISCAL, por meio dos seguintes documentos:
+a) Inscrição no Cadastro Nacional de Pessoa Jurídica (CNPJ);
+b) Inscrição no Cadastro de Contribuintes Estadual ou Municipal, se houver, relativo à sede do licitante, pertinente ao seu
+ramo de atividade e compatível com o objeto da licitação;
+b.1) Os interessados com sede em outro município que tenham filial no município de São Paulo deverão, também,
+comprovar inscrição no cadastro de contribuintes deste Município.
+c) Certificado de regularidade perante o Fundo de Garantia por Tempo de Serviço (FGTS), com prazo de validade em
+vigor, sendo aceito documento extraído via INTERNET.
+d) Prova de inexistência de débitos trabalhistas, mediante a apresentação de Certidão Negativa de Débitos Trabalhistas
+(CNDT).
+e) Regularidade para com a Fazenda Nacional e situação de regularidade perante a Procuradoria Geral da Fazenda
+Nacional, que deverão ser comprovadas mediante a apresentação da Certidão Conjunta de Débitos, relativos a Tributos
+Federais, à Dívida Ativa da União e à Seguridade Social (CND).
+f) Regularidade para com a Fazenda Estadual e Municipal da sede do licitante, pertinente ao seu ramo de atividade e
+quanto aos tributos relacionados com o objeto desta licitação, mediante a apresentação de certidão expedida pelo órgão
+competente, que terá validade por 6 (seis) meses, contados da data de sua expedição, se outro prazo não estiver
+assinalado por Lei ou no próprio documento.
+g) Regularidade perante a Fazenda Municipal de São Paulo, mediante a apresentação de Certidão Negativa de Débitos
+de Tributos Mobiliários.
+g.1) Na hipótese de não estar cadastrado como contribuinte neste município, o licitante com sede fora do município de
+São Paulo deverá apresentar declaração firmada pelo representante legal da empresa, sob as penas da Lei, do não
+cadastramento e de que nada deve à Fazenda do município de São Paulo relativamente aos tributos relacionados com
+a prestação licitada – ANEXO V.
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+3/41
+
+===== PAGE 4 =====
+4.2.1. Poderão ser aceitas certidões positivas com efeito de negativas ou cujos débitos estejam judicialmente garantidos ou com
+sua exigibilidade suspensa por decisão judicial, conforme Decreto nº 62.100/2022.
+4.3. Prova de QUALIFICAÇÃO ECONÔMICO-FINANCEIRA, por meio dos seguintes documentos:
+a) Certidão negativa de falência expedida pelo distribuidor da sede do fornecedor ou, se for o caso, Certidão de
+Recuperação Judicial, expedida pelo Cartório Distribuidor da sede da pessoa jurídica, com data de emissão de no máximo
+30 (trinta) dias anteriores à data da abertura da sessão, ou que esteja dentro do prazo de validade expresso na própria
+certidão;
+b) Balanço patrimonial, demonstração de resultado de exercício e demais demonstrações contábeis dos 2 (dois) últimos
+exercícios sociais;
+c) Apresentar capital mínimo igual ou superior a 10% (dez por cento) do valor estimado para a presente contratação;
+d) Apresentar índices de Liquidez Geral (LG), Solvência Geral (SG) e Liquidez Corrente (LC) superiores a 1 (um),
+comprovados mediante a apresentação pelo licitante de balanço patrimonial, demonstração de resultado de exercício e
+demais demonstrações contábeis dos 2 (dois) últimos exercícios sociais e obtidos pela aplicação das seguintes fórmulas:
+I. Liquidez Geral (LG) = (Ativo Circulante + Realizável a Longo Prazo) / (Passivo Circulante + Passivo Não
+Circulante);
+II. Solvência Geral (SG) = (Ativo Total) / (Passivo Circulante + Passivo Não Circulante);
+III. Liquidez Corrente (LC) = (Ativo Circulante) / (Passivo Circulante).
+4.3.1. As empresas criadas no exercício financeiro da licitação deverão atender a todas as exigências da habilitação e poderão
+substituir os demonstrativos contábeis pelo balanço de abertura.
+4.3.2. O balanço patrimonial, demonstração de resultado de exercício e demais demonstrações contábeis limitar-se-ão ao último
+exercício no caso de a pessoa jurídica ter sido constituída há menos de 2 (dois) anos.
+4.3.3 O atendimento dos índices econômicos previstos neste item deverá ser atestado mediante declaração assinada por
+profissional habilitado da área contábil, apresentada pelo fornecedor.
+4.4. Prova de QUALIFICAÇÃO TÉCNICA, por meio dos seguintes documentos:
+a) Certidão atualizada de Registro de Pessoa Jurídica expedida pelo CREA/CONFEA e/ou Conselho competente, na
+qual constem os seus responsáveis técnicos;
+b) Atestado fornecido por pessoa jurídica de direito público ou privado, no qual conste a empresa licitante como
+contratada, comprovando aptidão para desempenho de atividades pertinentes e compatíveis com as obras da licitação,
+conforme abaixo:
+ 
+ 
+NC.27 - PASSEIO DE CONCRETO ARMADO, FCK=30MPA, INCLUINDO PREPARO DA CAIXA E LASTRO DE BRITA
+161,955 M3
+DEMOLIÇÃO MANUAL DE CONCRETO ARMADO
+134,835 M3
+FORNECIMENTO E ASSENTAMENTO DE PARALELEPÍPEDOS SOBRE AREIA (IE-23)
+103,32 M2
+REMOÇÃO DE ENTULHO COM CAÇAMBA METÁLICA, INCLUSIVE CARGA MANUAL E DESCARGA EM BOTA-FORA 202,115 M3
+APICOAMENTO MECÂNICO DE SUPERFÍCIE DE CONCRETO
+141 M2
+LIMPEZA DE JUNTA DE DILATAÇÃO COM REMOÇÃO DO EXCESSO DE CONCRETO - ATÉ 3CM
+674,83 M
+DISPOSIÇÃO FINAL DE SOLOS E RESÍDUOS, CLASSE II B - INERTES, EM ATERRO SANITÁRIO LICENCIADO
+175,285 Ton
+TELA PARA PROTEÇÃO DE OBRAS, MALHA 2 MM
+375 M2
+TERRA PREPARADA PARA PLANTIO
+38,435 M3
+CARGA MANUAL E REMOÇÃO DE ENTULHO, INCLUSIVE TRANSPORTE ATÉ 1 KM
+202,115 M3
+CONDUTOR EM TUBO DE FERRO FUNDIDO PARA ESGOTO, LINHA SMU - 75MM
+24 M
+BOMBEAMENTO DE CONCRETO
+161,96 M3
+ACABAMENTO DE PISO DE CONCRETO TIPO BAMBOLÊ
+1349,66 M2
+IC.06 - BANCO EM CONCRETO APARENTE, TIPO PMSP
+22 M
+DRACENA (DRACAENA FRAGRANS)
+112,5 UN
+TRANSPORTE DE TERRA POR CAMINHÃO BASCULANTE, A PARTIR DE 1KM
+2260,125 M3XKM
+ARRANCAMENTO E REASSENTAMENTO DE PARALELEPÍPEDOS SOBRE AREIA (IE-23)
+103,32 M2
+GRAMA ESMERALDA
+192,185 M2
+TINTA ACRÍLICA - CONCRETO OU REBOCO SEM MASSA CORRIDA
+240,4 M2
+REMOÇÃO DE ENTULHO COM CAÇAMBA METÁLICA, INCLUSIVE CARGA MANUAL E DESCARGA EM BOTA-FORA
+24 M3
+ 
+ 
+ 
+b.1) Caso o(s) atestado(s) apresentado(s) seja(m) de contratação de empresas reunidas em consórcio, será
+considerado para fins de comprovação das experiências, o percentual de participação de cada consorciado.
+c) Indicação de responsável técnico pela execução do objeto que trata a presente licitação, sendo este, Engenheiro Civil
+ou Arquiteto– Anexo VII.
+d) Atestado de responsabilidade técnica pela execução de serviços e obras, cujo detentor seja o profissional citado no
+item anterior, fornecido por pessoa jurídica de direito público ou privado, acompanhado do Certificado de Acervo
+Técnico - CAT, expedido pela entidade profissional competente (registro no sistema CREA/CONFEA e/ou Conselho
+competente), comprovando aptidão para desempenho de atividades pertinentes e compatíveis com a obra conforme
+descritos no subitem b) do item 4.4.
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+4/41
+
+===== PAGE 5 =====
+ 
+ 
+NC.27 - PASSEIO DE CONCRETO ARMADO, FCK=30MPA, INCLUINDO PREPARO DA CAIXA E LASTRO DE BRITA
+161,955 M3
+DEMOLIÇÃO MANUAL DE CONCRETO ARMADO
+134,835 M3
+FORNECIMENTO E ASSENTAMENTO DE PARALELEPÍPEDOS SOBRE AREIA (IE-23)
+103,32 M2
+REMOÇÃO DE ENTULHO COM CAÇAMBA METÁLICA, INCLUSIVE CARGA MANUAL E DESCARGA EM BOTA-FORA 202,115 M3
+APICOAMENTO MECÂNICO DE SUPERFÍCIE DE CONCRETO
+141 M2
+LIMPEZA DE JUNTA DE DILATAÇÃO COM REMOÇÃO DO EXCESSO DE CONCRETO - ATÉ 3CM
+674,83 M
+DISPOSIÇÃO FINAL DE SOLOS E RESÍDUOS, CLASSE II B - INERTES, EM ATERRO SANITÁRIO LICENCIADO
+175,285 Ton
+TELA PARA PROTEÇÃO DE OBRAS, MALHA 2 MM
+375 M2
+TERRA PREPARADA PARA PLANTIO
+38,435 M3
+CARGA MANUAL E REMOÇÃO DE ENTULHO, INCLUSIVE TRANSPORTE ATÉ 1 KM
+202,115 M3
+CONDUTOR EM TUBO DE FERRO FUNDIDO PARA ESGOTO, LINHA SMU - 75MM
+24 M
+BOMBEAMENTO DE CONCRETO
+161,96 M3
+ACABAMENTO DE PISO DE CONCRETO TIPO BAMBOLÊ
+1349,66 M2
+IC.06 - BANCO EM CONCRETO APARENTE, TIPO PMSP
+22 M
+DRACENA (DRACAENA FRAGRANS)
+112,5 UN
+TRANSPORTE DE TERRA POR CAMINHÃO BASCULANTE, A PARTIR DE 1KM
+2260,125 M3XKM
+ARRANCAMENTO E REASSENTAMENTO DE PARALELEPÍPEDOS SOBRE AREIA (IE-23)
+103,32 M2
+GRAMA ESMERALDA
+192,185 M2
+TINTA ACRÍLICA - CONCRETO OU REBOCO SEM MASSA CORRIDA
+240,4 M2
+REMOÇÃO DE ENTULHO COM CAÇAMBA METÁLICA, INCLUSIVE CARGA MANUAL E DESCARGA EM BOTA-FORA
+24 M3
+ 
+ 
+4.5. A documentação exigida poderá ser apresentada no original, por qualquer processo de cópia reprográfica autenticada e/ou por
+publicação em órgão da imprensa oficial, sendo que nenhum documento será autenticado pela Comissão de Contratação.
+4.6. Os documentos deverão estar com sua validade em vigor na data da abertura da sessão.
+4.7. Toda e qualquer declaração emitida pela empresa deverá estar em papel timbrado da licitante, sendo a mesma datada e assinada
+por seu(s) representante(s) legal(is), devidamente qualificado(s).
+4.8. Os documentos cujo prazo de validade não esteja especificado neste Edital ou em lei, terão validade de 60 (sessenta) dias da data
+de sua expedição.
+4.9. Será verificado se o licitante apresentou declaração de que atende aos requisitos de habilitação, e o declarante responderá pela
+veracidade das informações prestadas, na forma da lei (art. 63, I, da Lei nº 14.133/2021).
+4.10. Após a entrega dos documentos para habilitação, não será permitida a substituição ou a apresentação de novos documentos,
+salvo para complementação de informações acerca dos documentos já apresentados pelos licitantes.
+4.11. Na hipótese de o licitante não atender às exigências para habilitação, a comissão de contratação examinará a proposta
+subsequente e assim sucessivamente, na ordem de classificação, até a apuração de uma proposta que atenda ao presente edital.
+4.12. Somente serão disponibilizados para acesso público os documentos de habilitação do licitante cuja proposta atenda ao edital de
+licitação, após concluídos os procedimentos de que trata o item anterior.
+ 
+5. ENVELOPE II - PROPOSTA
+5.1. A documentação deverá ser entregue no Protocolo da Coordenadoria de Administração e Finanças – Prédio Sede da Subprefeitura
+de Pinheiros, à Rua Frederico Hermann Jr, 595 – 2º andar, em envelope fechado e indevassável, em cujo anverso deverá constar, no
+mínimo, a razão social da empresa e a indicação do nº da presente Concorrência .
+5.2. O envelope deverá conter:
+5.2.1. A proposta elaborada em uma única via, no Modelo de Proposta de Preços - ANEXO IV, ou com os mesmos dados e
+características, impressa em papel timbrado da empresa, integralmente digitada, datilografada ou manuscrita de forma legível,
+sem emendas ou rasuras, contendo a razão social e endereço da empresa, datada e assinada por representante legal desta,
+devidamente identificado com nome, cargo, R.G. e C.P.F.
+5.2.2. As licitantes deverão apresentar proposta com data base correspondente ao mês da sessão de abertura da licitação;
+5.2.3. A proposta deverá conter os preços unitários e total compatíveis com os praticados no mercado, devendo estar incluídos
+todos os impostos, taxas, fretes, descontos, bonificações, inclusive custo do orçamento, etc., e excluídos quaisquer encargos
+financeiros agregados ao seu valor econômico;
+5.2.3.1. Os custos e preços unitários e totais deverão ser truncados com duas casas decimais, sem arredondamento.
+5.2.4. O orçamento da Subprefeitura de Pinheiros (ANEXO I), contempla todos os custos com material, mão de obra (data
+base JANEIRO/2026), encargos sociais e trabalhistas e demais despesas diretas, não incluindo apenas a parcela relativa aos
+serviços complementares e à taxa de Benefícios e Despesas Indiretas - BDI, abrangendo toda e qualquer despesa direta
+necessária à execução dos serviços, não sendo admitida qualquer contestação posterior quanto à sua composição;
+5.2.5. A empresa deverá preencher a planilha proposta (ANEXO IV) em papel timbrado da licitante que acompanha o Impresso
+Proposta - Padrão (ANEXO IV):
+● Optando por oferecer os seus próprios custos unitários, a licitante, além de preencher a planilha-proposta
+(ANEXO IV), deverá apresentar outra(s) planilha(s) de composição de custos para cada item orçado
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+5/41
+
+===== PAGE 6 =====
+diferentemente da P.M.S.P., anexando-a(s) ao Impresso Proposta - Padrão;
+● Sob pena de desclassificação da proposta, não serão admitidos preços unitários ou totais superiores aos orçados
+pela PMSP, elaborados com base na tabela de SIURB / EDIF – JANEIRO/2026.
+5.2.6. Os custos unitários ofertados pela licitante deverão contemplar os mesmos itens, quantitativos e despesas
+diretas constantes na planilha proposta da PMSP, não sendo admitidas alterações em sua composição, devendo
+obedecer rigorosamente:
+● A relação de serviços descritos na planilha de orçamento referencial;
+● Os elementos de composição de custos unitários da tabela EDIF / SIURB / data base de JANEIRO/2026;
+● Caderno de critérios técnicos e as determinações estabelecidas no Caderno de Encargos de EDIF;
+● As normas da Associação Brasileira de Normas Técnicas – ABNT, nos quesitos pertinentes, principalmente no
+tocante as determinações de fiscalização;
+5.2.7. Sobre o valor total dos custos básicos, deverá incidir a Taxa de Benefícios e Despesas Indiretas - BDI, ofertada pela
+licitante, devidamente expressa em valor percentual, com até duas casas decimais, a ser indicada na Planilha de Proposta. A
+Taxa de Benefícios e Despesas Indiretas - BDI deverá contemplar os custos de administração central e local, custos financeiros,
+lucro e encargos legais, tais como: Imposto sobre Serviços - ISS, Programa de Integração Social - PIS, Contribuição para o Fim
+Social – COFINS, Imposto de Renda – IRPJ;
+5.2.8. O valor total da proposta será o resultado da aplicação da Taxa de Benefícios e Despesas Indiretas - BDI sobre o valor
+total dos custos ofertados. A proposta deverá obedecer às especificações que integram o presente Edital, sob pena de
+desclassificação;
+5.2.8.1. Serão desclassificadas as propostas que não atenderem às especificações deste Edital e as que forem consideradas
+de valor total excessivo ou não tiverem sua exequibilidade demonstrada, quando exigido pela Administração, nos termos
+do artigo 59, incisos III e IV, da Lei Federal nº 14.133/21. Sendo facultado à Comissão de Licitação diligenciar às
+empresas para sanarem propostas que contenham irregularidades, incongruência de cálculo, vícios ou defeitos que
+impossibilitem seu entendimento ou julgamento, sob pena de desclassificação;
+5.2.9. A proposta deverá atender a todas as solicitações contidas no ANEXO IV – Proposta Padrão, Planilha da Proposta,
+Planilha de composição do B.D.I., Taxas de encargos sociais e Cronograma físico-financeiro;
+5.2.10. A proposta apresentada terá prazo de validade de 60 (sessenta) dias, a contar da data de abertura do certame;
+5.2.11. Fica facultado à Comissão de Contratação proceder às diligências complementares visando comprovar a exequibilidade
+da proposta, podendo, para tanto, requerer a composição de custos para cada item orçado, diferentemente da P.M.S.P. e outros
+esclarecimentos dos proponentes no prazo de 02 (dois) dias úteis, contados da publicação da intimação no Diário Oficial do
+Município;
+5.2.12. A Comissão poderá determinar que a licitante, no prazo de 02 (dois) dias úteis, contados da publicação da intimação no
+Diário Oficial da Prefeitura de São Paulo, demonstre a composição da Taxa de Benefícios e Despesas Indiretas - BDI, a fim de
+verificar a compatibilidade com os encargos previstos;
+5.2.13. Os preços ofertados, tanto na proposta inicial, quanto na etapa de lances, serão de exclusiva responsabilidade do
+licitante, não lhe assistindo o direito de pleitear qualquer alteração, sob alegação de erro, omissão ou qualquer outro pretexto;
+5.2.14. A apresentação das propostas implica obrigatoriedade do cumprimento das disposições nelas contidas, em conformidade
+com o que dispõe o Termo de Referência, assumindo o proponente o compromisso de executar o objeto licitado nos seus
+termos, bem como de fornecer os materiais, equipamentos, ferramentas e utensílios necessários, em quantidades e qualidades
+adequadas à perfeita execução contratual, promovendo, quando requerido, sua substituição.
+ 
+6. DO PROCEDIMENTO E JULGAMENTO
+6.1. Iniciada a sessão pública, a Comissão de Contratação abrirá os envelopes de habilitação para verificar se os licitantes atendem às
+condições de participação no certame, conforme previsto no art. 14 da Lei nº 14.133/2021 e no item 3.4 do edital, especialmente
+quanto à existência de sanção que impeça a participação no certame ou a futura contratação.
+6.1.1. Encerrada a etapa de habilitação, a Comissão de Contratação procederá à classificação das propostas, em ordem crescente
+dos preços ofertados.
+6.2. Proposta de Preço
+6.2.1. Para julgamento e classificação das propostas, será adotado o critério de menor preço global pela obra, observados os
+requisitos, as especificações técnicas e os parâmetros definidos neste Edital e em seus anexos quanto ao objeto.
+6.2.2. A verificação da conformidade das propostas será feita exclusivamente em relação à proposta mais bem classificada.
+6.2.3. Será desclassificada a proposta que:
+a) apresentar borrões ou rasuras que não permitam o seu entendimento;
+b) apresentar valor unitário e/ou global dos serviços e/ou materiais superior ao orçado pela SUB-PI;
+c) apresentar quantitativo ou item de serviços e/ou materiais diversos ao apresentado nos Anexos I (Planilha
+Orçamentaria);
+d) não apresentarem preços/custos para todos os itens descritos na Planilha Orçamentária Referencial – SUB-PI;
+e) apresentar BDI superior ao contido na obra, desde que comprovada que a compensação com os custos diretos
+demonstre preços inexequíveis ou superiores aos orçados pela Administração;
+f) apresentar custos de mão de obra inferiores aos estabelecidos nas convenções coletivas de trabalho da categoria;
+g) apresentar preços diversos para o mesmo tipo de insumo;
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+6/41
+
+===== PAGE 7 =====
+h) contiver vícios insanáveis;
+i) não obedecerem às especificações técnicas pormenorizadas no edital;
+j) apresentar preços inexequíveis ou permanecerem acima do orçamento estimado para a contratação;
+k) não tiverem sua exequibilidade demonstrada, quando exigido pela Administração;
+l) apresentar desconformidade com quaisquer outras exigências deste edital, desde que insanável.
+6.2.4. A Administração poderá realizar diligências para aferir a exequibilidade das propostas ou exigir dos licitantes que ela seja
+demonstrada, caso julgue necessário.
+6.2.5. Serão consideradas inexequíveis as propostas cujos valores forem inferiores a 75% (setenta e cinco por cento) do valor orçado
+pela Administração, não justificados conforme o item 5.2.8.1.
+6.2.5.1. Na hipótese do item anterior, a Administração dará ao licitante a oportunidade de demonstrar a exequibilidade da sua
+proposta antes de deliberar acerca de sua desclassificação.
+6.2.5.2. Se o preço alcançado ensejar dúvidas quanto à sua exequibilidade, poderá a comissão determinar à licitante que
+demonstre a sua viabilidade, por meio de documentação complementar que comprove a capacidade da licitante em fornecer o
+objeto licitado pelo preço ofertado e nas condições propostas no Edital.
+6.2.5.2.1. Constatada a inexequibilidade dos preços ofertados, nos termos do artigo 59, III e IV, da Lei Federal nº 14.133,
+de 2021, a proposta será desclassificada, podendo a conduta do licitante ser apurada na forma prevista no art. 148, do
+Decreto Municipal nº 62.100/2022, caso também seja tipificada como ato lesivo pela Lei Federal nº 12.846, de 2013.
+6.2.6. Em caso de incompatibilidade de algum valor unitário com os parâmetros da Administração, estes poderão ser
+negociados com o licitante provisoriamente classificado em primeiro lugar, sem possibilidade de majoração do preço final
+alcançado.
+6.2.7. Se a oferta não for aceitável ou se a licitante não atender à exigência estabelecida no presente edital, a comissão
+desclassificará, motivadamente, a proposta e examinará as ofertas subsequentes, na ordem de classificação, até a apuração de
+uma proposta que atenda a todas as exigências.
+6.2.8. Considerada aceitável a oferta de menor preço, passará a comissão ao julgamento da habilitação.
+6.3. Habilitação
+6.3.1. Será(ão) considerada(s) habilitada(s) a(s) licitante(s) que apresentar(em), com exatidão, todos os documentos solicitados
+no item 4.
+6.3.2. O não atendimento do item 6.3.1 motivará a desclassificação da licitante.
+ 
+7. DOS LANCES E NEGOCIAÇÃO
+7.1. Encerrada a etapa de habilitação, a Comissão de Contratação procederá à classificação das propostas, em ordem crescente dos
+preços ofertados.
+7.2. Após a devida classificação, a Comissão de Contratação procederá com o início da fase de lances, com as licitantes presentes, que
+terá duração máxima de 10 (dez) minutos, a contar da autorização do agente de contratação designado para este ato, podendo ser
+prorrogada enquanto houver disputa de preço.
+7.2.1. Os licitantes presentes não serão obrigados a participar da fase de lances.
+7.2.2. Caso a licitante não apresente lances ou esteja ausente na sessão pública, concorrerá com o valor de sua proposta.
+7.3. O lance deverá ser público e ofertado pelo valor total da obra, os mesmos deverão ser registrados na Ata de Sessão Pública.
+7.4. Os licitantes poderão oferecer lances sucessivos, observando o horário fixado, conforme item 7.2.
+7.5. O licitante somente poderá oferecer lance de valor inferior ao último por ele ofertado, observando o intervalo mínimo de
+diferença de valores, que incidirá tanto em relação aos lances intermediários quanto em relação à proposta que cobrir a melhor oferta.
+7.5.1. O intervalo mínimo entre os lances deverá ser de R$ 1.000,00 (mil reais).
+7.6. Após o término do prazo estabelecido no item 7.2 e divulgados os lances segundo a ordem crescente de valores, a Comissão de
+Contratação realizará a negociação com a licitante melhor classificada, conforme art. 48 do Decreto nº 62.100/2022.
+7.7. Previsto no artigo 60 da Lei 14.133/2021; em caso de empate entre duas ou mais propostas, serão utilizados os seguintes critérios
+de desempate:
+I - Licitante que apresentar maior quantidade de acervo em relação ao item 4.4. "a"
+7.8. Em caso de permanência de empate avaliado após os critérios solicitados no item 7.7 – I,II,III, serão utilizados os critérios
+conforme artigo 60 da Lei 14.133/2021.
+7.9. Terminadas as fases de lance e negociação, caso haja alteração nos valores das propostas inicialmente apresentadas, a licitante
+melhor classificada deverá apresentar a documentação original, conforme item 5, em até 2 (dois) dias úteis, no endereço constante no
+item 5.1, não havendo necessidade de nova apresentação da garantia de proposta, que trata o item 8.
+7.9.1. Caso a licitante venha a solicitar prorrogação de prazo para entrega da documentação, caberá a Comissão de Contratação
+aceitar ou não as motivações apresentadas pela licitante.
+7.9.2. Caso a Comissão de Contratação venha a aceitar as motivações apresentadas pela licitante, o prazo contido no item 7.9
+poderá ser prorrogado uma única vez por igual período.
+ 
+8. DA GARANTIA DA PROPOSTA
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+7/41
+
+===== PAGE 8 =====
+8.1. As licitantes deverão prestar garantia de proposta conforme disposto no art. 58 da Lei nº 14.133/2021, visando assegurar a
+manutenção das propostas durante o prazo de validade estipulado no Edital.
+8.2. A prestação da garantia de proposta seguirá os procedimentos e critérios definidos na PORTARIA SF Nº 76 DE 22 DE MARÇO
+DE 2019, com as suas respectivas atualizações, dada pela PORTARIA SF Nº 8 DE 21 DE JANEIRO DE 2025.
+8.3. O valor da garantia será de 1% (um por cento) do valor estimado da obra para o presente objeto.
+8.4. O comprovante do recolhimento da garantia para licitar deverá ser apresentado juntamente com os documentos elencados no
+item 4.
+8.5. A unidade competente e/ou servidores designados analisarão a conformidade e efetividade da garantia, com base no Anexo I da
+Portaria SF nº 8 de 21 de janeiro de 2025, conforme § 1º do art. 2º da Portaria SF nº 76 de 22 de março de 2019.
+8.5.1. Após análise da conformidade do documento de garantia e validação, a unidade responsável emitirá manifestação quanto
+à validação da garantia para prosseguimento do procedimento licitatório.
+8.6. A garantia não poderá ter validade inferior a 90 (noventa) dias da abertura do certame.
+8.7. A garantia da proposta deverá ser entregue dentro do Envelope I.
+8.8. A garantia de proposta poderá ser prestada nas modalidades de que trata o § 1º do art. 96 da Lei nº 14.133/2021.
+8.9. A garantia será devolvida aos licitantes no prazo de 10 (dez) dias úteis, contado da assinatura do contrato ou da data em que for
+declarada fracassada a licitação.
+8.10. A justificativa para a exigência de garantia da proposta é conforme previsto no art. 58 da Lei nº 14.133/2021, que autoriza a
+Administração Pública a exigir dos licitantes, como condição de participação, a apresentação de garantia com o objetivo de assegurar
+a manutenção da proposta apresentada até a assinatura do contrato.
+8.10.1. A adoção dessa medida justifica-se pelos seguintes fundamentos:
+a) Mitigação de riscos à Administração: a garantia da proposta visa reduzir o risco de desistência imotivada do
+licitante vencedor, o que comprometeria o regular andamento da contratação e geraria a necessidade de convocação do
+segundo colocado ou até a repetição do certame, com impacto direto na continuidade e eficiência dos serviços públicos.
+b) Resguardo do interesse público e do erário: a exigência atua como mecanismo de segurança institucional,
+garantindo que apenas empresas com efetiva capacidade de assumir as obrigações contratuais participem do certame,
+evitando propostas temerárias ou a participação de licitantes que não tenham real intenção de contratar.
+c) Proporcionalidade e legalidade: o valor da garantia da proposta foi fixado em 1% do valor estimado da
+contratação, conforme limite estabelecido pela legislação vigente. Ademais, é facultada ao licitante a escolha entre as
+modalidades de caução em dinheiro ou títulos da dívida pública, fiança bancária ou seguro-garantia, nos termos da Lei nº
+14.133/2021.
+8.10.2. Portanto, a exigência da garantia da proposta encontra-se devidamente motivada, legalmente respaldada e
+proporcional ao objeto da licitação, sendo compatível com os princípios da legalidade, razoabilidade, eficiência, interesse
+público e planejamento, que regem a atuação da Administração Pública.
+ 
+9. DA IMPUGNAÇÃO AO EDITAL E DO PEDIDO DE ESCLARECIMENTO
+9.1. Qualquer pessoa poderá solicitar esclarecimentos ou informações relativos a esta licitação, que serão prestados mediante
+solicitação dirigida à comissão de contratação, até 03 (três) dias úteis antes da data marcada para abertura do certame, por meio do
+endereço eletrônico @smsub.prefeitura.sp.gov.br.
+9.2. Os esclarecimentos e as informações serão prestados no prazo de até 3 (três) dias úteis, contado da data de recebimento do
+pedido, limitado ao último dia útil anterior à data de abertura do certame.
+9.3. Qualquer pessoa, física ou jurídica, poderá formular impugnações contra o ato convocatório, até 3 (três) dias úteis antes da data
+marcada para abertura do certame, mediante petição apresentada, por meio do endereço eletrônico @smsub.prefeitura.sp.gov.br.
+9.3.1. No ato da apresentação da impugnação, é obrigatório anexar ao e-mail a cópia digitalizada dos seguintes documentos:
+a) Documento de identidade e do Cadastro de Pessoas Físicas (CPF), se o impugnante for pessoa física;
+b) Cadastro Nacional de Pessoas Jurídicas (CNPJ), em se tratando de pessoa jurídica, acompanhado do respectivo ato
+constitutivo ou de procuração, que comprove que o signatário/remetente da impugnação efetivamente representa a
+impugnante.
+9.4. Caberá à comissão de contratação se manifestar motivadamente, ouvidas, se for o caso, as unidades competentes a respeito da(s)
+impugnação(ões), proferindo sua decisão no prazo de 03 (três) dias úteis, contados da data de recebimento, limitado ao último dia útil
+anterior à data da abertura do certame.
+9.5. Quando o acolhimento da impugnação implicar alteração do edital capaz de afetar a formulação das propostas, será designada
+nova data para a realização do certame.
+9.6. A decisão sobre a impugnação será publicada no Diário Oficial.
+9.7. Os pedidos de impugnações, bem como as respectivas respostas, serão publicados no Diário Oficial para visualização dos
+interessados.
+9.8. As impugnações e pedidos de esclarecimentos não suspendem os prazos previstos no certame.
+9.9. A concessão de efeito suspensivo à impugnação é medida excepcional e deverá ser motivada pela comissão de contratação, nos
+autos do processo de licitação.
+ 
+10. DO RECURSO
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+8/41
+
+===== PAGE 9 =====
+10.1. A interposição de recurso referente ao julgamento das propostas, da habilitação ou inabilitação das licitantes, da anulação ou
+revogação da licitação, observará o disposto no art. 165 da Lei nº 14.133, de 2021.
+10.2. Na sessão pública que declara a licitante vencedora, as licitantes devem:
+a) PRESENTES, deverão expressar em momento oportuno, na própria sessão pública, sua intenção de apresentar
+recurso, sob pena de preclusão do direito de recorrer.
+b) AUSENTES, deverão expressar, em até 1 (um) dia útil da publicação da ata Diário Oficial da Prefeitura de São Paulo,
+sua intenção de apresentar recurso, sob pena de preclusão do direito de recorrer, através do e-mail licitacao-
+pinheiros@smsub.prefeitura.sp.gov.br.
+10.3 As razões do recurso deverão ser apresentadas, no prazo máximo de 3 (três) dias úteis, contados a partir da: a) lavratura da ata,
+quando todas as licitantes estiverem presentes, ou; b) na ausência de uma ou mais licitantes na sessão pública, o prazo será contado a
+partir da publicação da ata que definir o resultado do certame em Diário Oficial da Prefeitura de São Paulo;
+10.4. Os memoriais recursais deverão ser dirigidos à comissão de contratação no endereço no Protocolo da Coordenadoria de
+Administração e Finanças – Prédio Sede da Subprefeitura de Pinheiros à Rua Frederico Hermann Jr, 595 – 2º andar, podendo ser
+entregues em dias úteis das 8h às 16h30.
+10.5. Os demais licitantes, se desejarem, poderão apresentar suas contrarrazões, no prazo de 3 (três) dias úteis, contado da divulgação
+das razões recursais, no endereço contido no item 10.4.
+10.6. Após o prazo de apresentação das razões e contrarrazões, quando for o caso, poderá a comissão de contratação reconsiderar sua
+decisão no prazo máximo de 3 (três) dias úteis, ou, nesse mesmo prazo, encaminhar recurso para a autoridade superior, a qual deverá
+proferir sua decisão no prazo de 10 (dez) dias úteis, contado do recebimento dos autos.
+10.7. Será assegurado aos licitantes vistas dos elementos indispensáveis à defesa de seus interesses, por meio do Portal de Processos
+da Prefeitura de São Paulo, conforme art. 48 da Portaria Conjunta nº 001/SMG/SMIT/2018.
+10.8. Não serão aceitos recursos intempestivos ou direcionados para locais diferentes do contido no item 10.4.
+10.9. O acolhimento do recurso importará na invalidação apenas dos atos que não possam ser aproveitados.
+10.10. O recurso e pedido de reconsideração terão efeito suspensivo até a decisão final pela autoridade competente.
+ 
+11. DA ADJUDICAÇÃO E DA HOMOLOGAÇÃO
+11.1. O objeto da licitação será adjudicado ao(s) licitante(s) declarado(s) vencedor(es), pela autoridade superior, que em seguida
+homologará o processo licitatório.
+11.2. Após a fase recursal, constatada a regularidade dos atos praticados, a autoridade competente homologará o procedimento
+licitatório.
+ 
+12. DO CONTRATO
+12.1. Após a homologação da licitação, em sendo realizada a contratação, será firmado contrato.
+12.2. O licitante vencedor terá o prazo de 05 (cinco) dias úteis, contados a partir da data de sua convocação, para assinar o Contrato,
+sob pena de decair do direito à contratação, sem prejuízo das sanções previstas neste Edital.
+12.2.1. O prazo previsto no subitem anterior poderá ser prorrogado, por igual período, por solicitação justificada do
+adjudicatário e aceita pela Administração.
+12.3. Na assinatura do contrato, será exigida a comprovação das condições de habilitação consignadas no edital, que deverão ser
+mantidas pelo licitante durante a vigência do contrato.
+12.3.1. Na hipótese de irregularidade, o contratado deverá regularizar a sua situação perante o cadastro no prazo de até 05
+(cinco) dias úteis, sob pena de aplicação das penalidades previstas no edital.
+12.4. Quando convocada a subscrever o contrato, a adjudicatária deverá apresentar:
+12.4.1. Certidão atualizada de Registro de Pessoa Jurídica expedida pelo CREA e/ou conselho competente.
+12.4.1.1. Caso a licitante vencedora da presente licitação esteja sediada em outro Estado, deverá providenciar, até a data
+da assinatura do Contrato, o visto do CREA-SP e/ou Conselho competente na Certidão de Registro de Pessoa Jurídica.
+12.4.2. Declaração com a indicação do responsável técnico pela execução do objeto do contrato, necessariamente o indicado na
+licitação, e o preposto que o representará durante a execução dos trabalhos.
+12.4.3. Declaração firmada sob as penas da lei, conforme previsto no artigo 5º do Decreto 50.977 de 06 de novembro de 2009 e
+no artigo 5º do Decreto nº 48.184, de 13 de março de 2007, do compromisso de utilização de produtos ou subprodutos de
+madeira de origem exótica, ou de origem nativa, que tenham procedência legal, e de utilização de produtos de
+empreendimentos minerários que tenham procedência legal, conforme modelos constantes nos ANEXOS IX e X.
+12.4.4. Certidão comprobatória de regularidade perante a Prefeitura do Município de São Paulo, referente aos tributos
+relacionados com a prestação licitada, e comprovante de inscrição no Cadastro de Contribuintes Mobiliários do Município de
+São Paulo.
+12.4.5. Certidão comprobatória de regularidade relativa à Seguridade Social e ao Fundo de Garantia por Tempo de Serviço –
+FGTS.
+12.4.6. Certidão de Negativa de Débitos Trabalhistas – CNDT.
+12.4.7. Certidão conjunta de débitos relativos a tributos federais, à dívida ativa da União e à seguridade social.
+12.5. Os documentos acima citados deverão estar dentro do prazo de validade na data da assinatura do contrato.
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9da…
+9/41
+
+===== PAGE 10 =====
+12.6. Como condição à contratação, ainda, deverá restar comprovado que a empresa a ser contratada não possui pendências junto ao
+Cadastro Informativo Municipal – CADIN MUNICIPAL, por força da Lei Municipal nº 14.094/2005 e Decreto nº 47.096/2006, que
+disciplinam que a inclusão no CADIN impedirá a empresa de contratar com a Administração Municipal.
+12.7. A minuta do contrato a ser firmado entre a administração e a licitante vencedora, constitui parte integrante deste edital –
+ANEXO III, sendo que nela encontram-se definidas e especificadas todas as regras e condições da contratação, inclusive, regras de
+medição, condições de pagamento dos serviços executados, critérios de reajuste, gestão e fiscalização do contrato, penalidades
+contratuais e condições de recebimento.
+12.8. Na hipótese de o vencedor da licitação não comprovar as condições de habilitação consignadas no edital ou se recusar a assinar
+o contrato ou receber a nota de empenho, a Administração, sem prejuízo da aplicação das sanções das demais cominações legais
+cabíveis a esse licitante, poderá convocar outro licitante, respeitada a ordem de classificação, para, após a comprovação dos requisitos
+para habilitação, analisada a proposta e eventuais documentos complementares e, feita a negociação, assinar o contrato.
+ 
+13. DA GARANTIA CONTRATUAL
+13.1. Deverá ser prestada garantia para contratar, nos termos do art. 125 do Decreto Municipal nº 62.100/2022, com prazo não
+superior a 15 (quinze) dias contados da assinatura do contrato, no valor de 5% (cinco inteiros por cento) do valor total do contrato,
+que será prestada mediante depósito no Tesouro Municipal, com memorando a ser retirado na unidade contratante para este fim.
+13.2. A garantia será prestada nas modalidades previstas no artigo 96, § 1°, da Lei Federal n° 14.133/21.
+13.3. Sempre que o valor contratual for aumentado ou o contrato tiver sua vigência prorrogada, a contratada será convocada a reforçar
+a garantia, no prazo máximo de 3 (três) dias úteis, de forma a que corresponda sempre a mesma percentagem estabelecida.
+13.4. O não cumprimento do disposto na cláusula supra, ensejará aplicação da penalidade.
+13.5. A garantia exigida pela Administração poderá ser utilizada para satisfazer débitos decorrentes da execução do contrato, inclusive
+nos termos da Orientação Normativa 2/12 – PGM, e/ou de multas aplicadas à empresa contratada.
+13.6. A garantia contratual será devolvida após a lavratura do Termo de Recebimento Definitivo dos serviços, mediante requerimento
+da Contratada, que deverá vir acompanhado de comprovação, contemporânea, da inexistência de ações distribuídas na Justiça do
+Trabalho que possam implicar na responsabilidade subsidiária do ente público, condicionante de sua liberação, nos termos da
+Orientação Normativa 2/12 – PGM.
+13.7. A garantia poderá ser substituída, mediante requerimento da interessada, respeitadas as modalidades referidas no item 13.2.
+ 
+14. DO PAGAMENTO
+14.1. O pagamento dos serviços executados observará o contido na Portaria SF 275/2024 e será procedido mediante requerimento,
+com base em medição mensal efetuada pela Fiscalização, com a apresentação da nota fiscal e fatura ou nota fiscal fatura, destacando,
+quando for o caso, o valor da retenção a título de “Retenção para a Seguridade Social”, nos termos da Lei nº 9.711, de 20/11/98 e da
+Instrução Normativa em vigor, do Instituto Nacional do Seguro Social.
+14.2. A medição mensal deverá ser requerida pela contratada, junto ao protocolo da Unidade, a partir do primeiro dia útil posterior ao
+período de execução dos serviços.
+14.3. A medição deverá ser liberada pela fiscalização, no máximo, até o oitavo dia a partir do requerimento previsto no subitem
+anterior.
+14.4. Em caso de dúvida ou divergência, a fiscalização liberará, para pagamento, a parte inconteste dos serviços executados.
+14.5. O valor de cada medição será apurado em função das quantidades dos serviços realizados no período, sobre os quais serão
+aplicados os respectivos preços unitários contratuais.
+14.6. As medições deverão ser vistadas pela contratada que, em caso de divergência, declarará as razões de seu inconformismo, sendo
+certo que, se procedente a reclamação, será a diferença apontada considerada na medição seguinte.
+14.7. A medição final dos serviços somente será encaminhada para pagamento quando resolvidas as divergências, inclusive quanto a
+atrasos e multas relativos ao objeto do contrato.
+14.8. Estando em termos a documentação apresentada pela Contratada, o pagamento devido será efetuado no prazo de 30 (trinta) dias
+corridos, contados da data da apresentação do requerimento para pagamento, por crédito em conta corrente no Banco do Brasil S/A,
+ou, excepcionalmente, no Departamento do Tesouro, a critério da Secretaria Municipal de Finanças, nos termos da legislação vigente.
+14.9. Nenhum pagamento isentará a contratada da responsabilidade pelos serviços executados ou implicará em sua aceitação.
+14.10. A Administração rejeitará, no todo ou em parte, serviços em desacordo com o contrato, podendo, entretanto, recebê-los,
+justificadamente, desde que lhe convenha, com o abatimento do preço que couber.
+ 
+15. DAS PENALIDADES
+15.1. São aplicáveis as sanções e procedimentos previstos no Título IV, Capítulo I da Lei Federal nº 14.133/21 e Seção XI do Decreto
+Municipal nº 62.100/22.
+15.2. As penalidades só deixarão de ser aplicadas nas seguintes hipóteses: a) Comprovação, anexada aos autos, da ocorrência de força
+maior impeditiva do cumprimento da obrigação; e/ou,
+b) Manifestação da unidade requisitante, informando que o ocorrido derivou de fatos imputáveis exclusivamente à
+Administração.
+15.3. Ocorrendo recusa da adjudicatária em retirar/receber a nota de empenho ou assinar o termo de contrato, dentro do prazo
+estabelecido neste Edital, sem justificativa aceita pela Administração, garantido o direito prévio de citação e da ampla defesa, serão
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+10/41
+
+===== PAGE 11 =====
+aplicadas:
+a) Multa no valor de 20% (vinte por cento) do valor do ajuste, se firmado fosse;
+b) Pena de impedimento de licitar e contratar pelo prazo de até 3 (três) anos com a Administração Pública, a critério da
+Prefeitura;
+15.3.1. Incidirá nas mesmas penas previstas neste subitem a empresa que estiver impedida de firmar o ajuste pela não
+apresentação dos documentos necessários para tanto.
+15.4. À licitante que ensejar o retardamento da execução do certame, inclusive em razão de comportamento inadequado de seus
+representantes, deixar de entregar ou apresentar documentação falsa exigida neste edital, não mantiver a proposta/lance, comportar-se
+de modo inidôneo, fizer declaração falsa ou cometer fraude fiscal, garantido o direito prévio de citação e da ampla defesa, serão
+aplicadas as penalidades referidas nas alíneas “a” e “b” do subitem 15.3 ou declaração de inidoneidade para licitar ou contratar, a
+depender da natureza e gravidade da infração cometida e peculiaridades do caso em concreto.
+15.5. As penalidades poderão ainda ser aplicadas em outras hipóteses, previstas na Minuta do Contrato.
+15.6. As sanções são independentes e a aplicação de uma não exclui a das outras, quando cabíveis.
+15.7. Das decisões de aplicação de penalidade, caberá recurso nos termos dos artigos 166 e 167 da Lei Federal nº 14.133/21,
+observados os prazos nele fixados, que deverá ser dirigido à autoridade competente, e protocolizado nos dias úteis de segunda a sexta
+feira das 8h às 16h30 na Coordenadoria de Administração e Finanças – Prédio Sede da Subprefeitura de Pinheiros à Rua Frederico
+Hermann Jr, 595 – 2º andar – Protocolo da Supervisão de Administração e Suprimentos.
+15.8. Os procedimentos de aplicação das penalidades de impedimento de licitar e contratar e de declaração de inidoneidade para
+licitar e contratar serão conduzidos por comissão, nos termos do artigo 158, “caput” e § 1º, da Lei Federal nº 14.133, de 2021.
+15.9. São aplicáveis à presente licitação e ao ajuste dela decorrente no que cabível for, inclusive, as sanções penais estabelecidas na
+Lei Federal nº 14.133/21.
+ 
+16. DA VISTORIA
+16.1. As empresas interessadas em participar do certame DEVERÃO ter pleno conhecimento das condições gerais e particulares do
+objeto da licitação e do local onde serão executadas as obras e/ou serviços, não podendo invocar qualquer desconhecimento como
+elemento impeditivo da correta formulação da proposta e do integral cumprimento do contrato, não sendo aceitas reivindicações
+posteriores sob quaisquer alegações.
+16.2. As empresas interessadas PODERÃO efetuar vistoria técnica, no local onde serão executados os serviços, com o objetivo de
+verificar as condições locais, avaliar a quantidade e a natureza dos trabalhos, materiais e equipamentos necessários à execução do
+objeto da licitação, permitindo aos interessados colher as informações e subsídios que julgarem necessários para a elaboração da sua
+proposta, de acordo com o que o próprio interessado julgar conveniente, não cabendo à Unidade Contratante nenhuma
+responsabilidade em função de insuficiência dos dados levantados por ocasião da visita técnica.
+16.3. A vistoria técnica ao local dos serviços será realizada diretamente pelos licitantes, de forma que sejam identificadas, observadas,
+analisadas e assinaladas todas as dificuldades e peculiaridades do local, no tocante à execução do projeto.
+16.4. O responsável técnico da empresa, a partir da vistoria do local onde os serviços serão prestados, deverá declarar que visitou e
+vistoriou o local, apresentar cópia autenticada da certidão de Registro de Pessoa Jurídica no CREA comprovando sua condição
+técnica, e a comprovação do seu vínculo com a empresa licitante.
+16.5. A Declaração deverá ser apresentada, acompanhada de fotos recentes do local vistoriado, não sendo aceitas imagens de banco de
+dados como Street View.
+16.6. Não será permitido que um mesmo responsável técnico realize a vistoria para mais de uma empresa.
+16.7. Em atendimento ao determinado no art. 38 da Lei Municipal n° 17.273/20, as empresas que decidirem por NÃO REALIZAR
+VISTORIA TÉCNICA (ANEXO XIII) deverão apresentar, juntamente com os documentos solicitados acima, declaração de não
+vistoria. A declaração deverá estar assinada pelo responsável técnico, de que está ciente de que não serão atendidas solicitações
+durante a execução da obra sob o argumento de falta de conhecimento das condições de trabalho ou de dados deste projeto.
+16.8. É facultativo o acompanhamento do técnico da Supervisão Técnica de Projetos e Obras. No caso de solicitar o acompanhamento
+de um técnico desta unidade, fazer agendamento por meio eletrônico no endereço niwton@smsub.prefeitura.sp.gov.br e indicar a
+obra desejada.
+ 
+17. DAS DISPOSIÇÕES GERAIS
+17.1. Da sessão pública da concorrência, publicará a Ata no Diário Oficial.
+17.2. Não havendo expediente ou ocorrendo qualquer fato superveniente que impeça a realização do certame na data marcada, a
+sessão será automaticamente transferida para o primeiro dia útil subsequente, no mesmo horário anteriormente estabelecido, desde
+que não haja comunicação em contrário pela comissão de contratação.
+17.3. Todas as referências de tempo no Edital, no aviso e durante a sessão pública observarão o horário de Brasília – DF.
+17.4. A homologação do resultado desta licitação não implicará direito à contratação.
+17.5. As normas disciplinadoras desta licitação serão interpretadas em favor da ampliação da disputa e o princípio do formalismo
+moderado, respeitada a igualdade de oportunidade entre as licitantes e desde que não comprometam o interesse público, a finalidade e
+a segurança da contratação.
+17.6. Os licitantes assumem todos os custos de preparação e apresentação de suas propostas, e a Administração não será, em nenhum
+caso, responsável por esses custos, independentemente da condução ou do resultado do processo licitatório.
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+11/41
+
+===== PAGE 12 =====
+17.7. As licitantes são responsáveis pela fidelidade e legitimidade das informações e dos documentos apresentados em qualquer fase
+do certame.
+17.8. A falsidade de qualquer declaração prestada poderá caracterizar o crime de que trata o art. 299 do Código Penal, sem prejuízo do
+enquadramento em outras figuras penas e das sanções administrativas previstas na legislação pertinente, mediante o devido processo
+legal, e implicará, também, a inabilitação da licitante se o fato vier a ser constatado durante o trâmite da licitação.
+17.9. A licitante vencedora deverá comunicar à Administração toda e qualquer alteração nos dados cadastrais, para atualização,
+devendo manter, durante toda a execução do contrato, em compatibilidade com as obrigações assumidas, todas as condições de
+habilitação e qualificação exigidas na licitação.
+17.10. O ajuste, suas alterações e rescisão obedecerão à Lei Federal nº 14.133/21, demais normas complementares e disposições deste
+Edital, aplicáveis à execução dos contratos e especialmente os casos omissos.
+17.11. A revogação ou anulação da licitação observará os procedimentos e normas previstos no art. 71 da Lei Federal nº 14.133/2.021.
+17.12. A comissão de contratação poderá promover diligências destinadas à complementação de informações sobre documentos já
+apresentados, desde que se tratem de fatos existentes à época da abertura do certame e atualização de documentos cuja validade tenha
+expirado após a data de recebimento das propostas, nos termos do art. 64 da Lei Federal nº 14.133/21.
+17.13. No julgamento da habilitação e das propostas, a comissão de contratação poderá sanar erros ou falhas que não alterem a
+substância das propostas, dos documentos e sua validade jurídica, mediante despacho fundamentado, registrado em ata e acessível a
+todos, atribuindo-lhes validade e eficácia para fins de habilitação e classificação.
+17.14. Os casos omissos e as dúvidas surgidas serão resolvidos pela comissão de contratação, ouvidas, se for o caso, as unidades
+competentes.
+17.15. Integrarão o ajuste a ser firmado, para todos os fins, a proposta da Contratada, a Ata da licitação e o Edital da Licitação, com
+seus anexos, que o precedeu, independentemente de transcrição.
+17.16. A participação nesta CONCORRÊNCIA implica na aceitação integral e irretratável pelas licitantes, dos termos deste Edital e
+seus anexos, que passarão a integrar o contrato, não sendo aceita, sob qualquer hipótese, alegação de seu desconhecimento em
+qualquer fase do procedimento licitatório e execução do contrato.
+17.17. A contratada não poderá subcontratar, ceder ou transferir o objeto do contrato, à terceiros, sob pena de extinção.
+17.18. As exigências constantes neste Edital e seus Anexos, no que couber, abrangem fornecedores, subfornecedores e
+subcontratados, sem exceções, cuja responsabilidade pela implementação de qualidade das obras, materiais e serviços
+executados/fornecidos é exclusiva da licitante vencedora, inclusive a promoção de readequações, sempre que detectadas
+impropriedades que possam comprometer a consecução do objeto contratado.
+17.19. Fica ressalvada a possibilidade de alteração das condições contratuais em face da superveniência de normas federais e
+municipais disciplinando a matéria.
+17.20. Na contagem dos prazos estabelecidos neste edital e seus anexos, excluir-se-á o dia do início e incluir-se-á o do vencimento,
+observado o art. 183 da Lei Federal 14.133/2021.
+17.21. O Edital e seus anexos estão disponíveis, na íntegra, no Portal Nacional de Contratações Públicas (PNCP) e Diário Oficial da
+Cidade de São Paulo.
+17.22. Fica desde logo eleito o Foro da Comarca da Capital – Vara da Fazenda Pública - para dirimir quaisquer controvérsias
+decorrentes do presente certame ou de ajuste dele decorrente.
+ 
+18. ANEXOS INTEGRANTES DO EDITAL
+I - TERMO DE REFERÊNCIA; 
+II - ESTUDO TÉCNICO PRELIMINAR;
+III - MINUTA DE CONTRATO; 
+IV- PROPOSTA PADRÃO (A); PLANILHA ORÇAMENTÁRIA PROPOSTA(B); PLANILHA DE COMPOSIÇÃO
+DO B.D.I.(C); TAXAS DE ENCARGOS SOCIAIS(D); CRONOGRAMA FISICO-FINANCEIRO(E);
+V - DECLARAÇÃO DE NÃO CADASTRAMENTO E INEXISTÊNCIA DE DÉBITOS PARA COM A FAZENDA
+DO MUNICÍPIO DE SÃO PAULO;
+VI - DECLARAÇÃO GERAL;
+VII - DECLARAÇÃO DE INDICAÇÃO DO RESPONSÁVEL TÉCNICO;
+VIII - DECLARAÇÃO DE ATENDIMENTO AOS PROCEDIMENTOS DE CONTROLE AMBIENTAL,
+CONFORME DECRETO 48.184/07;
+IX - DECLARAÇÃO DE ATENDIMENTO AOS PROCEDIMENTOS DE CONTROLE AMBIENTAL, CONFORME
+DECRETO 50.977/09.
+X - CRITÉRIOS DE ANÁLISE ECONÔMICO-FINANCEIRA - BALANÇO PATRIMONIAL;
+XI – TERMO DE CREDENCIAMENTO;
+XII – DECLARAÇÃO DE VISTORIA;
+XIII – TERMO DE AUSÊNCIA DE VISTORIA TÉCNICA.
+XIV - RELATÓRIO FOTOGRÁFICO
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+12/41
+
+===== PAGE 13 =====
+XV - PORTARIA SF 275
+XVI - PROJETO BÁSICO / CROQUI REFERENCIAL
+XVII - MATRIZ DE RISCO
+ 
+ 
+ 
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO I
+ TERMO DE REFERÊNCIA,
+ 
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+13/41
+
+===== PAGE 14 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO II
+ESTUDO TÉCNICO PRELIMINAR 
+ 
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+14/41
+
+===== PAGE 15 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO III
+MINUTA DE CONTRATO
+ 
+TERMO DE CONTRATO TERMO DE CONTRATO Nº
+PROCESSO: 6050.2026/0008794-6
+CONCORRÊNCIA Nº ___/SUB-PI/20___
+OBJETO: _______________________________
+CONTRATANTE: SUB-PI C
+ONTRATADA: ______
+VALOR DO CONTRATO: R$ ______ (extenso)
+DOTAÇÃO A SER ONERADA:
+NOTA DE EMPENHO:
+Aos ...... dias do mês de ............... do ano de dois mil e vinte e quatro, na sede da Subprefeitura Pinheiros, presentes de um lado a
+PMSP/Prefeitura do Município de São Paulo/Subprefeitura Pinheiros, inscrita no Cadastro Nacional de Pessoa Jurídica sob o n°
+05.649.898/0001-47, situada na Av. Professor Frederico Hermann Júnior, 595 – Alto de Pinheiros – São Paulo – SP – CEP 05459-010,
+representada pelo Senhor Subprefeito ....................................., portador da Cédula de Identidade n° ............., inscrito no Cadastro de Pessoa
+Física sob o n° .............., em conformidade com a Lei Municipal n° 13.399/02 , e ora denominada CONTRATANTE e de outro a empresa
+____, inscrita no Cadastro Nacional de Pessoa Jurídica Nº ______, com sede na Rua ______ – CEP _____ – ____/SP, telefone: (11) _____,
+e-mail: _______, neste ato representada por seu Representante Legal, ________, portador da cédula de identidade RG nº ______ e inscrito
+no cadastro de pessoa física sob o CPF nº ______, adiante denominada simplesmente CONTRATADA, têm entre si contratado, em
+conformidade com a Lei Federal nº 14.133/21 e Lei Municipal nº 13.278/02, conforme autorização contida Despacho Autorizatório sob
+Doc. SEI nº ______, do Processo Administrativo em epígrafe, publicado no DOC de _____ – pág. ___, bem como observadas as cláusulas
+e condições a seguir pactuadas.
+ 
+CLÁUSULA PRIMEIRA
+DO OBJETO DO CONTRATO
+1.1 
+O 
+presente 
+contrato 
+tem 
+por 
+objeto 
+a
+_________________________________________________________________________________________________________________.
+1.2 Deverão ser observadas as especificações e condições de prestação de serviços constantes do Termo de Referência e demais
+documentos técnicos constantes no Processo Administrativo nº 6050.202_/______-___ parte integrante deste instrumento.
+ 
+CLÁUSULA SEGUNDA
+DOS LOCAIS DE PRESTAÇÃO DOS SERVIÇOS
+2.1 A prestação dos serviços será na Rua........................, jurisdição da Subprefeitura Pinheiros.
+CLÁUSULA TERCEIRA
+DO PRAZO CONTRATUAL
+3.1 O prazo de execução do contrato terá duração de 120 (cento e vinte) dias, a contar da data estabelecida na Ordem de Início dos
+Serviços, emitida pela Supervisão Técnica de Projetos e Obras desta Subprefeitura Pinheiros.
+3.2 A CONTRATADA deverá apresentar à CONTRATANTE, no prazo de 05 (cinco) dias úteis, contados da assinatura deste Contrato, a
+seguinte documentação necessária à emissão da Ordem de Início:
+a) ART - Anotação de Responsabilidade Técnica referente ao objeto a ser executado;
+3.2.1 O atraso na entrega do presente documento ensejará multa, conforme o item 10.2.1 do presente instrumento.
+3.3 O presente instrumento poderá ser prorrogado, desde que haja concordância das partes e seja observado o disposto do art. 107 da Lei
+14.133/2.021 e suas alterações.
+ 
+CLÁUSULA QUARTA
+Ã
+Á
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+15/41
+
+===== PAGE 16 =====
+DO PREÇO E DOTAÇÃO ORÇAMENTÁRIA
+4.1 O valor total estimado da presente contratação para o período de ________ dias é de R$ ___________ (___________).
+4.2. Todos os custos e despesas necessários à correta execução do ajuste estão inclusos no preço, inclusive os referentes às despesas
+trabalhistas, previdenciárias, impostos, taxas, emolumentos, em conformidade com o estatuído no Edital e seus Anexos, constituindo a
+única remuneração devida pela CONTRATANTE à CONTRATADA.
+4.3. Para fazer às despesas do Contrato, foi emitida a nota de empenho nº ........., no valor de R$ ____(___), onerando a dotação
+orçamentária nº ........... do orçamento vigente, respeitado o princípio da anualidade orçamentária, devendo as despesas do exercício
+subsequente onerar as dotações do orçamento próprio.
+ 
+CLÁUSULA QUINTA
+DAS OBRIGAÇÕES DA CONTRATADA
+5.1 São obrigações da CONTRATADA:
+a) Executar regularmente o objeto deste ajuste, respondendo perante a CONTRATANTE pela fiel e integral realização dos
+serviços contratados;
+b) Garantir total qualidade dos serviços contratados;
+c) Executar todos os serviços objeto do presente contrato, obedecendo as especificações e obrigações descritas no Termo de
+Referência e demais documentos técnicos, que precederam este ajuste e faz parte integrante do presente instrumento;
+d) Fornecer mão de obra necessária, devidamente selecionada para o atendimento do presente contrato, verificando a aptidão
+profissional, antecedentes pessoais, saúde física e mental e todas as informações necessárias, de forma a garantir uma perfeita
+qualidade e eficiência dos serviços prestados;
+e) Arcar fiel e regularmente com todas as obrigações trabalhistas dos empregados, quando for o caso, que participem da
+execução do objeto contratual;
+f) Enviar à Administração e manter atualizado o rol de todos os funcionários que participem da execução do objeto contratual;
+g) Responsabilizar-se pela segurança do trabalho de seus empregados, adotando as precauções necessárias à execução dos
+serviços, fornecendo os equipamentos de proteção individual (EPI) exigidos pela legislação, respondendo por eventuais
+indenizações decorrentes de acidentes de trabalho, cabendo-lhe comunicar à CONTRATANTE a ocorrência de tais fatos;
+h) Responder por todos os encargos e obrigações de natureza trabalhista, previdenciária, acidentária, fiscal, administrativa, civil
+e comercial, resultantes da prestação dos serviços; i) Responsabilizar-se integralmente pelos serviços contratados, nos termos
+da legislação vigente;
+j) Responder por todo e qualquer dano que venha a ser causado por seus empregados e prepostos, à CONTRATANTE ou a
+terceiros, podendo ser descontado do pagamento a ser efetuado, o valor do prejuízo apurado;
+k) Manter, durante o prazo de execução do Contrato, todas as condições de habilitação e qualificação exigidas na licitação.
+5.2 A CONTRATADA não poderá subcontratar, ceder ou transferir o objeto do Contrato, no todo ou em parte, a terceiros, sob pena de
+rescisão.
+5.2.1. A subcontratação parcial do objeto, poderá ser autorizada pela fiscalização do contrato, quando devidamente motivada pela
+CONTRATADA, até o limite máximo de 30% (trinta por cento) do objeto, devendo observar as normas previstas no art. 122 da Lei
+Federal nº 14.133/2.021
+5.3. A CONTRATADA tem a possibilidade, mediante prévia autorização da CONTRATANTE, do projeto básico ou executivo serem
+alterados, desde que demonstrada a superioridade das inovações propostas, em termos de redução de custos, de aumento da qualidade, de
+redução do prazo de execução ou de facilidade de manutenção ou operação, assumindo a contratada a responsabilidade integral pelos
+riscos associados à alteração do projeto.
+ 
+CLÁUSULA SEXTA
+DAS OBRIGAÇÕES DA CONTRATANTE
+6.1 A CONTRATANTE se compromete a executar todas as obrigações contidas no Termo de Referência, cabendo-lhe especialmente:
+a) Cumprir e exigir o cumprimento das obrigações deste Contrato e das disposições legais que a regem;
+b) Realizar o acompanhamento do presente contrato, comunicando à CONTRATADA as ocorrências de quaisquer fatos que
+exijam medidas corretivas;
+c) Proporcionar todas as condições necessárias à boa execução dos serviços contratados, inclusive comunicando à
+CONTRATADA, por escrito e tempestivamente, qualquer mudança de Administração e ou endereço de cobrança;
+d) Exercer a fiscalização dos serviços, indicando, formalmente, o gestor e/ou o fiscal para acompanhamento da execução
+contratual, inclusive no que tange a mão de obra que o integra, acompanhando a sua presença, fornecimento dos materiais,
+manutenção e etc, realizando a supervisão das atividades desenvolvidas pela CONTRATADA e efetivando avaliação periódica;
+e) Prestar as informações e os esclarecimentos que venham a ser solicitados pela CONTRATADA, podendo solicitar o seu
+encaminhamento por escrito;
+f) Efetuar os pagamentos devidos, de acordo com o estabelecido no presente contrato;
+g) Aplicar as penalidades previstas neste contrato, em caso de descumprimento pela CONTRATADA de quaisquer cláusulas
+estabelecidas;
+h) Exigir da CONTRATADA, a qualquer tempo, a comprovação das condições requeridas para a contratação;
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+16/41
+
+===== PAGE 17 =====
+i) Indicar e formalizar o(s) responsável(is) pela fiscalização do contrato, a quem competirá o acompanhamento dos serviços,
+nos termos do Decreto Municipal nº 62.100/22;
+j) Atestar mensalmente a execução e a qualidade dos serviços prestados, indicando qualquer ocorrência havida no período, se
+for o caso, em processo próprio, onde será juntada a Nota Fiscal Fatura a ser apresentada pela CONTRATADA, para fins de
+pagamento;
+k) Ordenar a imediata retirada do local, bem como a substituição de funcionário da CONTRATADA que estiver sem crachá,
+que embaraçar ou dificultar a fiscalização ou cuja permanência na área, a seu exclusivo critério, julgar inconveniente, bem
+assim a substituição de equipamentos, que não se apresentarem em boas condições de operação ou estiverem em desacordo
+com as especificações técnicas.
+6.2 A fiscalização dos serviços pelo CONTRATANTE não exime, nem diminui a completa responsabilidade da CONTRATADA, por
+qualquer inobservância ou omissão às cláusulas contratuais.
+6.3 A CONTRATANTE poderá, a seu critério e a qualquer tempo, realizar vistoria dos equipamentos e verificar o cumprimento de normas
+preestabelecidas no edital/contrato.
+ 
+CLÁUSULA SÉTIMA
+DO PAGAMENTO
+7.1 O prazo de pagamento será de até 30 (trinta) dias, a contar da data da entrega de cada nota fiscal ou nota fiscal-fatura e serviços
+atestados a contento pelo fiscal, nos termos da Portaria SF nº 170/2020 e Instrução Normativa nº 1234/12 da RF. 7.1.1 Caso venha a
+ocorrer a necessidade de providências complementares por parte da CONTRATADA, a fluência do prazo será interrompida, reiniciando-se
+a sua contagem a partir da data em que estas forem cumpridas. 7.1.2 Caso venha a ocorrer atraso no pagamento dos valores devidos, por
+culpa exclusiva da Administração, a CONTRATADA terá direito à aplicação de compensação financeira, nos termos da Portaria SF nº 05,
+de 05/01/2012. 7.2 Os pagamentos serão efetuados em conformidade com a execução dos serviços, mediante apresentação da(s)
+respectiva(s) nota(s) fiscal(is) ou nota(s) fiscal(is)/fatura, acompanhada, quando for o caso, do recolhimento do ISSQN – Imposto Sobre
+Serviços de Qualquer Natureza do mês de competência, descontados os eventuais débitos da CONTRATADA, inclusive os decorrentes de
+multas.
+7.2.1 No caso de prestadores de serviço com sede ou domicílio fora do Município de São Paulo, deverá ser apresentada prova de
+inscrição no CPOM – Cadastro de Empresas Fora do Município, da Secretaria Municipal de Finanças, nos termos dos artigos 9º-A E
+9º-B da Lei Municipal nº 13.701/2003, com redação da Lei Municipal nº 14.042/05 e artigo 68 do Regulamento do Imposto Sobre
+Serviços de Qualquer Natureza - ISS, aprovado pelo Decreto Municipal nº 53.151/12.
+7.2.2 Não sendo apresentado o cadastro mencionado no subitem anterior, o valor do ISSQN – Imposto Sobre Serviços de Qualquer
+Natureza, incidente sobre a prestação de serviços objeto do presente, será retido na fonte por ocasião de cada pagamento, consoante
+determina o artigo 9º-A e seus parágrafos 1º e 2º, da Lei Municipal nº 13.701/2003, acrescentados pela Lei Municipal nº 14.042/05, e
+na conformidade do Regulamento do Imposto Sobre Serviços de Qualquer Natureza - ISS, aprovado pelo Decreto Municipal nº
+53.151/12 e da Portaria SF nº 124/22.
+7.2 Na hipótese de existir nota de retificação e/ou nota suplementar de empenho, cópia(s) da(s) mesma(s) deverá(ão) acompanhar os
+demais documentos.
+7.3 A CONTRATADA deverá apresentar, a cada pedido de pagamento, os documentos a seguir discriminados, para verificação de sua
+regularidade fiscal perante os órgãos competentes:
+a) Certificado de Regularidade do Fundo de Garantia do Tempo de Serviço – F.G.T.S., fornecido pela Caixa Econômica
+Federal;
+b) Certidão Negativa de Débitos relativa às Contribuições Previdenciárias e as de Terceiros – CND – ou outra equivalente na
+forma da lei;
+c) Certidão negativa de débitos de tributos mobiliários do Município de São Paulo;
+d) Certidão negativa de débitos trabalhistas (CNDT);
+e) Nota Fiscal ou Nota Fiscal Fatura devidamente atestada;
+f) Folha de Medição dos Serviços;
+g) Declaração de utilização de produtos e subprodutos de madeira de origem exótica, quando esta for a hipótese, acompanhada
+das respectivas notas fiscais de sua aquisição;
+h) no caso de utilização de produtos ou subprodutos de madeira de origem nativa, deverão ser entregues ao CONTRATANTE
+os seguintes documentos:
+• notas fiscais de aquisição destes produtos e subprodutos.
+• original da 1ª (primeira) via da Autorização de Transporte de Produtos Florestais – ATPF, expedida pelo Instituto
+Brasileiro de Meio Ambiente e dos Recursos Naturais Renováveis – IBAMA, mantendo arquivada na empresa cópia
+autenticada deste documento.
+• comprovante de que o fornecedor dos produtos ou subprodutos de madeira de origem nativa encontra-se cadastrado no
+Cadastro Técnico Federal do Instituto Brasileiro do Meio Ambiente e Recursos Naturais Renováveis – IBAMA.
+i) no caso de utilização de produtos de empreendimentos minerários, nos termos do Decreto nº 48.184, de 13 de março de 2007,
+deverão ser entregues ao CONTRATANTE os seguintes documentos:
+• notas fiscais de aquisição desses produtos;
+• na hipótese de o volume dos produtos minerários ultrapassar 3m³ (três metros cúbicos), cópia da última Licença de
+Operação do empreendimento responsável pela extração dos produtos de mineração, emitida pela Companhia Ambiental
+do Estado de São Paulo - CETESB, quando localizado no Estado de São Paulo, ou de documento equivalente, emitido
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+17/41
+
+===== PAGE 18 =====
+por órgão ambiental competente, integrante do Sistema Nacional do Meio Ambiente - SISNAMA, no caso de
+empreendimentos localizados em outro Estado;
+7.3.1 Serão aceitas como prova de regularidade, certidões positivas com efeito de negativas e certidões positivas que noticiem em seu
+corpo que os débitos estão judicialmente garantidos ou com sua exigibilidade suspensa.
+7.4 Por ocasião de cada pagamento, serão feitas as retenções eventualmente devidas em função da legislação tributária.
+7.5 A não apresentação de certidões negativas de débito, ou na forma prevista no subitem 7.3, não impede o pagamento, porém será objeto
+de aplicação de penalidade ou rescisão contratual, conforme o caso.
+7.6 O pagamento será efetuado por crédito em conta corrente, no BANCO DO BRASIL S/A, conforme estabelecido no Decreto nº
+51.197/2010, publicado no DOC do dia 22 de janeiro de 2010.
+7.7 Fica ressalvada qualquer alteração por parte da Secretaria Municipal da Fazenda, quanto às normas referentes ao pagamento de
+fornecedores.
+ 
+CLÁUSULA OITAVA
+DO CONTRATO E DA EXTINÇÃO
+8.1 O presente contrato é regido pelas disposições da Lei Federal nº 14.133/21, do Decreto Municipal nº 62.100/2022, Decreto Municipal
+nº 56.475/2015 e da Lei Complementar nº 123/2006, alterada pela Lei Complementar nº 147/2014, e das demais normas complementares
+aplicáveis.
+8.2 O ajuste poderá ser alterado nas hipóteses previstas no artigo 137 da Lei Federal 14.133/21.
+8.3 A CONTRATANTE se reserva o direito de promover a redução ou acréscimo do ajuste, nos termos do art. 125 da Lei Federal
+14.133/21.
+8.4 O contrato se extingue quando vencido o prazo nele estipulado, independentemente de terem sido cumpridas ou não as obrigações de
+ambas as partes contraentes.
+8.5 O contrato pode ser extinto antes do prazo nele fixado, sem ônus para o CONTRATANTE, quando esta não dispuser de créditos
+orçamentários para sua continuidade ou quando entender que o contrato não mais lhe oferece vantagem.
+8.6 O contrato pode ser extinto antes de cumpridas as obrigações nele estipuladas, ou antes do prazo nele fixado, por algum dos motivos
+previstos no artigo 137 da Lei nº 14.133/21, bem como amigavelmente, assegurados o contraditório e a ampla defesa.
+8.7 Nesta hipótese, aplicam-se também os artigos 138 e 139 da mesma Lei.
+ 
+CLÁUSULA NONA
+DA EXECUÇÃO E RECEBIMENTO DOS SERVIÇOS
+9.1 A execução dos serviços será feita conforme o Termo de Referência e documentos técnicos que precederam este ajuste, e dele faz parte
+integrante para todos os fins.
+9.2 A execução dos serviços objeto deste contrato deverá ser atestada pelo responsável pela fiscalização, pela CONTRATANTE, atestado
+esse que deverá acompanhar os documentos para fins de pagamento conforme Cláusula Sétima.
+9.2.1 A fiscalização será exercida de acordo com o Decreto Municipal nº 62.100/22.
+9.3 O objeto contratual será recebido consoante as disposições do artigo 140, da Lei Federal n° 14.133/21 e demais normas municipais
+pertinentes.
+9.4 O objeto contratual será recebido mensalmente mediante relatório de medição dos serviços executados no mês, emitido pela
+CONTRATADA, sendo tal relatório submetido à fiscalização da CONTRATANTE, que, após conferência, atestará se os serviços foram
+prestados a contento, atestado esse que deverá ser acompanhado de fatura ou nota-fiscal fatura, bem como da cópia reprográfica da nota de
+empenho, para fins de pagamento.
+9.5 Havendo inexecução de serviços, o valor respectivo será descontado da importância mensal devida à CONTRATADA, sem prejuízo da
+aplicação das sanções cabíveis, observados os trâmites legais e os princípios do contraditório e ampla defesa.
+9.5.1 O recebimento e aceite do objeto pela CONTRATANTE não exclui a responsabilidade civil da CONTRATADA por vícios de
+quantidade ou qualidade dos serviços, materiais ou disparidades com as especificações estabelecidas no Anexo II, verificadas
+posteriormente.
+ 
+CLÁUSULA DÉCIMA
+DAS PENALIDADES
+10.1 Com fundamento no artigo 156, incisos I a IV, da Lei nº 14.133/21, a CONTRATADA poderá ser apenada, isoladamente, ou
+juntamente com as multas definidas no item
+10.2 com as seguintes penalidades:
+a) advertência;
+b) impedimento de licitar e contratar; ou
+c) declaração de inidoneidade para licitar ou contratar;
+10.3 Na aplicação das sanções serão considerados a natureza e a gravidade da infração cometida, as peculiaridades do caso concreto, as
+circunstâncias agravantes ou atenuantes, os danos que dela provierem para a Administração Pública e a implantação ou o aperfeiçoamento
+de programa de integridade, conforme normas e orientações dos órgãos de controle.
+10.4 A CONTRATADA estará sujeita às seguintes penalidades pecuniárias:
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+18/41
+
+===== PAGE 19 =====
+10.4.1 Multa 1% (um por cento) sobre o valor do Contrato por dia de atraso no início da prestação de serviços, até o máximo de 10
+(dez) dias.
+10.4.1.1 No caso de atraso por período superior a 10 (dez) dias, poderá ser promovida, a critério exclusivo da
+CONTRATANTE, a rescisão contratual, por culpa da CONTRATADA, aplicando-se a pena de multa de 20% (vinte por cento)
+do valor total do Contrato, além da possibilidade de aplicação da pena de impedimento de licitar e contratar com a
+Administração Pública, pelo prazo máximo de 03 (três) anos.
+10.4.2 Multa por inexecução parcial do contrato: 20% (vinte por cento), sobre o valor mensal da parcela não executada, além da
+possibilidade de aplicação da pena de impedimento de licitar e contratar com a Administração Pública, pelo prazo máximo de 03
+(três) anos.
+10.4.3. Multa por inexecução total do contrato: 30% (trinta por cento) sobre o valor total do contrato, além da possibilidade de
+aplicação da pena de impedimento de licitar e contratar com a Administração Pública, pelo prazo máximo de 03 (três) anos.
+10.4.4 Se, por qualquer meio, independentemente da existência de ação judicial, chegar ao conhecimento do gestor do contrato uma
+situação de inadimplemento com relação às obrigações trabalhistas, tais como salários, vale transporte, vale-refeição, seguros, entre
+outros, previstos em lei ou instrumento normativo da categoria e constantes na planilha de composição de custo, caberá a autoridade
+apurá-la e, se o caso, garantido o contraditório, aplicar à CONTRATADA multa de 20% (vinte por cento), sobre o valor da parcela
+não executada, pelo descumprimento de obrigação contratual e, persistindo a situação, o contrato será rescindido.
+10.4.4.1 A aplicação da multa não ilide a aplicação das demais sanções previstas no item 10.1, independentemente da
+ocorrência de prejuízo decorrente da descontinuidade da prestação de serviço imposto à Administração.
+10.5 O valor da multa poderá ser descontado das faturas devidas à CONTRATADA.
+10.5.1 Se o valor a ser pago à CONTRATADA não for suficiente para cobrir o valor da multa, a diferença será descontada da garantia
+contratual, quando exigida.
+10.5.2 Se os valores das faturas e da garantia forem insuficientes, fica a CONTRATADA obrigada a recolher a importância devida no
+prazo de 05 (cinco) dias úteis, contados da comunicação oficial.
+10.5.3 Esgotados os meios administrativos para cobrança do valor devido pela CONTRATADA à CONTRATANTE, este será
+encaminhado para inscrição em dívida ativa.
+10.5.4 Caso o valor da garantia seja utilizado no todo ou em parte para o pagamento da multa, esta deve ser complementada no prazo
+de até 10 (dez) dias úteis, contado da solicitação da CONTRATANTE.
+10.6 Caso haja rescisão, a mesma atrai os efeitos previstos no artigo 139, incisos I e IV, da Lei Federal nº 14.133/21. 10.5. Das decisões de
+aplicação de penalidade, caberá recurso nos termos dos artigos 166 e 167 da Lei Federal nº 14.133/21, observados os prazos nele fixados.
+10.6.1. No ato do oferecimento de recurso deverá ser recolhido o preço público devido, nos termos do que dispõe o artigo 17 do
+Decreto nº 51.714/2010.
+ 
+CLÁUSULA DÉCIMA PRIMEIRA
+DA GARANTIA
+11.1 Para execução deste contrato, será prestada garantia no valor de R$ ................., correspondente ao importe de 5% (cinco inteiros por
+cento) do valor total do contrato, sob a modalidade .................., nos termos do artigo 96, § 1°, da Lei Federal n° 14.133/21, considerando o
+prazo previsto no Edital.
+11.1.1 Sempre que o valor contratual for aumentado ou o contrato tiver sua vigência prorrogada, a CONTRATADA será convocada a
+reforçar a garantia, no prazo máximo de 3 (três) dias úteis, de forma a que corresponda sempre a mesma percentagem estabelecida.
+11.1.1.1 O não cumprimento do disposto na cláusula supra ensejará a aplicação da penalidade estabelecida na cláusula 10.2
+deste contrato.
+11.1.2 A garantia exigida pela Administração poderá ser utilizada para satisfazer débitos decorrentes da execução do contrato,
+inclusive nos termos da Orientação Normativa 2/12 – PGM, e/ou de multas aplicadas à empresa CONTRATADA.
+11.1.3 A garantia contratual será devolvida após a lavratura do Termo de Recebimento Definitivo dos serviços, mediante requerimento
+da CONTRATADA, que deverá vir acompanhado de comprovação, contemporânea, da inexistência de ações distribuídas na Justiça
+do Trabalho que possam implicar na responsabilidade subsidiária do ente público, condicionante de sua liberação, nos termos da
+Orientação Normativa 2/12 – PGM. 11.1.4 A garantia poderá ser substituída, mediante requerimento da interessada, respeitadas as
+modalidades referidas no artigo 96, §1º, da Lei Federal nº 14.133/21.
+11.2 A validade da garantia prestada, em seguro-garantia ou fiança bancária, deverá ter validade mínima de 180 (cento e oitenta) dias, nos
+termos da Portaria SF nº 76/2019.
+ 
+CLÁUSULA DÉCIMA SEGUNDA
+DISPOSIÇÕES FINAIS
+12.1 Nenhuma tolerância das partes quanto à falta de cumprimento de qualquer das cláusulas deste contrato poderá ser entendida como
+aceitação, novação ou precedente.
+12.2 Todas as comunicações, avisos ou pedidos, sempre por escrito, concernentes ao cumprimento do presente contrato, serão dirigidos aos
+seguintes endereços eletrônicos: CONTRATANTE – (fiscal): ..............@smsub.prefeitura.sp.gov.br CONTRATADA:
+12.3 Fica ressalvada a possibilidade de alteração das condições contratuais em face da superveniência de normas federais e/ou municipais
+que as autorizem.
+12.4 Fica o CONTRATADO ciente de que a assinatura deste termo de contrato indica que tem pleno conhecimento dos elementos nele
+constantes, bem como de todas as condições gerais e peculiares de seu objeto, não podendo invocar qualquer desconhecimento quanto aos
+mesmos, como elemento impeditivo do perfeito cumprimento de seu objeto.
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+19/41
+
+===== PAGE 20 =====
+12.5 A Administração reserva-se o direito de executar, por meio de outras contratadas, nos mesmos locais, serviços distintos dos
+abrangidos na presente contratação.
+12.6 A CONTRATADA deverá comunicar a CONTRATANTE toda e qualquer alteração nos dados cadastrais, para atualização, sendo sua
+obrigação manter, durante a vigência do Contrato, em compatibilidade com as obrigações assumidas, todas as condições de habilitação e
+qualificação exigidas na licitação.
+12.7 No ato da assinatura deste instrumento foram apresentados todos os documentos exigidos pelo Termo de Referência.
+12.8 Fazem parte integrante deste instrumento, para todos os efeitos legais, o Edital, Termo de Referência e demais documentos técnicos,
+Proposta da CONTRATADA com a Planilha Orçamentária inseridas sob documento SEI nº ____________ do processo administrativo nº
+6050.20__/_________-__.
+12.9 O presente ajuste, o recebimento de seu objeto, suas alterações e rescisão obedecerão ao Decreto Municipal n.º 62.100/22, Lei Federal
+n° 14.133/21 e demais normas pertinentes, aplicáveis à execução dos serviços e especialmente aos casos omissos.
+12.10 Para a execução deste contrato, nenhuma das partes poderá oferecer, dar ou se comprometer a dar a quem quer que seja, ou aceitar
+ou se comprometer a aceitar de quem quer que seja, tanto por conta própria quanto por intermédio de outrem, qualquer pagamento, doação,
+compensação, vantagens financeiras ou não financeiras ou benefícios de qualquer espécie que constituam prática ilegal ou de corrupção,
+seja de forma direta ou indireta quanto ao objeto deste contrato, ou de outra forma a ele não relacionada, devendo garantir, ainda, que seus
+prepostos e colaboradores ajam da mesma forma.
+ 
+CLÁUSULA DÉCIMA
+TERCEIRA DO FORO
+13.1 Fica eleito o foro desta Comarca para todo e qualquer procedimento judicial oriundo deste Contrato, com expressa renúncia de
+qualquer outro, por mais especial ou privilegiado que seja ou venha a ser. E para firmeza e validade de tudo quanto ficou estabelecido,
+lavrou-se o presente termo de contrato, em 02 (duas) vias de igual teor, o qual, depois de lido e achado conforme, vai assinado e rubricado
+pelas partes contratantes e duas testemunhas presentes ao ato.
+São Paulo, __de __________ de 202__.
+ 
+SUBPREFEITURA DE PINHEIROS
+CONTRATANTE
+ 
+ 
+CONTRATADA
+Nome:
+RG:
+Cargo:
+ 
+TESTEMUNHAS:
+Nome: _______________________
+RG: ________________________
+ 
+Nome: ______________________________
+RG.: _______________________________
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+20/41
+
+===== PAGE 21 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO IV - A
+ 
+IMPRESSO PROPOSTA – PADRÃO
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+ 
+A empresa ______________________________________________________________________, estabelecida à
+_______________________________________, CNPJ / MF Nº _________________________, pelo presente propõe
+executar o objeto licitado pelo valor de R$_________________________________.
+Valor por extenso: ___________________________________________________________________________________.
+Custo total ofertado (SEM BDI) R$ ____________________
+Taxa B.D.I. - _________% R$ ____________________
+Valor total da proposta R$ ____________________
+ 
+Prazo de execução dos serviços: De até ______ (_______________________) dias corridos, contados a partir da data
+da Ordem de Início dos Serviços, prorrogável nos termos da lei.
+ 
+Declara, outros sim, que por ser de seu conhecimento, se submete a todas as cláusulas e condições do Edital relativas à
+licitação supra, bem como, às disposições da Lei Federal 14.133/21 e demais normas aplicáveis, que integrarão o ajuste
+correspondente.
+Validade da proposta: .......... (xx) dias corridos.(Não inferior a 60 dias)
+ 
+São Paulo, _____ de __________ de 2026.
+_______________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+21/41
+
+===== PAGE 22 =====
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ANEXO IV - B
+PLANILHA DA PROPOSTA
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+ 
+ 
+ 
+ 
+INSERIR PLANILHA DE COMPOSIÇÃO DE CUSTOS
+ 
+ 
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+Carimbo do CNPJ/MF
+Assinatura do Representante da empresa
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+22/41
+
+===== PAGE 23 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ANEXO IV - C
+PLANILHA DE COMPOSIÇÃO DO B.D.I.
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+ 
+ 
+SECRETARIA DE INFRAESTRUTURA URBANA E OBRAS
+BDI - SEM DESONERAÇÃO
+EDIFICAÇÕES
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Escritório Central
+ 
+4,93%.
+1,0493
+ 
+ 
+ 
+ 
+ 
+Lucro Bruto
+ 
+8,00%.
+1,1332
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IMPOSTOS:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cofins
+ 
+3,00% 
+ 
+ 
+ 
+ 
+ 
+ 
+PIS
+ 
+0,65% 
+ 
+ 
+ 
+ 
+ 
+ 
+ISS
+ 
+2,00%.
+1,2011
+ 
+ 
+ 
+ 
+ 
+BDI - EDIFICAÇÕES
+ 
+ 
+ 
+20,11%
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SECRETARIA DE INFRAESTRUTURA URBANA E OBRAS
+BDI - SEM DESONERAÇÃO
+PAVIMENTAÇÃO
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Escritório Central
+ 
+6,67%.
+1,0667
+ 
+ 
+ 
+ 
+ 
+Lucro Bruto
+ 
+8,00%.
+1,1521
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IMPOSTOS:
+ 
+ 
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+23/41
+
+===== PAGE 24 =====
+ 
+ 
+ 
+ 
+ 
+Cofins
+ 
+3,00% 
+ 
+ 
+ 
+ 
+ 
+ 
+PIS
+ 
+0,65% 
+ 
+ 
+ 
+ 
+ 
+ 
+ISS
+ 
+2,50%.
+1,22758
+ 
+ 
+ 
+ 
+ 
+BDI - PAVIMENTAÇÃO
+ 
+ 
+ 
+22,76%
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SECRETARIA DE INFRAESTRUTURA URBANA E OBRAS
+BDI - SEM DESONERAÇÃO
+BDI - Galerias, Pontes, Viadutos
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Escritório Central
+ 
+6,88%.
+1,0688
+ 
+ 
+ 
+ 
+ 
+Lucro Bruto
+ 
+8,00%.
+1,1543
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IMPOSTOS:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cofins
+ 
+3,00% 
+ 
+ 
+ 
+ 
+ 
+ 
+PIS
+ 
+0,65% 
+ 
+ 
+ 
+ 
+ 
+ 
+ISS
+ 
+3,50%.
+1,2431
+ 
+ 
+ 
+ 
+ 
+BDI - ESTRUTURA
+ 
+ 
+ 
+24,31%
+ 
+ 
+SECRETARIA DE INFRAESTRUTURA URBANA E OBRAS
+BDI - SEM DESONERAÇÃO
+PROJETOS
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Escritório Central
+ 
+12,72%.
+1,1272
+ 
+ 
+ 
+ 
+ 
+Lucro Bruto
+ 
+8,00%.
+1,2173
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IMPOSTOS:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cofins
+ 
+3,00% 
+ 
+ 
+ 
+ 
+ 
+ 
+PIS
+ 
+0,65% 
+ 
+ 
+ 
+ 
+ 
+ 
+ISS
+ 
+5,00%.
+1,3326
+ 
+ 
+ 
+ 
+ 
+BDI - PROJETOS
+ 
+ 
+ 
+33,20%
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+24/41
+
+===== PAGE 25 =====
+Carimbo do CNPJ/MF
+Assinatura do Representante da empresa
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+25/41
+
+===== PAGE 26 =====
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ANEXO IV - D
+TAXAS DE ENCARGOS SOCIAIS
+ 
+TAXAS DE LEIS SOCIAIS NOS CUSTOS DA CONSTRUÇÃO - HORISTAS
+ 
+ 
+ 
+ 
+ 
+     
+A
+ENCARGOS SOCIAIS BÁSICOS ( % )
+     
+ 
+ 
+ 
+ 
+ 
+     
+A 1
+Previdencia Social
+ 
+      
+A 2
+FGTS
+ 
+ 
+      
+A 3
+Salário Educaçao
+ 
+      
+A 4
+SESI
+ 
+ 
+      
+A 5
+SENAI
+ 
+ 
+      
+A 6
+SEBRAE
+ 
+      
+A 7
+INCRA
+ 
+ 
+ 
+     
+A 8
+Seguro contra risco e acidente de trabalho (INSS)
+   
+A 9
+SECONCI
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+ 
+Total do Grupo A
+ 
+ 
+    %
+ 
+ 
+ 
+ 
+ 
+     
+B
+ENCARGOS QUE RECEBEM INCIDÊNCIA DE A ( % )
+ 
+ 
+ 
+ 
+ 
+ 
+     
+B 1
+Descanso semanal remunerado (DSR)
+     
+B 2
+Feriados que coincidem com dias úteis
+     
+B 3
+Auxílio Enfermidade
+ 
+     
+B 4
+Licença Paternidade
+ 
+     
+B 5
+Acidente de Trabalho
+ 
+     
+B 6
+Faltas abonadas
+ 
+ 
+     
+B 7
+Dias de Chuva e outras dificuldades
+     
+B 8
+13.º Salário
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+ 
+Total do Grupo B
+ 
+ 
+    %
+ 
+ 
+ 
+ 
+ 
+     
+C
+ENCARGOS QUE NÃO RECEBEM INCIDÊNCIA GLOBAL DE A ( % )
+ 
+ 
+ 
+ 
+ 
+     
+C 1
+Depósito por despedida sem justa causa
+     
+C 2
+Férias indenizadas
+ 
+ 
+     
+C 3
+Aviso prévio indenizado
+ 
+     
+C 4
+Indenização Adicional ( Lei 7.238 / 84)
+     
+ 
+ 
+ 
+ 
+ 
+     
+ 
+Total do Grupo C
+ 
+ 
+    %
+ 
+ 
+ 
+ 
+ 
+     
+D
+REINCIDÊNCIAS
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+D 1
+Reincidência de A sobre B
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+ 
+Total do Grupo D
+ 
+ 
+    %
+ 
+ 
+ 
+ 
+ 
+     
+E
+COMPLEMENTARES
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+E1
+vale refeição
+ 
+ 
+     
+E2
+vale transporte
+ 
+ 
+     
+E3
+EPI's
+ 
+ 
+ 
+     
+E4
+seguro de vida coletivo
+ 
+     
+ 
+Total do Grupo E
+ 
+ 
+    %
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
+TOTAL DOS ENCARGOS
+    %
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+26/41
+
+===== PAGE 27 =====
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+Local __________________, _______ de __________________de 202_
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+     
+_____________________________________________________________
+Assinatura e identificação do responsável legal pela licitante
+Nome: RG: CPF:
+Cargo ou função
+ 
+Carimbo do CNPJ/MF
+Assinatura do Representante da empresa
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+27/41
+
+===== PAGE 28 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ANEXO IV - E
+CRONOGRAMA FÍSICO-FINANCEIRO
+ 
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+ 
+ 
+INSERIR CRONOGRAMA
+ 
+ 
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+28/41
+
+===== PAGE 29 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO V
+DECLARAÇÃO DE NÃO CADASTRAMENTO E INEXISTÊNCIA DE DÉBITOS PARA COM A
+FAZENDA DO MUNICÍPIO DE SÃO PAULO
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+(Preenchimento obrigatório para licitantes com sede em outro Município)
+ 
+ 
+A empresa _________________________________________________________
+CNPJ/ MF nº_____________________________, com sede à __________________________________________________,
+ 
+Por seu representante legal, DECLARA, para os fins de direito, e sob as penas da lei, que não está cadastrada como
+contribuinte no Município de São Paulo, bem como não possui nenhum débito junto à Fazenda do Município de São
+Paulo.
+ 
+São Paulo, _____ de __________ de 202_.
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+OBS: APRESENTAR ESTA DECLARAÇÃO ACOMPANHADA DA PROVA DE REGULARIDADE FISCAL COM A
+FAZENDA MUNICIPAL DO MUNICÍPO SEDE.
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+29/41
+
+===== PAGE 30 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ 
+ 
+ANEXO VI
+DECLARAÇÃO GERAL
+(PAPEL TIMBRADO DA EMPRESA)
+A empresa, inscrita no C.N.P.J. nº
+, com sede na, nºBairro
+Cidade− UF, por intermédio de seu representante legal o(a) Sr(a)
+, portador(a) da Carteira de Identidade nºe do CPF nº________________DECLARA:
+1. Para fins do disposto no inciso VI do art. 68 da Lei Federal nº 14.133/21, que não emprega menor de dezoito anos em
+trabalho noturno, perigoso ou insalubre e não emprega menor de dezesseis anos, salvo, a partir de 14 anos, na condição de
+aprendiz
+2. Que, até a presente data, inexistem fatos impeditivos para a sua habilitação no presente processo licitatório, inclusive
+condenação judicial na proibição de contratar com o Poder Público ou receberbenefícios ou incentivos fiscais ou creditícios,
+transitada em julgada ou não desafiada por recurso comefeito suspensivo, por ato de improbidade administrativa, estando
+ciente da obrigatoriedade de declarar ocorrências posteriores;
+3. Que não se encontra declarada inidônea, nem suspensa ou impedida de licitar e contratar com a Administração Pública.
+4. Que suas propostas econômicas compreendem a integralidade dos custos para atendimento dos direitos trabalhistas
+assegurados na CF/88, leis trabalhistas, nas normas infralegais, nas convenções coletivas de trabalho e nos termos de
+ajustamento de conduta vigentes na data de entrega das propostas, sob pena de desclassificação.
+5. Que estão cientes das normativas previstas no art. 45 da Lei nº 14.133/2021.
+6. Que cumpre as exigências de reserva de cargos para pessoa com deficiência e para reabilitado da Previdência Social.
+7. Não possui, em sua cadeia produtiva, empregados executando trabalho degradante ou forçado, observando o disposto nos
+incisos II e IV do art. 1º e no inciso III do art. 5º da CF/88.
+8. Na composição societária não existe participação de dirigente e/ou empregados da entidade promotora da licitação.
+9. Os profissionais vinculados a ela não participaram e não possuem responsabilidade pela elaboração dos projetos;
+10. Que disporá, por ocasião da futura contratação, das instalações, aparelhamento e pessoal técnico considerados essenciais
+para a execução contratual.
+ 
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+30/41
+
+===== PAGE 31 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO VII
+DECLARAÇÃO DE INDICAÇÃO DO RESPONSÁVEL TÉCNICO
+(PAPEL TIMBRADO DA EMPRESA)
+ 
+A 
+empresa 
+_________________________________________________________, 
+inscrita 
+no 
+C.N.P.J. 
+nº
+____________________________, 
+com 
+sede 
+na__________________________, 
+no 
+______ 
+Bairro 
+______
+Cidade_________ - UF ________, por intermédio de seu representante legal o(a) Sr(a) ___________________________,
+portador(a) da Carteira de Identidade nº_____________________ e do CPF nº ________________________, neste ato
+RELACIONA os técnicos que ficarão vinculados a execução do objeto em questão, bem como, informa estar ciente de que,
+em caso de necessidade de substituição de referidos profissionais, está obrigada a substituí-los por profissionais de
+experiência equivalente ou superior, nos termos do § 6º do artigo 67 da Lei Federal nº 14.133/2021. NOME MODALIDADE
+NÚMERO DE INSCRIÇÃO CREA E/OU CAU
+(LOCAL DO ESTABELECIMENTO), __________ de ____________________ de 202_.
+___________________________________________________
+(nome completo, cargo ou função e assinatura do representante legal/procurador)
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+31/41
+
+===== PAGE 32 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ 
+ANEXO VIII
+DECLARAÇÃO DE ATENDIMENTO AOS PROCEDIMENTOS DE CONTROLE AMBIENTAL,
+CONFORME DECRETO 48.184/07
+ 
+ 
+Em conformidade com o disposto no artigo 5º do Decreto nº 48.184, de 13 de março de 2007, que estabelece procedimentos
+de controle ambiental para a aquisição de produtos de empreendimentos minerários e sua utilização em obras e serviços pela
+Administração Pública Municipal, eu, _______________________________, RG ___________________________,
+legalmente nomeado representante da empresa ______________________________, CNPJ _________________, e
+vencedor do procedimento licitatório nº _______, na modalidade de ______, nº ______ / ______, processo nº
+_________________, declaro, sob as penas da lei, que, para o fornecimento e/ou a execução da(s) obra(s) e serviço(s) objeto
+da referida licitação, somente serão fornecidos e/ou utilizados produtos de empreendimentos minerários devidamente
+licenciados, por órgão ambiental competente, integrante do Sistema Nacional do Meio Ambiente - SISNAMA, ficando
+sujeito às sanções administrativas previstas nos artigos 86 a 88 da Lei Federal nº 8.666, de 21 de junho de 1993, e no inciso
+V do § 8º do artigo 72 da Lei Federal nº 9.605, de 12 de fevereiro de 1998, sem prejuízo das implicações de ordem criminal
+estabelecidas em lei.
+ 
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+32/41
+
+===== PAGE 33 =====
+ 
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO IX 
+DECLARAÇÃO DE ATENDIMENTO AOS PROCEDIMENTOS DE CONTROLE AMBIENTAL,
+CONFORME DECRETO 50.977/09
+ 
+ 
+Em conformidade com o disposto no artigo 5º do Decreto nº 50.977, de 6 de novembro de 2009, que estabelece
+procedimentos de controle ambiental para a utilização de produtos e subprodutos de madeira de origem nativa nas
+contratações de obras e serviços de engenharia e nas compras públicas realizadas pela Administração Pública Municipal
+Direta e Indireta, bem como institui a exigência de cadastramento no CADMADEIRA, criado pelo Decreto Estadual nº
+53.047, de 2 de junho de 2008:
+Eu, _____________________________, RG _________________________, legalmente nomeado representante da
+empresa____________________, CNPJ_____________________, e vencedor do procedimento licitatório nº__________,
+na modalidade de__________, nº______, processo nº____________, declaro, sob as penas da lei, que, para a execução da
+(s) obra(s) e serviço(s) de engenharia objeto da referida licitação, somente serão utilizados produtos e subprodutos de
+madeira de origem exótica, ou de origem nativa que tenha procedência legal, decorrentes de desmatamento autorizado ou de
+manejo florestal aprovados por órgão ambiental competente, integrante do Sistema Nacional do Meio Ambiente –
+SISNAMA, com comprovantes da legalidade da madeira, tais como: Documentos de Origem Florestal, Guias Florestais ou
+outros eventualmente criados para o controle de produtos e subprodutos florestais, bem como comprovante de inscrição no
+CADMADEIRA – Cadastro Estadual das Pessoas Jurídicas que comercializam, no Estado de São Paulo, produtos e
+subprodutos de origem nativa da flora brasileira, instituído pelo Decreto Estadual nº 53.047, de 2 de junho de 2008, ficando
+sujeito às penalidades administrativas previstas nos artigos 86 a 88 da Lei Federal n? 8.666, de 21 de junho de 1993, e no
+inciso V do § 8º do artigo 72 da Lei Federal n? 9.605, de 12 de fevereiro de 1998, sem prejuízo das sanções penais previstas
+em lei.
+ 
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+33/41
+
+===== PAGE 34 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ 
+ANEXO X
+CRITÉRIOS DE ANÁLISE ECONÔMICO-FINANCEIRA - BALANÇO PATRIMONIAL
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+A empresa inscrita no CNPJ sob o nº , estabelecida na , Bairro ,Cidade , Estado , Telefone: fax: vem por meio de seu
+representante legal abaixo identificado, demonstrar as seguintes condições:
+ 
+ÍNDICES CÁLCULOS
+ 
+1.1. 
+INDICE 
+DE 
+LIQUIDEZ 
+GERAL 
+(LG),
+COM VALOR SUPERIOR OU IGUAL A 1, ONDE:
+ 
+Ativo Circulante + Realizável a Longo Prazo Passivo
+Circulante + Exigível a Longo Prazo
+ 
+LG= =
+1.2. 
+ÍNDICE 
+DE 
+SOLVÊNCIA 
+GERAL 
+(SG),
+COM VALOR SUPERIOR OU IGUAL A 1, ONDE:
+Ativo Total
+Passível Circulante + Exigível a Longo Prazo
+SG = =
+1.3.  ÍNDICE DE LIQUIDEZ CORRENTE (LC),
+COM VALOR SUPERIOR OU IGUAL A 1, ONDE:
+Ativo Circulante Passivo Circulante
+ 
+LC= =
+ 
+São Paulo,____,_______de 202___
+ 
+ 
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+34/41
+
+===== PAGE 35 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ANEXO XI
+TERMO DE CREDENCIAMENTO
+(PAPEL TIMBRADO DA LICITANTE)
+ 
+ 
+A 
+empresa 
+_______________________________________________________________________, 
+com 
+sede 
+à
+_______________________________________________ CNPJ nº ________________________, representada pelo(a) Sr.
+(a) 
+________________________________________________________________ 
+CREDENCIA 
+o(a) 
+Senhor(a)
+_______________________________________________________________________________, portador do RG nº
+___________________________CNPJ nº _____________________________________, para representá-la perante a
+SUBPREFEITURA PINEIROS/ PREFEITURA DO MUNICÍPIO DE SÃO PAULO na licitação / CONCORRÊNCIA n°
+..............., podendo, inclusive, interpor e desistir de recursos em todas as fases licitatórias.
+ 
+ 
+São Paulo, _____ de __________ de 202_.
+ 
+ 
+ 
+__________________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+35/41
+
+===== PAGE 36 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ 
+ANEXO XII
+DECLARAÇÃO DE VISTORIA
+ 
+ 
+Declaro, 
+sob 
+as 
+penas 
+da 
+lei, 
+que 
+esta 
+proponente,
+__________________________________________________________________________________________, CNPJ nº________ com
+sede à __________________________________________, referente ao objeto da licitação, tendo realizado vistoria no local indicado para
+a execução dos serviços.
+ 
+Assim sendo, para fins que se fizerem de direito, e por possuir poderes legais para tanto, firmo a presente.
+ 
+OBS.: DEVERÁ SER ACOMPANHADO DE RELATÓRIO FOTOGRÁFICO
+ 
+São Paulo, _____ de __________ de 202_.
+ 
+ 
+ 
+_______________________________________________
+Assinatura do representante legal / procurador da empresa
+Nome / Cargo / RG / CPF
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+36/41
+
+===== PAGE 37 =====
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO XIII 
+TERMO DE AUSÊNCIA DE VISTORIA TÉCNICA
+(PAPEL TIMBRADO DA EMPRESA)
+ 
+DECLARAMOS, para os devidos fins de direito e sob as penas da lei, que a empresa.................................................(nome),
+CNPJ nº ........................................,com sede na ...........................................................(rua, avenida), nº..........,Bairro
+........................, 
+Cidade 
+.............................................., 
+por 
+intermédio 
+de 
+seu 
+representante 
+legal, 
+Senhor
+................................................................., portador da cédula de identidade nº ........................................, inscrito no
+Cadastro de Pessoa Física-CPF nº ........................................................, optou pela não realização da vistoria técnica e que
+estamos ciente de que não serão atendidas solicitações durante a execução dos serviços sob o argumento de falta de
+conhecimento das condições de trabalho ou de dados deste projeto. DECLARAMOS, ainda, sob as penas da lei, ter total
+conhecimento do(s) local(is), condições de acesso e escopo da licitação, objeto do Edital em epígrafe.
+ 
+(LOCAL DO ESTABELECIMENTO), __________ de ____________________ de 202__.
+ 
+___________________________________________________
+(nome completo, CREA/CAU e assinatura do responsável pela vistoria)
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+37/41
+
+===== PAGE 38 =====
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO XIV
+RELATÓRIO FOTOGRÁFICO
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+38/41
+
+===== PAGE 39 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO XV
+PORTARIA SF 275
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+39/41
+
+===== PAGE 40 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO XVI
+PROJETO BÁSICO / CROQUI REFERENCIAL
+ 
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+ 
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+40/41
+
+===== PAGE 41 =====
+ 
+EDITAL DE LICITAÇÃO POR CONCORRÊNCIA PRESENCIAL Nº 90002/SUB-PI/2026
+PROCESSO SEI: 6050.2026/0010848-0
+TIPO: MENOR PREÇO GLOBAL
+MODO DE DISPUTA: ABERTO.
+REGIME DE EXECUÇÃO: EMPREITADA POR PREÇO UNITÁRIO.
+OBJETO: CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM ENGENHARIA PARA EXECUÇÃO DE OBRAS DE
+REVITALIZAÇÃO 
+EM 
+ÁREA 
+PÚBLICA, 
+COM 
+MANUTENÇÃO 
+DE 
+EQUIPAMENTOS 
+E 
+CORREÇÃO 
+DE
+ACESSIBILIDADE, NA PRAÇA BENEDITO CALIXTO NA SUBPREFEITURA DE PINHEIROS - SÃO PAULO/SP.
+ 
+ANEXO XVII
+MATRIZ DE RISCO
+ 
+ 
+https://drive.google.com/file/d/1m56kuAq0vUwo4FkiRASz3NsDmaXNI4sf/view?usp=drive_link
+ 
+ 
+ 
+Ailton Lopes Omelczuk
+Assistente Administrativo de Gestão
+Em 25/06/2026, às 15:08.
+A autenticidade deste documento pode ser conferida no site http://processos.prefeitura.sp.gov.br, informando o código verificador 160038043 e o código
+CRC 3084D8B9.
+Referência: Processo nº 6050.2026/0010848-0
+SEI nº 160038043
+MINUTA
+9/30/26, 7:15 AM
+SEI/PMSP - 160038043 - Minuta
+https://sei.prefeitura.sp.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=2990549&id_documento=160258003&infra_hash=aedd35d6190bc9d…
+41/41

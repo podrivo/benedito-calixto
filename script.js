@@ -202,6 +202,7 @@
     { d: "s/d", t: "Proposta da comunidade: Orçamento Participativo 2026", x: "Prancha com o projeto em duas fases, uma estrutural e outra de paisagismo.", docs: [["Projeto", "projeto-pc-bc-subpi-1.pdf"]] },
     { phase: "Preparação" },
     { d: "19/05/2026", t: "Comissão de licitação nomeada", x: "A Portaria 23/SUB-PI/GAB/2026 designa os agentes de contratação e a equipe de apoio.", docs: [["Portaria", "portaria-licitacao-2026.pdf"]] },
+    { d: "17/06/2026", t: "Processo da obra aberto", x: "O processo 6050.2026/0010848-0 é autuado no SEI com o motivo “Revitalização Praça Benedito Calixto”.", docs: [["Portal de Processos", "portal-processo-6050-2026-0010848-0.pdf"]] },
     { d: "23/06/2026", t: "Estudo técnico, termo de referência e orçamento", x: "A área técnica fecha o pacote: orçamento de R$ 1.502.407,93 e prazo de 120 dias.", docs: [["ETP", "sei-pmsp-159491882-estudo-tecnico-preliminar-etp.pdf"], ["TR", "sei-pmsp-159492184-termo-de-referencia.pdf"], ["Planilha", "orcamento-final-praca-benedito-calixto-4-xls.pdf"]] },
     { d: "24/06/2026", t: "Dinheiro reservado", x: "Nota de reserva 47.637/2026, da verba do Orçamento Cidadão da Subprefeitura.", docs: [["Nota de reserva", "scanned-document-2.pdf"]] },
     { d: "26/06/2026", t: "Parecer jurídico favorável", x: "A Assessoria Jurídica aprova a fase preparatória.", docs: [["Parecer", "sei-pmsp-160111990-manifestacao.pdf"]] },
@@ -214,6 +215,7 @@
     { d: "27/08/2026", t: "Adjudicação e homologação", x: "O agente de contratação recomenda a Progredior e o Subprefeito homologa. Publicado no Diário Oficial de 28/08, p. 578.", docs: [["Homologação (DO)", "arquip-dosp-163965930-despacho.pdf"], ["DO p. 578", "edicao-217-de-28-agosto-2026-pdf-protegido.pdf"]] },
     { phase: "Contrato e obra" },
     { d: "28/08/2026", t: "Nota de empenho 91609/2026", x: "R$ 1.439.886,76 comprometidos em três parcelas: outubro, novembro e dezembro.", docs: [["Nota de empenho", "scan-2026-08-28-161236532.pdf"]] },
+    { d: "31/08/2026", t: "Seguro-garantia de 5%", x: "O Ofício 022 pede a garantia à Progredior, e a Pottencial Seguradora emite a apólice de R$ 71.994,34, válida até 30/06/2027. A Secretaria da Fazenda registra o recebimento em 02/09, no processo 6050.2026/0016583-1.", docs: [["Ofício 022", "scan-2026-08-28-161909006.pdf"], ["Apólice", "cto-14-sub-pi-26-apolice.pdf"], ["Formulário de caução", "72416.pdf"]] },
     { d: "01/09/2026", t: "Contrato assinado e ordem de início", x: "Contrato 014/SUB-PI/2026 e Ordem de Início 013/SUB-PI/CPO/STPO/2026. Começam a contar os 120 dias.", docs: [["Contrato", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"], ["Ordem de início", "ordem-de-inicio.pdf"]], key: true },
     { d: "04/09/2026", t: "Extrato do contrato no Diário Oficial", x: "Publicado na p. 501.", docs: [["Extrato (DO)", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]] },
     { d: "17/09/2026", t: "Bancas atrapalham a obra", x: "O fiscal relata que estruturas de permissionários ocupam as áreas de trabalho. A Assessoria Jurídica dá parecer favorável à suspensão das permissões.", docs: [["Relato", "sei-pmsp-165312590-encaminhamento.pdf"], ["Parecer", "sei-pmsp-165323457-manifestacao.pdf"]] },
@@ -242,6 +244,8 @@
     ["Decisão", [
       ["Ygor Lucas Gomes da Costa", "Subprefeito de Pinheiros. Autorizou a licitação, homologou o resultado, assinou o contrato e a Portaria 30.", "pinheiros@smsub.prefeitura.sp.gov.br",
         [["Página oficial", SUBPI], ["Autorização", "arquip-dosp-160141757-despacho-deferido.pdf"], ["Homologação", "arquip-dosp-163965930-despacho.pdf"], ["Portaria 30", "arquip-dosp-165388683-portaria.pdf"]]],
+      ["Gabinete do Subprefeito", "Onde está o processo das bancas (6050.2026/0017937-9). O Portal de Processos lista como contatos Norival Nunes Rodrigues Junior e lkguaglini@smsub.prefeitura.sp.gov.br.", "norivaljunior@smsub.prefeitura.sp.gov.br",
+        [["Portal de Processos", "portal-de-processos-administrativos.pdf"]]],
     ]],
     ["Obra e fiscalização", [
       ["Niwton Gilberto de Jesus", "Supervisor Técnico de Projetos e Obras. Fez a vistoria, o termo de referência e o orçamento, e é o fiscal do contrato.", "niwton@smsub.prefeitura.sp.gov.br",
@@ -260,10 +264,16 @@
     ["Administração e finanças", [
       ["Kenedi Oliveira e Silva", "Coordenador de Administração e Finanças (CAF). Pediu a reserva do dinheiro.", "ksilva@smsub.prefeitura.sp.gov.br",
         [["Página oficial", SUBPI], ["Pedido de reserva", "sei-pmsp-159995135-informacao.pdf"], ["Pedido de celeridade", "sei-pmsp-164048895-encaminhamento.pdf"]]],
-      ["Marcia Pagotti Pimentel", "Supervisão de Finanças. Emitiu a nota de reserva.", "",
+      ["Sergio Martins Pinto", "Supervisor de Finanças. Assinou as notas de reserva e de empenho, como responsável pela área contábil, e o ofício que pediu o seguro-garantia.", "sergiomartins@smsub.prefeitura.sp.gov.br",
+        [["Nota de reserva", "scanned-document-2.pdf"], ["Nota de empenho", "scan-2026-08-28-161236532.pdf"], ["Ofício 022", "scan-2026-08-28-161909006.pdf"]]],
+      ["Marcia Pagotti Pimentel", "Supervisão de Finanças. Lançou a nota de reserva no sistema e a encaminhou à licitação.", "mpagotti@smsub.prefeitura.sp.gov.br",
         [["Nota de reserva", "scanned-document-2.pdf"], ["Encaminhamento", "sei-pmsp-160028648-encaminhamento.pdf"]]],
-      ["Carmen Moreira Bertuccelli", "Supervisão de Finanças. Nota de empenho e seguro-garantia.", "cbertuccelli@smsub.prefeitura.sp.gov.br",
-        [["Nota de empenho", "scan-2026-08-28-161236532.pdf"], ["E-mail à empresa", "e-mail-de-smsub-envio-de-nota-de-empenho-e-seguro-garantia-sei-6050-2026-0010848-0.pdf"]]],
+      ["Carmen Moreira Bertuccelli", "Chefe de Unidade na Supervisão de Finanças. Lançou a nota de empenho no sistema e enviou o seguro-garantia à Secretaria da Fazenda.", "cbertuccelli@smsub.prefeitura.sp.gov.br",
+        [["Nota de empenho", "scan-2026-08-28-161236532.pdf"], ["E-mail à empresa", "e-mail-de-smsub-envio-de-nota-de-empenho-e-seguro-garantia-sei-6050-2026-0010848-0.pdf"], ["Envio da garantia", "sei-pmsp-164255120-encaminhamento.pdf"]]],
+      ["E-mail de finanças", "Supervisão de Finanças: reserva, empenho, garantia e pagamentos da obra.", "sf-pinheiros@smsub.prefeitura.sp.gov.br",
+        [["Portal de Processos", "portal-processo-6050-2026-0016583-1.pdf"]]],
+      ["Secretaria Municipal da Fazenda", "A equipe de cauções (DIPED) recebeu e registrou o seguro-garantia em 02/09 (Yoshie Imada e Samuel Fernando Santos).", "",
+        [["Formulário de caução", "72416.pdf"], ["Devolução", "sei-pmsp-164311737-encaminhamento.pdf"]]],
       ["Sandy Sthephany Gomes de Oliveira", "Administração e Suprimentos. Elaborou o contrato e o extrato.", "",
         [["Extrato do contrato", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]]],
     ]],
@@ -275,10 +285,12 @@
     ["Empresa contratada", [
       ["Construtora Progredior Ltda.", "CNPJ 56.838.949/0001-10. Rua Michigan, 135, Brooklin Novo, São Paulo.", "",
         [["Site", "https://progredior.com.br/"], ["CNPJ na Receita", "https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.aspx"], ["Proposta", "progredior-proposta-de-preco.pdf"], ["Habilitação", "ilovepdf-merged-2026-08-14t163522-597.pdf"]]],
-      ["Alexandre Grava", "Representante legal. Assinou o contrato e esteve nas sessões.", "alexandre@progredior.com.br",
+      ["Alexandre Grava", "Procurador e representante legal. Assinou o contrato e esteve nas sessões.", "alexandre@progredior.com.br",
         [["Contrato", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"], ["Ata da 1ª sessão", "ata-sessao-publica-12082026.pdf"]]],
-      ["Guilherme Leme Perazza", "Engenheiro civil e sócio-administrador.", "",
-        [["Habilitação", "ilovepdf-merged-2026-08-14t163522-597.pdf"], ["Atestados técnicos", "documento-consulta-externa-5-php.pdf"]]],
+      ["Guilherme Leme Perazza", "Engenheiro civil (CREA-SP 5062442704) e sócio-administrador. A empresa o indicou como responsável técnico da obra.", "",
+        [["Consulta no CREA-SP", "https://www.creasp.org.br/servico/consulta-publica-de-registrados/"], ["Indicação", "progredior-indicacao-responsavel-tecnico.pdf"], ["Habilitação", "ilovepdf-merged-2026-08-14t163522-597.pdf"], ["Atestados técnicos", "documento-consulta-externa-5-php.pdf"]]],
+      ["Pottencial Seguradora S.A.", "Emitiu o seguro-garantia de R$ 71.994,34 (apólice 030692026009907751912893, corretora RVG). A apólice pode ser conferida na SUSEP ou no site da seguradora.", "",
+        [["Conferir na SUSEP", "https://www.gov.br/pt-br/servicos/consultar-apolice-de-seguro-garantia"], ["Site da seguradora", "https://pottencial.com.br/consultar-apolice/"], ["Apólice", "cto-14-sub-pi-26-apolice.pdf"], ["Certidões SUSEP", "certidao-de-administradores-agosto-2026.pdf"]]],
     ]],
     ["Comunidade", [
       ["Conselho Participativo Municipal", "Indicou a obra, segundo a CAF. Reúne-se na primeira quinta-feira do mês, com reuniões abertas ao público.", "",
@@ -304,20 +316,26 @@
   /* dev:start */
   /* ---------------- Flags (only in development; stripped by tools/build-prod.sh) ---------------- */
   const FLAGS = [
-    ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026.",
-      [["Memorial", D.memorial], ["TR", D.tr], ["Edital", D.edital], ["Contrato", D.contrato], ["Ordem de início", D.ordem]]],
+    ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026. A confusão chegou às propostas: a Progredior e a Stein ofereceram 120 dias, a Dekton e a DPT, 180.",
+      [["Memorial", D.memorial], ["TR", D.tr], ["Edital", D.edital], ["Contrato", D.contrato], ["Ordem de início", D.ordem], ["Proposta Dekton", "proposta-de-preco-dekton.pdf"], ["Proposta DPT", "dtp-engenharia-proposta-de-preco.pdf"]]],
     ["Itens de outro projeto no Estudo Técnico", "O ETP cita playground, cachorródromo e academia ao ar livre, com totais de R$ 476.863,04 e R$ 490.396,55. Nada disso está na planilha de R$ 1,5 milhão da praça.",
       [["ETP", D.etp], ["Planilha final", D.planilha]]],
-    ["Planilhas com o nome de outra praça", "Duas versões da planilha e do cronograma trazem no cabeçalho “Praça Panamericana – Alto de Pinheiros”. Uma delas descreve o objeto como “obras de drenagem urbana”. Os valores são os mesmos da versão da Benedito Calixto.",
-      [["Planilha “Panamericana”", "orcamento-final-praca-benedito-calixto-xls.pdf"], ["Cronograma “Panamericana”", "copia-de-orcamento-final-praca-benedito-calixto-xls.pdf"], ["Planilha final", D.planilha]]],
+    ["Planilhas com o nome de outra praça", "Duas versões da planilha e do cronograma trazem no cabeçalho “Praça Panamericana – Alto de Pinheiros”. Uma delas descreve o objeto como “obras de drenagem urbana”. Os valores são os mesmos da versão da Benedito Calixto. A versão completa da memória de cálculo (13 páginas) tem o mesmo cabeçalho. Já a versão de 8 páginas e a nota de reserva descrevem o objeto como “execução de projetos de revitalização”, e não de obras.",
+      [["Planilha “Panamericana”", "orcamento-final-praca-benedito-calixto-xls.pdf"], ["Cronograma “Panamericana”", "copia-de-orcamento-final-praca-benedito-calixto-xls.pdf"], ["Memória “Panamericana”", "memoria-calculo-ben-calixto.pdf"], ["Memória de 8 páginas", "orcamento-final-praca-benedito-calixto-3-xls.pdf"], ["Nota de reserva", "scanned-document-2.pdf"], ["Planilha final", D.planilha]]],
     ["Outra Subprefeitura no termo de referência", "O TR menciona “Subprefeitura Vila Maria/Vila Guilherme” e “SMS/SP”, provavelmente de um modelo anterior.",
       [["TR", D.tr]]],
     ["Duas origens para o dinheiro", "A CAF e as notas de reserva e de empenho falam em Orçamento Cidadão, por indicação do Conselho Participativo Municipal. O ETP e o TR falam em “recursos obtidos por emenda parlamentar”.",
       [["Informação da CAF", "sei-pmsp-159995135-informacao.pdf"], ["Nota de reserva", "scanned-document-2.pdf"], ["Nota de empenho", D.empenho], ["ETP", D.etp], ["TR", D.tr]]],
     ["Pedidos da comunidade que não estão no orçamento", "Iluminação com braços duplos, novas lixeiras, retirada do orelhão e aumento da mureta da quadra não aparecem na planilha. O corrimão citado no memorial também não.",
       [["Projeto OP 2026", "projeto-pc-bc-subpi-1.pdf"], ["Planilha final", D.planilha], ["Memorial", D.memorial]]],
-    ["Desconto só no BDI", "O custo direto da Progredior é idêntico, centavo por centavo, ao da Prefeitura (R$ 1.250.423,93). O desconto de 4,16% vem só da redução da margem (BDI). A proposta inicial da Dekton foi exatamente o valor de referência.",
-      [["Proposta Progredior", "progredior-proposta-de-preco.pdf"], ["Planilha final", D.planilha], ["Ata da 3ª sessão", "ata-terceira-sessao-sessao.pdf"]]],
+    ["A feira de sábado não aparece no planejamento", "Só a solicitação da obra e o projeto da comunidade falam da Feira de Arte, Cultura e Lazer e das bancas. O ETP, o TR, o memorial, a matriz de riscos e o edital não as mencionam. O item 4.3 do TR diz apenas, de forma genérica, que resolver interferências é responsabilidade da contratada. Em 17/09 as bancas travaram a obra e foi preciso editar a Portaria 30.",
+      [["Solicitação", "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf"], ["Projeto OP 2026", "projeto-pc-bc-subpi-1.pdf"], ["TR", D.tr], ["Matriz de riscos", "documento-consulta-externa-php.pdf"], ["Relato do fiscal", "sei-pmsp-165312590-encaminhamento.pdf"]]],
+    ["Dois endereços para entregar os envelopes", "O edital, o aviso no Diário Oficial e o anúncio no Estadão mandam entregar os envelopes e assistir à abertura na Rua Frederico Hermann Jr., 595, 2º andar. O cabeçalho do próprio edital e quase todos os documentos SEI usam a Av. Dra. Ruth Cardoso (antiga Nações Unidas), 7123. O preâmbulo do contrato também cita a Frederico Hermann, e o modelo de contrato anexo ao edital ainda diz “dois mil e vinte e quatro”. Nove empresas entregaram os envelopes, então na prática ninguém ficou de fora.",
+      [["Edital", D.edital], ["Aviso (DO)", "arquip-dosp-160265181-abertura-np.pdf"], ["Estadão", "cad-b-br-8-estado-economia-paginas-b08-02-07-26.pdf"], ["Contrato", D.contrato]]],
+    ["Cadastro desatualizado no Portal de Processos", "O portal lista João Paulo Bezzon como coordenador de Projetos e Obras, mas quem assina a ordem de início com esse cargo é Rosa Menegali. O mesmo portal dá endereços diferentes para unidades da mesma Subprefeitura: Av. Dra. Ruth Cardoso, “Avenida Nações Unidas” (nome antigo) e Viaduto do Chá, 15.",
+      [["Portal: processo principal", "portal-processo-6050-2026-0010848-0.pdf"], ["Portal: garantia", "portal-processo-6050-2026-0016583-1.pdf"], ["Ordem de início", D.ordem]]],
+    ["Erros no formulário da caução", "O formulário da Secretaria da Fazenda traz emissão em 01/08/2026 (o ofício e a apólice são de 31/08), contrato “14/SUB-IP/2026” e o CNPJ escrito “56.838.949-0001/10”.",
+      [["Formulário de caução", "72416.pdf"], ["Ofício 022", "scan-2026-08-28-161909006.pdf"], ["Apólice", "cto-14-sub-pi-26-apolice.pdf"]]],
     ["Número de empenho e de processo no contrato", "O quadro-resumo do contrato cita a nota de empenho 91608/2026, mas a cláusula 4.3 e a nota emitida são 91609/2026. O mesmo quadro traz o processo 6050.2026/0008794-6, que vem do modelo de contrato anexo ao edital, e não o 6050.2026/0010848-0.",
       [["Contrato", D.contrato], ["Nota de empenho", D.empenho], ["Edital (modelo de contrato)", D.edital]]],
     ["Portaria 30 pula o Art. 3º", "A Portaria que suspende as permissões de uso passa do Art. 2º direto para o Art. 4º.",
@@ -341,7 +359,8 @@
     ["2026-06-23", "23/06/2026", "p", "Requisição de serviços", "Pedido formal da área técnica.", "sei-pmsp-159637598-requisicao-de-servicos.pdf", "159637598", "CF4F635F"],
     ["2026-06-23", "jun/2026", "p", "Memorial descritivo", "Lista dos serviços, categoria por categoria.", "memorial-descritivo.pdf"],
     ["2026-06-23", "jun/2026", "o", "Planilha orçamentária (versão final)", "Todos os itens, quantidades e preços: R$ 1.502.407,93.", "orcamento-final-praca-benedito-calixto-4-xls.pdf"],
-    ["2026-06-23", "jun/2026", "o", "Memória de cálculo", "De onde saem as quantidades (áreas, volumes, horas).", "orcamento-final-praca-benedito-calixto-3-xls.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Memória de cálculo", "De onde saem as quantidades (áreas, volumes, horas). Versão de 8 páginas.", "orcamento-final-praca-benedito-calixto-3-xls.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Memória de cálculo completa (cabeçalho “Praça Panamericana”)", "13 páginas, incluindo drenagem e administração local, com o cabeçalho de outra praça.", "memoria-calculo-ben-calixto.pdf"],
     ["2026-06-23", "jun/2026", "o", "Cronograma físico-financeiro", "Distribuição do valor em 4 meses.", "orcamento-final-praca-benedito-calixto-2-xls.pdf"],
     ["2026-06-23", "jun/2026", "o", "Planilha orçamentária (cabeçalho “Praça Panamericana”)", "Mesmos valores, com o cabeçalho de outra praça.", "orcamento-final-praca-benedito-calixto-xls.pdf"],
     ["2026-06-23", "jun/2026", "o", "Cronograma (cabeçalho “Praça Panamericana”)", "Mesmos valores, com o cabeçalho de outra praça.", "copia-de-orcamento-final-praca-benedito-calixto-xls.pdf"],
@@ -365,6 +384,10 @@
     ["2026-08-11", "11/08/2026", "e", "Progredior: proposta de preço", "Planilha de preços, BDI e cronograma da vencedora.", "progredior-proposta-de-preco.pdf", "", "", "", "8 MB"],
     ["2026-08-11", "11/08/2026", "e", "Progredior: documentos de habilitação", "Contrato social, certidões e balanços.", "ilovepdf-merged-2026-08-14t163522-597.pdf", "", "", "", "21 MB"],
     ["2026-08-11", "11/08/2026", "e", "Progredior: atestados técnicos", "Obras anteriores que comprovam capacidade técnica.", "documento-consulta-externa-5-php.pdf", "", "", "", "14 MB"],
+    ["2026-08-11", "11/08/2026", "e", "Progredior: indicação do responsável técnico", "Anexo VII: o engenheiro Guilherme Leme Perazza (CREA-SP 5062442704) fica vinculado à obra.", "progredior-indicacao-responsavel-tecnico.pdf"],
+    ["2026-08-11", "11/08/2026", "e", "Stein: proposta de preço", "R$ 1.494.882,58, com o mesmo custo direto da Prefeitura e prazo de 120 dias.", "proposta-de-preco-stein.pdf", "", "", "", "6 MB"],
+    ["2026-08-11", "11/08/2026", "e", "Dekton: proposta de preço", "R$ 1.502.407,93, igual ao orçamento da Prefeitura, com prazo de 180 dias.", "proposta-de-preco-dekton.pdf", "", "", "", "5 MB"],
+    ["2026-08-11", "11/08/2026", "e", "DPT Engenharia: proposta de preço", "R$ 1.464.895,21, com o mesmo custo direto da Prefeitura, BDI de 17,11% (obras) e 30,20% (projeto) e prazo de 180 dias.", "dtp-engenharia-proposta-de-preco.pdf", "", "", "", "5 MB"],
     ["2026-08-11", "11/08/2026", "e", "S.C. Engenharia: envelope de habilitação", "Documentos de uma das inabilitadas.", "documento-consulta-externa-3-php.pdf", "", "", "", "39 MB"],
     ["2026-08-11", "11/08/2026", "e", "Amaral Engenharia: envelope de habilitação", "Documentos de uma das inabilitadas.", "documento-consulta-externa-4-php.pdf", "", "", "", "5 MB"],
     ["2026-08-12", "12/08/2026", "l", "Ata da 1ª sessão pública (assinada)", "Abertura dos envelopes. Presentes e ocorrências.", "ata-sessao-publica-12082026.pdf"],
@@ -387,6 +410,13 @@
     ["2026-08-28", "28/08/2026", "c", "Nota de empenho 91609/2026", "R$ 1.439.886,76 em três parcelas (out/nov/dez).", "scan-2026-08-28-161236532.pdf"],
     ["2026-08-31", "31/08/2026", "c", "E-mail à Progredior: empenho e seguro-garantia", "", "e-mail-de-smsub-envio-de-nota-de-empenho-e-seguro-garantia-sei-6050-2026-0010848-0.pdf"],
     ["2026-08-31", "31/08/2026", "c", "Encaminhamento para elaborar o contrato", "Seguro-garantia no processo 6050.2026/0016583-1.", "sei-pmsp-164096796-encaminhamento.pdf", "164096796", "E524EF14"],
+    ["2026-08-31", "31/08/2026", "c", "Ofício 022/SUB-PI/CAF/2026: pedido do seguro-garantia", "A Supervisão de Finanças pede à Progredior a garantia de 5% (R$ 71.994,34).", "scan-2026-08-28-161909006.pdf"],
+    ["2026-08-31", "31/08/2026", "c", "Apólice de seguro-garantia da Pottencial", "R$ 71.994,34, de 01/09/2026 a 30/06/2027. Registro SUSEP 0306920269907751912893000.", "cto-14-sub-pi-26-apolice.pdf"],
+    ["2026-08-03", "03/08/2026", "c", "Certidão da SUSEP: administradores da Pottencial", "Quem dirige a seguradora que emitiu a garantia.", "certidao-de-administradores-agosto-2026.pdf"],
+    ["2026-08-03", "03/08/2026", "c", "Certidão da SUSEP: licenciamento da Pottencial", "Autorização da seguradora para operar.", "certidao-de-licenciamento-agosto-2026.pdf"],
+    ["2026-09-01", "01/09/2026", "c", "Envio da garantia à Secretaria da Fazenda", "Carmen Moreira Bertuccelli (Supervisão de Finanças), processo 6050.2026/0016583-1.", "sei-pmsp-164255120-encaminhamento.pdf", "164255120", "835A50F0"],
+    ["2026-09-02", "02/09/2026", "c", "Formulário de caução 0072416/2026", "Recibo da Secretaria da Fazenda para o seguro-garantia.", "72416.pdf"],
+    ["2026-09-02", "02/09/2026", "c", "Devolução da Secretaria da Fazenda", "Garantia registrada e documentos devolvidos à Subprefeitura.", "sei-pmsp-164311737-encaminhamento.pdf", "164311737", "1D97773E"],
     ["2026-09-01", "01/09/2026", "c", "Termo de Contrato 014/SUB-PI/2026", "Contrato assinado com a Progredior.", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"],
     ["2026-09-01", "01/09/2026", "c", "Ordem de Início 013/SUB-PI/CPO/STPO/2026", "Início 01/09, término 31/12/2026. Fiscal e suplente.", "ordem-de-inicio.pdf"],
     ["2026-09-01", "01/09/2026", "c", "Ordem de Início (segunda digitalização)", "", "scanned-document.pdf"],
@@ -397,7 +427,10 @@
     ["2026-09-17", "17/09/2026", "b", "Parecer jurídico sobre suspensão das TPUs", "", "sei-pmsp-165323457-manifestacao.pdf", "165323457", "8823ED74"],
     ["2026-09-17", "17/09/2026", "b", "Minuta da Portaria 30", "", "sei-pmsp-165331383-minuta.pdf", "165331383", "FF1E42D7"],
     ["2026-09-24", "pub. 24/09/2026", "b", "Portaria 30/SUB-PI/G/2026", "Suspende temporariamente as permissões de uso nas áreas da obra.", "arquip-dosp-165388683-portaria.pdf", "165388683", "B9FA27CC"],
-    ["2026-09-29", "29/09/2026", "b", "Situação no Portal de Processos", "O processo 6050.2026/0017937-9 está no Gabinete do Subprefeito.", "portal-de-processos-administrativos.pdf"],
+    ["2026-09-29", "29/09/2026", "b", "Portal de Processos: processo das bancas", "O processo 6050.2026/0017937-9, autuado em 17/09/2026, está no Gabinete do Subprefeito.", "portal-de-processos-administrativos.pdf"],
+    ["2026-09-30", "30/09/2026", "l", "Portal de Processos: processo principal", "Autuação em 17/06/2026, unidades responsáveis, lista de documentos (dois classificados como restritos) e processos relacionados.", "portal-processo-6050-2026-0010848-0.pdf"],
+    ["2026-09-30", "30/09/2026", "l", "Decisões e publicações do processo principal", "Lista do Portal de Processos com cada despacho e sua data de publicação.", "rptdecisoes.pdf"],
+    ["2026-09-30", "30/09/2026", "c", "Portal de Processos: processo da garantia", "Processo 6050.2026/0016583-1, “Garantias depositadas a título de caução”, autuado em 28/08/2026.", "portal-processo-6050-2026-0016583-1.pdf"],
   ];
 
   const byFile = Object.fromEntries(DOCS.map((d) => [d[5], d]));
@@ -417,7 +450,7 @@
   const tlNewest = phases.reverse().flatMap(([head, ...items]) => [head, ...items.reverse()]);
   $("#timeline").innerHTML = tlNewest.map((e) => {
     if (e.phase) return `<li class="tl__phase">${e.phase}</li>`;
-    if (e.today) return `<li class="tl tl--today"><div class="tl__date">${now.toLocaleDateString("pt-BR")}</div><div class="tl__title">Hoje</div><p class="tl__text">Os documentos públicos analisados vão até 29/09/2026.</p></li>`;
+    if (e.today) return `<li class="tl tl--today"><div class="tl__date">${now.toLocaleDateString("pt-BR")}</div><div class="tl__title">Hoje</div><p class="tl__text">Os documentos públicos analisados vão até 30/09/2026.</p></li>`;
     const future = e.future && parseBR(e.d) > now;
     const docs = (e.docs || []).map(tlDoc).join("");
     return `<li class="tl ${e.key ? "tl--key" : ""} ${future ? "tl--future" : ""}">
@@ -570,6 +603,9 @@
     AMJA: "Associação Amigos da Joaquim Antunes",
     EDIF: "Tabela de custos de edificações da Prefeitura (SIURB)",
     INFRA: "Tabela de custos de infraestrutura da Prefeitura (SIURB)",
+    CREA: "Conselho Regional de Engenharia e Agronomia, onde engenheiros são registrados",
+    SUSEP: "Superintendência de Seguros Privados, que autoriza e fiscaliza as seguradoras",
+    DIPED: "Divisão de Pagamentos Especiais, Devoluções e Custódia de Cauções, da Secretaria da Fazenda",
   };
   const abbrRe = new RegExp(`\\b(${Object.keys(ABBR).join("|")})s?\\b`, "g");
   const texts = document.createTreeWalker($("main"), NodeFilter.SHOW_TEXT, {
