@@ -576,6 +576,14 @@
 
   const links = [...document.querySelectorAll(".toc a")];
   const tocBar = $(".toc__inner");
+  const tocEdges = () => {
+    tocBar.classList.toggle("more-left", tocBar.scrollLeft > 2);
+    tocBar.classList.toggle("more-right", tocBar.scrollLeft + tocBar.clientWidth < tocBar.scrollWidth - 2);
+  };
+  tocBar.addEventListener("scroll", tocEdges, { passive: true });
+  addEventListener("resize", tocEdges);
+  document.fonts.ready.then(tocEdges);
+  tocEdges();
   const spy = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
       if (!en.isIntersecting) return;

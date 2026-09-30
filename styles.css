@@ -107,6 +107,9 @@ h1 + .hero__lede { margin-top: 20px; }
 .toc { position: sticky; top: 0; z-index: 20; background: rgba(250, 251, 249, .94); backdrop-filter: saturate(1.4) blur(8px); border-bottom: 1px solid var(--line); }
 .toc__inner { position: relative; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-top: 8px; padding-bottom: 8px; }
 .toc__inner::-webkit-scrollbar { display: none; }
+.toc__inner { --fl: 0px; --fr: 0px; mask-image: linear-gradient(to right, transparent, #000 var(--fl), #000 calc(100% - var(--fr)), transparent); }
+.toc__inner.more-left { --fl: 32px; }
+.toc__inner.more-right { --fr: 48px; }
 .toc a { flex: none; display: inline-flex; align-items: center; font-family: var(--f-display); font-weight: 600; font-size: .9rem; text-decoration: none; color: var(--ink); padding: 8px 12px; border-radius: 99px; }
 .toc a:hover { background: var(--concrete); }
 .toc a.is-active { background: var(--granite); color: #fff; }
