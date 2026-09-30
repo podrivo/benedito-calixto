@@ -316,18 +316,24 @@ tfoot th { font-family: var(--f-display); border-bottom: 0; border-top: 2px soli
 @media (min-width: 760px) { .people { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1040px) { .people { grid-template-columns: repeat(3, 1fr); } }
 .group { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; }
-.group h3 { margin: 0 0 10px; font-size: 1rem; font-family: var(--f-mono); font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
-.person { padding: 8px 0; border-top: 1px solid var(--concrete); }
+.group h3 { margin: 0 0 4px; font-size: 1rem; font-family: var(--f-mono); font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.person { padding: 24px 0; border-top: 1px solid var(--concrete); }
+.person:last-child { padding-bottom: 4px; }
 .person:first-of-type { border-top: 0; }
 .person strong { font-family: var(--f-display); display: block; line-height: 1.25; }
 .person span { font-size: .9rem; color: var(--muted); display: block; line-height: 1.4; }
+.person__mail { display: inline-block; margin-top: 4px; font-family: var(--f-mono); font-size: .78rem; overflow-wrap: anywhere; }
+.doc-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.doc-links a { font: 500 .78rem/1 var(--f-display); padding: 6px 10px; border: 1px solid var(--line); border-radius: 99px; color: var(--ink); text-decoration: none; background: var(--paper); }
+.doc-links a:hover { border-color: var(--ink); }
+.flag .doc-links a { background: #fff; }
 
 /* ---------- Flags ---------- */
 .flags { display: grid; gap: 14px; margin-top: 28px; }
 @media (min-width: 860px) { .flags { grid-template-columns: 1fr 1fr; } }
 .flag { background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--yellow); border-radius: var(--r); padding: 18px 20px; }
 .flag h3 { margin: 0 0 6px; font-size: 1.08rem; }
-.flag p { margin: 0 0 8px; font-size: .96rem; }
+.flag p { margin: 0 0 14px; font-size: .96rem; }
 .flag .src { font-size: .82rem; color: var(--muted); }
 
 /* ---------- Library ---------- */

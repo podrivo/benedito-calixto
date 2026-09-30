@@ -231,55 +231,96 @@
   }).join("");
 
   /* ---------------- People ---------------- */
+  const D = {
+    memorial: "memorial-descritivo.pdf",
+    tr: "sei-pmsp-159492184-termo-de-referencia.pdf",
+    etp: "sei-pmsp-159491882-estudo-tecnico-preliminar-etp.pdf",
+    edital: "sei-pmsp-160252510-edital.pdf",
+    planilha: "orcamento-final-praca-benedito-calixto-4-xls.pdf",
+    contrato: "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf",
+    ordem: "ordem-de-inicio.pdf",
+    empenho: "scan-2026-08-28-161236532.pdf",
+  };
+  const docLinks = (ls = []) => ls.length ? `<div class="doc-links">${ls.map(([l, h]) => h.startsWith("http")
+    ? `<a href="${h}" target="_blank" rel="noopener">${esc(l)} ↗</a>`
+    : `<a href="docs/${h}">${esc(l)}</a>`).join("")}</div>` : "";
+  const SUBPI = "https://prefeitura.sp.gov.br/web/pinheiros/w/lista-de-servidores-e-contatos";
+  const CPM = "https://prefeitura.sp.gov.br/web/pinheiros/w/participacao_social/conselhos_e_orgaos_colegiados/conselho_participativo/53521";
+  // [name, role, work e-mail, [[label, local doc file or URL], ...]]
   const PEOPLE = [
     ["Decisão", [
-      ["Ygor Lucas Gomes da Costa", "Subprefeito de Pinheiros. Autorizou a licitação, homologou o resultado, assinou o contrato e a Portaria 30."],
+      ["Ygor Lucas Gomes da Costa", "Subprefeito de Pinheiros. Autorizou a licitação, homologou o resultado, assinou o contrato e a Portaria 30.", "pinheiros@smsub.prefeitura.sp.gov.br",
+        [["Página oficial", SUBPI], ["Autorização", "arquip-dosp-160141757-despacho-deferido.pdf"], ["Homologação", "arquip-dosp-163965930-despacho.pdf"], ["Portaria 30", "arquip-dosp-165388683-portaria.pdf"]]],
     ]],
     ["Obra e fiscalização", [
-      ["Niwton Gilberto de Jesus", "Supervisor Técnico de Projetos e Obras. Fez a vistoria, o termo de referência e o orçamento, e é o fiscal do contrato."],
-      ["Rosa Maria Castro Menegali", "Coordenadora de Projetos e Obras. Gestora do contrato e fiscal suplente."],
+      ["Niwton Gilberto de Jesus", "Supervisor Técnico de Projetos e Obras. Fez a vistoria, o termo de referência e o orçamento, e é o fiscal do contrato.", "niwton@smsub.prefeitura.sp.gov.br",
+        [["Página oficial", SUBPI], ["Vistoria", "relatorio-de-vistoria.pdf"], ["Requisição", "sei-pmsp-159637598-requisicao-de-servicos.pdf"], ["Ordem de início", "ordem-de-inicio.pdf"]]],
+      ["Rosa Maria Castro Menegali", "Coordenadora de Projetos e Obras. Gestora do contrato e fiscal suplente.", "rmenegali@smsub.prefeitura.sp.gov.br",
+        [["Página oficial", SUBPI], ["Contrato", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"], ["Ordem de início", "ordem-de-inicio.pdf"]]],
     ]],
     ["Licitação", [
-      ["Ailton Lopes Omelczuk", "Agente de contratação. Conduziu as sessões públicas e recomendou a adjudicação."],
-      ["Robinson Alexandre Ferreira", "Agente de contratação (Portaria 23/2026)."],
-      ["Equipe de apoio", "Carmen Moreira Bertuccelli, Sandy Sthephany Gomes de Oliveira, Kenedi Oliveira e Silva, Maria Aparecida Raposa da Costa e Marcia Pagotti Pimentel."],
+      ["Ailton Lopes Omelczuk", "Agente de contratação. Conduziu as sessões públicas e recomendou a adjudicação.", "",
+        [["Portaria 23", "portaria-licitacao-2026.pdf"], ["Ata da 3ª sessão", "ata-terceira-sessao-sessao.pdf"], ["Recomendação", "sei-pmsp-163918195-manifestacao.pdf"]]],
+      ["Robinson Alexandre Ferreira", "Agente de contratação (Portaria 23/2026).", "", [["Portaria 23", "portaria-licitacao-2026.pdf"]]],
+      ["Equipe de apoio", "Carmen Moreira Bertuccelli, Sandy Sthephany Gomes de Oliveira, Kenedi Oliveira e Silva, Maria Aparecida Raposa da Costa e Marcia Pagotti Pimentel.", "",
+        [["Portaria 23", "portaria-licitacao-2026.pdf"]]],
+      ["E-mail da licitação", "Canal indicado no edital para recursos.", "licitacao-pinheiros@smsub.prefeitura.sp.gov.br", [["Edital", "sei-pmsp-160252510-edital.pdf"]]],
     ]],
     ["Administração e finanças", [
-      ["Kenedi Oliveira e Silva", "Coordenador de Administração e Finanças (CAF). Pediu a reserva do dinheiro."],
-      ["Marcia Pagotti Pimentel", "Supervisão de Finanças. Emitiu a nota de reserva."],
-      ["Carmen Moreira Bertuccelli", "Supervisão de Finanças. Nota de empenho e seguro-garantia."],
-      ["Sandy Sthephany Gomes de Oliveira", "Administração e Suprimentos. Elaborou o contrato e o extrato."],
+      ["Kenedi Oliveira e Silva", "Coordenador de Administração e Finanças (CAF). Pediu a reserva do dinheiro.", "ksilva@smsub.prefeitura.sp.gov.br",
+        [["Página oficial", SUBPI], ["Pedido de reserva", "sei-pmsp-159995135-informacao.pdf"], ["Pedido de celeridade", "sei-pmsp-164048895-encaminhamento.pdf"]]],
+      ["Marcia Pagotti Pimentel", "Supervisão de Finanças. Emitiu a nota de reserva.", "",
+        [["Nota de reserva", "scanned-document-2.pdf"], ["Encaminhamento", "sei-pmsp-160028648-encaminhamento.pdf"]]],
+      ["Carmen Moreira Bertuccelli", "Supervisão de Finanças. Nota de empenho e seguro-garantia.", "cbertuccelli@smsub.prefeitura.sp.gov.br",
+        [["Nota de empenho", "scan-2026-08-28-161236532.pdf"], ["E-mail à empresa", "e-mail-de-smsub-envio-de-nota-de-empenho-e-seguro-garantia-sei-6050-2026-0010848-0.pdf"]]],
+      ["Sandy Sthephany Gomes de Oliveira", "Administração e Suprimentos. Elaborou o contrato e o extrato.", "",
+        [["Extrato do contrato", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]]],
     ]],
     ["Jurídico", [
-      ["Claudio R. Faustino", "Assessoria Jurídica. Parecer sobre o edital (26/06)."],
-      ["Leonardo Henrique Boy de Oliveira", "Assessoria Jurídica. Parecer e minuta da Portaria 30 (17/09)."],
+      ["Claudio R. Faustino", "Assessoria Jurídica. Parecer sobre o edital (26/06).", "", [["Parecer", "sei-pmsp-160111990-manifestacao.pdf"]]],
+      ["Leonardo Henrique Boy de Oliveira", "Chefe da Assessoria Jurídica. Parecer e minuta da Portaria 30 (17/09).", "",
+        [["Página oficial", SUBPI], ["Parecer", "sei-pmsp-165323457-manifestacao.pdf"], ["Minuta", "sei-pmsp-165331383-minuta.pdf"]]],
     ]],
     ["Empresa contratada", [
-      ["Construtora Progredior Ltda.", "CNPJ 56.838.949/0001-10. Rua Michigan, 135, Brooklin Novo, São Paulo."],
-      ["Alexandre Grava", "Representante legal. Assinou o contrato e esteve nas sessões."],
-      ["Guilherme Leme Perazza", "Engenheiro civil e sócio-administrador."],
+      ["Construtora Progredior Ltda.", "CNPJ 56.838.949/0001-10. Rua Michigan, 135, Brooklin Novo, São Paulo.", "",
+        [["Site", "https://progredior.com.br/"], ["CNPJ na Receita", "https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.aspx"], ["Proposta", "progredior-proposta-de-preco.pdf"], ["Habilitação", "ilovepdf-merged-2026-08-14t163522-597.pdf"]]],
+      ["Alexandre Grava", "Representante legal. Assinou o contrato e esteve nas sessões.", "alexandre@progredior.com.br",
+        [["Contrato", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"], ["Ata da 1ª sessão", "ata-sessao-publica-12082026.pdf"]]],
+      ["Guilherme Leme Perazza", "Engenheiro civil e sócio-administrador.", "",
+        [["Habilitação", "ilovepdf-merged-2026-08-14t163522-597.pdf"], ["Atestados técnicos", "documento-consulta-externa-5-php.pdf"]]],
     ]],
     ["Comunidade", [
-      ["Conselho Participativo Municipal", "Indicou a obra, segundo a CAF."],
-      ["AMJA – Praça Benedito Calixto", "Associação de moradores, representada por Maria Emília Carvalho na reunião de 06/11/2025."],
+      ["Conselho Participativo Municipal", "Indicou a obra, segundo a CAF. Reúne-se na primeira quinta-feira do mês, com reuniões abertas ao público.", "",
+        [["Página oficial", CPM], ["Ata de 06/11/2025", "pdf-6050-2023-0007906-9.pdf"], ["Informação da CAF", "sei-pmsp-159995135-informacao.pdf"]]],
+      ["AMJA", "Associação Amigos da Joaquim Antunes. Na reunião de 06/11/2025, Maria Emília Carvalho assinou como “AMJA – Praça Benedito Calixto”.", "",
+        [["Ata de 06/11/2025", "pdf-6050-2023-0007906-9.pdf"]]],
     ]],
   ];
   $("#people").innerHTML = PEOPLE.map(([g, ps]) => `
-    <div class="group"><h3>${g}</h3>${ps.map(([n, r]) => `<div class="person"><strong>${esc(n)}</strong><span>${esc(r)}</span></div>`).join("")}</div>`).join("");
+    <div class="group"><h3>${g}</h3>${ps.map(([n, r, m, ls]) => `<div class="person"><strong>${esc(n)}</strong><span>${esc(r)}</span>${m ? `<a class="person__mail" href="mailto:${m}">${m}</a>` : ""}${docLinks(ls)}</div>`).join("")}</div>`).join("");
 
   /* ---------------- Flags ---------------- */
   const FLAGS = [
-    ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026.", "Memorial · TR · Edital · Contrato"],
-    ["Itens de outro projeto no Estudo Técnico", "O ETP cita playground, cachorródromo e academia ao ar livre, com totais de R$ 476.863,04 e R$ 490.396,55. Nada disso está na planilha de R$ 1,5 milhão da praça.", "ETP SEI 159491882"],
-    ["Planilhas com o nome de outra praça", "Duas versões da planilha e do cronograma trazem no cabeçalho “Praça Panamericana – Alto de Pinheiros”. Uma delas descreve o objeto como “obras de drenagem urbana”. Os valores são os mesmos da versão da Benedito Calixto.", "Orçamento (versões sem sufixo e cópia)"],
-    ["Outra Subprefeitura no termo de referência", "O TR menciona “Subprefeitura Vila Maria/Vila Guilherme” e “SMS/SP”, provavelmente de um modelo anterior.", "TR SEI 159492184"],
-    ["Duas origens para o dinheiro", "A CAF e as notas de reserva e de empenho falam em Orçamento Cidadão, por indicação do Conselho Participativo Municipal. O ETP e o TR falam em “recursos obtidos por emenda parlamentar”.", "Informação SEI 159995135 · ETP · TR"],
-    ["Pedidos da comunidade que não estão no orçamento", "Iluminação com braços duplos, novas lixeiras, retirada do orelhão e aumento da mureta da quadra não aparecem na planilha. O corrimão citado no memorial também não.", "Projeto OP 2026 · Planilha"],
-    ["Desconto só no BDI", "O custo direto da Progredior é idêntico, centavo por centavo, ao da Prefeitura (R$ 1.250.423,93). O desconto de 4,16% vem só da redução da margem (BDI). A proposta inicial da Dekton foi exatamente o valor de referência.", "Proposta Progredior · Ata 3ª sessão"],
-    ["Número de empenho e de processo no contrato", "O quadro-resumo do contrato cita a nota de empenho 91608/2026, mas a cláusula 4.3 e a nota emitida são 91609/2026. O mesmo quadro traz o processo 6050.2026/0008794-6, que vem do modelo de contrato anexo ao edital, e não o 6050.2026/0010848-0.", "Termo de Contrato 014/2026"],
-    ["Portaria 30 pula o Art. 3º", "A Portaria que suspende as permissões de uso passa do Art. 2º direto para o Art. 4º.", "Portaria 30/SUB-PI/G/2026"],
+    ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026.",
+      [["Memorial", D.memorial], ["TR", D.tr], ["Edital", D.edital], ["Contrato", D.contrato], ["Ordem de início", D.ordem]]],
+    ["Itens de outro projeto no Estudo Técnico", "O ETP cita playground, cachorródromo e academia ao ar livre, com totais de R$ 476.863,04 e R$ 490.396,55. Nada disso está na planilha de R$ 1,5 milhão da praça.",
+      [["ETP", D.etp], ["Planilha final", D.planilha]]],
+    ["Planilhas com o nome de outra praça", "Duas versões da planilha e do cronograma trazem no cabeçalho “Praça Panamericana – Alto de Pinheiros”. Uma delas descreve o objeto como “obras de drenagem urbana”. Os valores são os mesmos da versão da Benedito Calixto.",
+      [["Planilha “Panamericana”", "orcamento-final-praca-benedito-calixto-xls.pdf"], ["Cronograma “Panamericana”", "copia-de-orcamento-final-praca-benedito-calixto-xls.pdf"], ["Planilha final", D.planilha]]],
+    ["Outra Subprefeitura no termo de referência", "O TR menciona “Subprefeitura Vila Maria/Vila Guilherme” e “SMS/SP”, provavelmente de um modelo anterior.",
+      [["TR", D.tr]]],
+    ["Duas origens para o dinheiro", "A CAF e as notas de reserva e de empenho falam em Orçamento Cidadão, por indicação do Conselho Participativo Municipal. O ETP e o TR falam em “recursos obtidos por emenda parlamentar”.",
+      [["Informação da CAF", "sei-pmsp-159995135-informacao.pdf"], ["Nota de reserva", "scanned-document-2.pdf"], ["Nota de empenho", D.empenho], ["ETP", D.etp], ["TR", D.tr]]],
+    ["Pedidos da comunidade que não estão no orçamento", "Iluminação com braços duplos, novas lixeiras, retirada do orelhão e aumento da mureta da quadra não aparecem na planilha. O corrimão citado no memorial também não.",
+      [["Projeto OP 2026", "projeto-pc-bc-subpi-1.pdf"], ["Planilha final", D.planilha], ["Memorial", D.memorial]]],
+    ["Desconto só no BDI", "O custo direto da Progredior é idêntico, centavo por centavo, ao da Prefeitura (R$ 1.250.423,93). O desconto de 4,16% vem só da redução da margem (BDI). A proposta inicial da Dekton foi exatamente o valor de referência.",
+      [["Proposta Progredior", "progredior-proposta-de-preco.pdf"], ["Planilha final", D.planilha], ["Ata da 3ª sessão", "ata-terceira-sessao-sessao.pdf"]]],
+    ["Número de empenho e de processo no contrato", "O quadro-resumo do contrato cita a nota de empenho 91608/2026, mas a cláusula 4.3 e a nota emitida são 91609/2026. O mesmo quadro traz o processo 6050.2026/0008794-6, que vem do modelo de contrato anexo ao edital, e não o 6050.2026/0010848-0.",
+      [["Contrato", D.contrato], ["Nota de empenho", D.empenho], ["Edital (modelo de contrato)", D.edital]]],
+    ["Portaria 30 pula o Art. 3º", "A Portaria que suspende as permissões de uso passa do Art. 2º direto para o Art. 4º.",
+      [["Portaria 30", "arquip-dosp-165388683-portaria.pdf"]]],
   ];
-  $("#flags").innerHTML = FLAGS.map(([t, p, s]) => `<article class="flag"><h3>${esc(t)}</h3><p>${esc(p)}</p><div class="src">Fonte: ${esc(s)}</div></article>`).join("");
+  $("#flags").innerHTML = FLAGS.map(([t, p, ls]) => `<article class="flag"><h3>${esc(t)}</h3><p>${esc(p)}</p><div class="src">Compare nos documentos:</div>${docLinks(ls)}</article>`).join("");
 
   /* ---------------- Library ---------------- */
   const C = { p: "Planejamento", o: "Orçamento", l: "Licitação", e: "Propostas das empresas", c: "Contrato e execução", b: "Bancas (TPUs)", x: "Contexto" };
