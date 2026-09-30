@@ -40,3 +40,6 @@ p.get_pixmap(matrix=fitz.Matrix(z, z)).save(os.path.join(IMG, "projeto-full.png"
 strip = fitz.Rect(0.05 * p.rect.width, 0.26 * p.rect.height, 0.96 * p.rect.width, 0.54 * p.rect.height)
 z = 3000 / strip.width
 p.get_pixmap(matrix=fitz.Matrix(z, z), clip=strip).save(os.path.join(IMG, "projeto-planta.png"))
+# high-res version for the zoom viewer (dimension labels need ~2x to be legible)
+z = 6000 / strip.width
+p.get_pixmap(matrix=fitz.Matrix(z, z), clip=strip).save(os.path.join(IMG, "projeto-planta-zoom.jpg"), jpg_quality=72)

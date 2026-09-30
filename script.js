@@ -20,10 +20,10 @@
   };
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) drawProgress(pct);
   else {
-    const DUR = 1100, t0 = performance.now();
+    const DELAY = 700, DUR = 1400, t0 = performance.now() + DELAY;
     const easeOut = (t) => 1 - Math.pow(1 - t, 3);
     const tick = (t) => {
-      const k = Math.min(1, (t - t0) / DUR);
+      const k = Math.min(1, Math.max(0, (t - t0) / DUR));
       drawProgress(pct * easeOut(k));
       if (k < 1) requestAnimationFrame(tick);
     };
@@ -419,4 +419,167 @@
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   document.querySelectorAll("main section[id]").forEach((s) => spy.observe(s));
+
+  /* ---------------- Zoom viewer (plan + photos) ---------------- */
+  const zoom = $("#zoom"), stage = $("#zoom-stage"), zImg = $("#zoom-img"), zLevel = $("#zoom-level");
+  const zTitle = $("#zoom-title"), zCount = $("#zoom-count"), zHelp = $("#zoom-help");
+  let ZW = 1, ZH = 1, s = 1, x = 0, y = 0, fit = 1, maxS = 1, items = [], cur = 0;
+
+  const zApply = () => {
+    const vw = stage.clientWidth, vh = stage.clientHeight, w = ZW * s, h = ZH * s;
+    x = w <= vw ? (vw - w) / 2 : Math.min(0, Math.max(vw - w, x));
+    y = h <= vh ? (vh - h) / 2 : Math.min(0, Math.max(vh - h, y));
+    zImg.style.transform = `translate(${x}px, ${y}px) scale(${s})`;
+    zLevel.textContent = Math.round((s / fit) * 100) + "%";
+  };
+  const zoomAt = (ns, cx = stage.clientWidth / 2, cy = stage.clientHeight / 2) => {
+    ns = Math.min(maxS, Math.max(fit, ns));
+    x = cx - ((cx - x) * ns) / s;
+    y = cy - ((cy - y) * ns) / s;
+    s = ns;
+    zApply();
+  };
+  const animated = (fn) => {
+    stage.classList.add("is-animating");
+    fn();
+    setTimeout(() => stage.classList.remove("is-animating"), 260);
+  };
+  const measure = () => {
+    fit = Math.min(stage.clientWidth / ZW, stage.clientHeight / ZH);
+    maxS = Math.max(1, fit * 2);
+  };
+  const zFit = () => {
+    measure();
+    s = fit;
+    zApply();
+  };
+
+  const show = (i) => {
+    cur = (i + items.length) % items.length;
+    const a = items[cur], img = a.querySelector("img");
+    ZW = +a.dataset.w || img.width;
+    ZH = +a.dataset.h || img.height;
+    zImg.style.width = ZW + "px";
+    zImg.style.height = ZH + "px";
+    zImg.alt = img.alt;
+    zImg.src = img.currentSrc || img.src;
+    const hiSrc = a.getAttribute("href");
+    if (!zImg.src.endsWith(hiSrc)) {
+      const hi = new Image();
+      hi.onload = () => items[cur] === a && (zImg.src = hi.src);
+      hi.src = hiSrc;
+    }
+    zTitle.textContent = a.dataset.title || a.closest("figure").querySelector("figcaption").textContent;
+    zCount.textContent = items.length > 1 ? `${cur + 1} / ${items.length}` : "";
+    zFit();
+  };
+  const step = (d) => items.length > 1 && show(cur + d);
+
+  document.querySelectorAll("[data-zoom]").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    items = [...document.querySelectorAll(`[data-zoom="${a.dataset.zoom}"]`)];
+    const multi = items.length > 1;
+    zoom.classList.toggle("is-light", "light" in a.dataset);
+    zoom.classList.toggle("is-multi", multi);
+    zHelp.textContent = multi
+      ? "Setas ou arraste para trocar de foto · duplo clique para aproximar"
+      : "Arraste para mover · roda do mouse ou pinça para zoom · duplo clique para aproximar";
+    zoom.showModal();
+    show(items.indexOf(a));
+  }));
+  addEventListener("resize", () => {
+    if (!zoom.open) return;
+    const wasFit = s === fit;
+    measure();
+    wasFit ? zFit() : zoomAt(s);
+  });
+
+  zoom.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-z]");
+    if (!b) return;
+    const k = b.dataset.z;
+    if (k === "close") zoom.close();
+    else if (k === "prev" || k === "next") step(k === "next" ? 1 : -1);
+    else animated(() => (k === "fit" ? zFit() : zoomAt(s * (k === "in" ? 1.6 : 1 / 1.6))));
+  });
+  zoom.addEventListener("keydown", (e) => {
+    const atFit = s === fit;
+    if (e.key === "+" || e.key === "=") animated(() => zoomAt(s * 1.6));
+    else if (e.key === "-") animated(() => zoomAt(s / 1.6));
+    else if (e.key === "0") animated(zFit);
+    else if (atFit && items.length > 1 && (e.key === "ArrowLeft" || e.key === "ArrowRight")) step(e.key === "ArrowRight" ? 1 : -1);
+    else if (e.key.startsWith("Arrow")) {
+      const d = 80;
+      x += e.key === "ArrowLeft" ? d : e.key === "ArrowRight" ? -d : 0;
+      y += e.key === "ArrowUp" ? d : e.key === "ArrowDown" ? -d : 0;
+      animated(zApply);
+    } else return;
+    e.preventDefault();
+  });
+
+  stage.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    const r = stage.getBoundingClientRect();
+    zoomAt(s * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.002)), e.clientX - r.left, e.clientY - r.top);
+  }, { passive: false });
+
+  // Pointer events cover mouse drag, one-finger pan, two-finger pinch and double tap.
+  const pts = new Map();
+  let lastTap = 0, moved = 0, lastType = "mouse", startX = 0, startS = 1;
+  const pinch = () => {
+    const [a, b] = [...pts.values()];
+    return { d: Math.hypot(a.x - b.x, a.y - b.y), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 };
+  };
+  stage.addEventListener("pointerdown", (e) => {
+    stage.setPointerCapture(e.pointerId);
+    lastType = e.pointerType;
+    const r = stage.getBoundingClientRect();
+    pts.set(e.pointerId, { x: e.clientX - r.left, y: e.clientY - r.top });
+    if (pts.size === 1) { moved = 0; startX = e.clientX; startS = s; }
+    stage.classList.add("is-dragging");
+  });
+  stage.addEventListener("pointermove", (e) => {
+    const p = pts.get(e.pointerId);
+    if (!p) return;
+    const r = stage.getBoundingClientRect();
+    const nx = e.clientX - r.left, ny = e.clientY - r.top;
+    if (pts.size === 1) {
+      x += nx - p.x;
+      y += ny - p.y;
+      moved += Math.abs(nx - p.x) + Math.abs(ny - p.y);
+      p.x = nx; p.y = ny;
+      zApply();
+    } else if (pts.size === 2) {
+      const before = pinch();
+      p.x = nx; p.y = ny;
+      const after = pinch();
+      x += after.cx - before.cx;
+      y += after.cy - before.cy;
+      zoomAt(s * (after.d / before.d), after.cx, after.cy);
+      moved = Infinity;
+    }
+  });
+  const release = (e) => {
+    const p = pts.get(e.pointerId);
+    if (!p) return;
+    pts.delete(e.pointerId);
+    if (!pts.size) stage.classList.remove("is-dragging");
+    if (e.type !== "pointerup" || pts.size) return;
+    const dx = e.clientX - startX;
+    if (startS === fit && s === fit && moved !== Infinity && Math.abs(dx) > 60) return step(dx < 0 ? 1 : -1);
+    if (e.pointerType === "mouse" || moved > 8) return;
+    const t = performance.now();
+    if (t - lastTap < 320) {
+      toggleZoom(p.x, p.y);
+      lastTap = 0;
+    } else lastTap = t;
+  };
+  const toggleZoom = (cx, cy) => animated(() => (s > fit * 1.5 ? zFit() : zoomAt(s * 3, cx, cy)));
+  stage.addEventListener("pointerup", release);
+  stage.addEventListener("pointercancel", release);
+  stage.addEventListener("dblclick", (e) => {
+    if (lastType !== "mouse") return;
+    const r = stage.getBoundingClientRect();
+    toggleZoom(e.clientX - r.left, e.clientY - r.top);
+  });
 })();
