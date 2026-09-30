@@ -12,20 +12,24 @@
   const START = new Date(2026, 8, 1), END = new Date(2026, 11, 31, 23, 59);
   const now = new Date();
   const pct = Math.min(1, Math.max(0, (now - START) / (END - START)));
-  const day = Math.floor((now - START) / 864e5) + 1;
-  const total = Math.round((END - START) / 864e5);
-  requestAnimationFrame(() => {
-    $("#progress-fill").style.width = pct * 100 + "%";
-    $("#progress-today").style.left = pct * 100 + "%";
-  });
-  $("#progress-today-label").textContent = "hoje, " + now.toLocaleDateString("pt-BR");
-  $("#progress-status").textContent =
-    now < START ? "A obra ainda não começou"
-    : now > END ? "Prazo do contrato encerrado"
-    : `Dia ${day} de ${total} · ${Math.round(pct * 100)}% do prazo`;
-  if (pct > .82) $("#progress-today span").style.transform = "translateX(-100%)";
-  if (pct < .12) $("#progress-today span").style.transform = "translateX(0)";
-
+  const fill = $("#progress-fill"), marker = $("#progress-today"), label = $("#progress-today-label");
+  const drawProgress = (p) => {
+    fill.style.width = marker.style.left = p * 100 + "%";
+    label.textContent = `hoje · ${Math.round(p * 100)}%`;
+    label.style.transform = `translateX(${-p * 100}%)`;
+  };
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) drawProgress(pct);
+  else {
+    const DUR = 1100, t0 = performance.now();
+    const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+    const tick = (t) => {
+      const k = Math.min(1, (t - t0) / DUR);
+      drawProgress(pct * easeOut(k));
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    drawProgress(0);
+    requestAnimationFrame(tick);
+  }
   /* ---------------- Budget ---------------- */
   const CATS = [
     { k: "calcada", name: "Calçadas e passeios", v: 554544.14, ref: 578631.72 },
