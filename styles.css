@@ -105,7 +105,7 @@ h1 + .hero__lede { margin-top: 20px; }
 .toc { position: sticky; top: 0; z-index: 20; background: rgba(250, 251, 249, .94); backdrop-filter: saturate(1.4) blur(8px); border-bottom: 1px solid var(--line); }
 .toc__inner { position: relative; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-top: 8px; padding-bottom: 8px; }
 .toc__inner::-webkit-scrollbar { display: none; }
-.toc a { flex: none; font-family: var(--f-display); font-weight: 600; font-size: .9rem; text-decoration: none; color: var(--ink); padding: 8px 12px; border-radius: 99px; }
+.toc a { flex: none; display: inline-flex; align-items: center; font-family: var(--f-display); font-weight: 600; font-size: .9rem; text-decoration: none; color: var(--ink); padding: 8px 12px; border-radius: 99px; }
 .toc a:hover { background: var(--concrete); }
 .toc a.is-active { background: var(--granite); color: #fff; }
 .toc__search { position: sticky; right: 0; margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 8px; font: 600 .9rem/1 var(--f-display); color: var(--ink); padding: 7px 8px 7px 14px; border: 1px solid var(--line); border-radius: 99px; background: #fff; cursor: pointer; box-shadow: -12px 0 12px rgba(250, 251, 249, .94); }
