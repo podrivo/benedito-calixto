@@ -4,4 +4,5 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-rm -rf research tools .venv
+# PDFs are served from Google Drive (see DRIVE in script.js).
+rm -rf research tools .venv docs

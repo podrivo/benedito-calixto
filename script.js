@@ -224,6 +224,93 @@
     { today: true },
     { d: "31/12/2026", t: "Fim do prazo contratual", x: "Término previsto na ordem de início.", future: true },
   ];
+  /* ---------------- Documents (hosted on Google Drive) ---------------- */
+  const DRIVE = {
+    "1.pdf": "1ggMs9zAgbNgZcLyvhBKMJNqE_TFJhHF0",
+    "72416.pdf": "1r3EK9UoVDQgvRrR537aqvh0skbo9Vu5d",
+    "arquip-dosp-158234407-despacho-indeferido.pdf": "18NzhCNn8GexpH_o_Q4kDBnkQQf4xSi6T",
+    "arquip-dosp-160141757-despacho-deferido.pdf": "1LIpnDcagqXQ8Rx8DO8hEJl4niY7Hbh3C",
+    "arquip-dosp-160203542-outras-np.pdf": "1QsU8zssw81i-7ZgCUQBDDMooJwq1i_YO",
+    "arquip-dosp-160265181-abertura-np.pdf": "1Se6gyw2YPuyekVmhQ-zs2WjeFtULuGSr",
+    "arquip-dosp-162950558-ata-da-licitacao-np.pdf": "1S2i4SGsluCGCjNU8DkU_z8cqdZVLGtCx",
+    "arquip-dosp-163316093-ata-da-licitacao-np.pdf": "1BFTPo5NUQFP9qkFJ8V06eSIpHf2WbhNv",
+    "arquip-dosp-163887970-ata-da-licitacao-np.pdf": "1tFClg0A-h5v-4f6HkhkUlzxIx_GZGf18",
+    "arquip-dosp-163965930-despacho.pdf": "1ihV6Tee6msovKuH-1X-d-PiCmJcR86DU",
+    "arquip-dosp-163978276-outras-np.pdf": "1zoC9yFcESdZV6agsDJ4wPOJBZ1qcvIx9",
+    "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf": "1tsh42Hv4I3gaKTjt-0Xs-YeVTuUgfiTt",
+    "arquip-dosp-165388683-portaria.pdf": "1GbiQXYXAnBqsvtoAUNvf6KcUeH7kc_oc",
+    "ata-segunda-sessao.pdf": "1KGZvOUYmoqD7HaiG59_Ws_3yVBMDn1iq",
+    "ata-sessao-publica-12082026.pdf": "1F0wzZG_w5VLRRYjbJKbf_9Vud6U9m4kU",
+    "ata-terceira-sessao-sessao.pdf": "1ATJh93Kimee-SdC5wXST9WTVm-IE9mXS",
+    "cad-b-br-8-estado-economia-paginas-b08-02-07-26.pdf": "13nK84tVWngo8L0OeR63uNt0dKJ5M5OQT",
+    "certidao-de-administradores-agosto-2026.pdf": "17nDNNGd2ae9pRFmFhHTGiLtQgtRcR-e_",
+    "certidao-de-licenciamento-agosto-2026.pdf": "1jHgB3Zc6znDBk_Dr9VXEheMuZ6jiN-AT",
+    "compras-gov-br-fase-interna.pdf": "1YLd5aKWpn7omtvWecyi4BU4w6qrmvL6j",
+    "copia-de-orcamento-final-praca-benedito-calixto-xls.pdf": "12SdydvHuKeIR6m6GwubaZx9aYN1fk1y0",
+    "cto-14-sub-pi-26-apolice.pdf": "1-xEvJO6LD5C0TpUps1Tplmuzm7ZB-x8-",
+    "diario-oficial-edicao-de-04-09-2026-pag-501.pdf": "1jaPSSgxBRI7sYDp8VT1wTJbbTFVYZPeH",
+    "documento-consulta-externa-2-php.pdf": "1jRzE23BpTjMvwfUcBLoI4y-VEZ3MT12Y",
+    "documento-consulta-externa-3-php.pdf": "1RtbAmQ6Py4UonZs_10BFyBBVNrXL4GNU",
+    "documento-consulta-externa-4-php.pdf": "1p3YacfZht2pNWkLuHaVx0b4_B04oNObH",
+    "documento-consulta-externa-5-php.pdf": "1yZw3Kv9pAhdOLkwBJ9dQGlY6qxOMFkmv",
+    "documento-consulta-externa-php.pdf": "1HmV_HMtLuNtLwXw_0Qmz4DqR9XUAcEiR",
+    "dtp-engenharia-proposta-de-preco.pdf": "14I5yiXyF-V_1Z1BThC6oxC9qo93_1Cdn",
+    "e-mail-de-smsub-envio-de-nota-de-empenho-e-seguro-garantia-sei-6050-2026-0010848-0.pdf": "1EiTfLjTWUfaIyyTO3EBoEIrGPJSZek25",
+    "edicao-217-de-28-agosto-2026-pdf-protegido.pdf": "1tHBpd7-XxaBtiysr6O0EAuAcTT1xu0ZZ",
+    "ilovepdf-merged-2026-08-14t163522-597.pdf": "1KkSBhJi9go2PuKxeXyJkRYcPpBCaLzbx",
+    "memoria-calculo-ben-calixto.pdf": "1K4MNhUmmMKmQ8_jV_qQFXNUKi2Hr_4Vl",
+    "memorial-descritivo.pdf": "1_w5omrcd1YEsGRbYSGCcLgaMzJMvsr3D",
+    "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf": "1KcfjEmmn8tdzUKamiiuG-NkSa6eNyOhi",
+    "orcamento-final-praca-benedito-calixto-2-xls.pdf": "1A7pWCQcyJKSGBLVqDnFIra2oA1Ixlk6E",
+    "orcamento-final-praca-benedito-calixto-3-xls.pdf": "1Ey-E9jba-VjTDJwocBHvfpt4IE128zeF",
+    "orcamento-final-praca-benedito-calixto-4-xls.pdf": "1HRP_H2Jw5HfDh4E2aJYfCAGuTH_O6yaG",
+    "orcamento-final-praca-benedito-calixto-xls.pdf": "1cU-FyV4es7xrdL0cHA4xyHX_T-q7q-Od",
+    "ordem-de-inicio.pdf": "17gG6_v_-Kui4e4Z56W4uCi03pBXEQDXV",
+    "pdf-6050-2023-0007906-9.pdf": "13k31O2qrP69aTMOmHvBXfqwRSjfJzple",
+    "portal-de-processos-administrativos.pdf": "1AxXHGSdSaLFZoCKDe_tJ21E6PTxiYauJ",
+    "portal-processo-6050-2026-0010848-0.pdf": "1vnrBfKizGThhoRH8pjbZQmzDhiZfhLM_",
+    "portal-processo-6050-2026-0016583-1.pdf": "1Miu5Pte-YjbaG2f0Z6gr-4VuXIvf8erk",
+    "portaria-licitacao-2026.pdf": "1nYb4-TXCklPmpYwFGMg4wGLaVd5cciJA",
+    "progredior-indicacao-responsavel-tecnico.pdf": "1OB6HdfpMwK2VmZYsOmrx4Ras_Bc44eMh",
+    "progredior-proposta-de-preco.pdf": "1HuPIASaVb-FIS-yuQ4gk8bPe-6OrrkrB",
+    "projeto-pc-bc-subpi-1.pdf": "1mQgFEiV-CDIgsfEUM2Ww4s1ZH_qvWCun",
+    "proposta-de-preco-dekton.pdf": "10yq9Ve0r5qlpwcS-TOkk0asuH28XzTmm",
+    "proposta-de-preco-stein.pdf": "1vRYxlIX7OuQJTO6bERsR786A8DzbCOdR",
+    "relatorio-de-vistoria.pdf": "1gzrIEzL69airXJr2p-umhdMxg2MSZwts",
+    "rptdecisoes.pdf": "162Z1Qi4tfalc24_TTUUmFti9S0vUjltt",
+    "scan-2026-08-28-161236532.pdf": "1x_gXNckXLzF0T5MFGi1SPjJwbzaqLf1G",
+    "scan-2026-08-28-161909006.pdf": "1U3qq9LOphESZ3CNixFLYzEwx7EHFg2Zf",
+    "scanned-document-2.pdf": "1yHsvumMu6OXcJCoKL26sJV4ySamNtCQL",
+    "scanned-document.pdf": "1oCScTkhUWPVboIoW4rFw1fkmEyyBkf-a",
+    "sei-pmsp-159491882-estudo-tecnico-preliminar-etp.pdf": "1o8TIttZAy9_zAPVa1q16EAVrZIwQZrJl",
+    "sei-pmsp-159492184-termo-de-referencia.pdf": "1k7xNMZTQ4asEgUxrUNDSUXn5r3BOhGtb",
+    "sei-pmsp-159637598-requisicao-de-servicos.pdf": "15L5i0w7WZV7WH5MYiTiynqWIfQwfJXdT",
+    "sei-pmsp-159990108-encaminhamento.pdf": "1sdcVxRrPK-pXuQE5-tFIKT6Wo3bxWe9T",
+    "sei-pmsp-159995135-informacao.pdf": "14qC36Rbr2rd9uuooKOTR1d238vXQOm2D",
+    "sei-pmsp-160028648-encaminhamento.pdf": "1p3mla5n24145JVngwFZferWxUSxjpGcp",
+    "sei-pmsp-160038043-minuta.pdf": "1Ol8oGFV9_w-FnKKSJ2UwV5amdl2HGwZV",
+    "sei-pmsp-160065139-encaminhamento.pdf": "1-LDHubj3Qd3VRXPIWwRpo5w6udadxien",
+    "sei-pmsp-160111990-manifestacao.pdf": "1bc15eyxcZiscQoekTXYfl4WRztMf6dew",
+    "sei-pmsp-160252510-edital.pdf": "12fUxB6_OHB-nvUOYiD-ICJgdX2RMqNzo",
+    "sei-pmsp-160254728-encaminhamento.pdf": "1_j74j6Ngds4_nmdj9RRphfnvUdCNKSTb",
+    "sei-pmsp-160256126-encaminhamento.pdf": "1Qa_eeNWryviAk1pRPHiLz6ZNemPDHSeS",
+    "sei-pmsp-162951299-comunicado.pdf": "1Kyye36oy4M8vAvuG66079KOgswG98LXB",
+    "sei-pmsp-163315678-ata-de-reuniao.pdf": "1jmBqEDbRhfCLyi_x0wSQghMmLsOWaL_s",
+    "sei-pmsp-163915791-informacao.pdf": "1JD8KyvH9HKQegLxse2eJcMRoJxOMi7Pd",
+    "sei-pmsp-163918195-manifestacao.pdf": "1RNnUe28ZbWzekEE8KFs3POXDxzchZzMo",
+    "sei-pmsp-163924950-minuta.pdf": "12HoAA-d0ZvLf5E1_9jBf2yT3P95FIgDF",
+    "sei-pmsp-163932498-encaminhamento.pdf": "15l7adA-y88N_VwX5pL5zOuGAaMSvoa9d",
+    "sei-pmsp-164048895-encaminhamento.pdf": "1crIz2Yye6Qy5USCZnpdZIgN1C3EsqAy0",
+    "sei-pmsp-164096796-encaminhamento.pdf": "1asAamcgZjcgcL62vDMQpjeSeukksg47z",
+    "sei-pmsp-164255120-encaminhamento.pdf": "12XDLranq_CePY9WA5HL32NIYgGlbf1vv",
+    "sei-pmsp-164311737-encaminhamento.pdf": "1aXSiTveKPCUpoWi58yG__uinEEAZ-H55",
+    "sei-pmsp-164707979-encaminhamento.pdf": "1gQiCT7C4UpRWPHM934OfZo5Kk4uU6jrb",
+    "sei-pmsp-165312590-encaminhamento.pdf": "1jNwP8e6k_Zpo62nYiOWnVsi5AM8K_q5J",
+    "sei-pmsp-165323457-manifestacao.pdf": "1ZMxifo_eOOWw6xe7TaCIE0_Qeeujo6CD",
+    "sei-pmsp-165331383-minuta.pdf": "1dLhHoLcK48grDqk1cXliqqQAYZz4L4Io",
+    "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf": "1og8N2IR7E6xi1Fimso7LGhLaLYh2E39_",
+  };
+  const doc = (f) => `https://drive.google.com/file/d/${DRIVE[f]}/view`;
   /* ---------------- People ---------------- */
   const D = {
     memorial: "memorial-descritivo.pdf",
@@ -237,7 +324,7 @@
   };
   const docLinks = (ls = []) => ls.length ? `<div class="doc-links">${ls.map(([l, h]) => h.startsWith("http")
     ? `<a href="${h}" target="_blank" rel="noopener">${esc(l)} ↗</a>`
-    : `<a href="docs/${h}">${esc(l)}</a>`).join("")}</div>` : "";
+    : `<a href="${doc(h)}">${esc(l)}</a>`).join("")}</div>` : "";
   const SUBPI = "https://prefeitura.sp.gov.br/web/pinheiros/w/lista-de-servidores-e-contatos";
   const CPM = "https://prefeitura.sp.gov.br/web/pinheiros/w/participacao_social/conselhos_e_orgaos_colegiados/conselho_participativo/53521";
   // [name, role, work e-mail, [[label, local doc file or URL], ...]]
@@ -439,7 +526,7 @@
   const tlDoc = ([l, h]) => {
     if (h.startsWith("http")) return `<li class="tl__doc"><a href="${h}" target="_blank" rel="noopener">${esc(l)} ↗</a></li>`;
     const [, , , title, , , sei, , doKey, size] = byFile[h] || [];
-    const meta = [`<a href="docs/${h}">PDF${size ? " · " + size : ""}</a>`, sei && `SEI ${sei}`,
+    const meta = [`<a href="${doc(h)}">PDF${size ? " · " + size : ""}</a>`, sei && `SEI ${sei}`,
       doKey && `<a href="${DO}${doKey}" target="_blank" rel="noopener">Diário Oficial ↗</a>`].filter(Boolean).join(" · ");
     return `<li class="tl__doc"><strong>${esc(title || l)}</strong><span>${meta}</span></li>`;
   };
@@ -502,14 +589,14 @@
     cCount.textContent = `${cRows.length} de ${DOCS.length}`;
     cList.innerHTML = cRows.map(([, dd, c, t, desc, file, sei, crc, doKey, size], i) => `
       <li class="cmdk__item" id="cmdk-${i}" role="option" aria-selected="false" data-i="${i}">
-        <a class="cmdk__main" href="docs/${file}" tabindex="-1">
+        <a class="cmdk__main" href="${doc(file)}" tabindex="-1">
           <span class="cmdk__meta">${dd} · ${C[c]}</span>
           <span class="cmdk__title">${esc(t)}</span>
           ${desc ? `<span class="cmdk__desc">${esc(desc)}</span>` : ""}
           ${sei ? `<span class="cmdk__meta">SEI ${sei} · CRC ${crc}</span>` : ""}
         </a>
         <span class="cmdk__links">
-          <a href="docs/${file}" tabindex="-1">PDF${size ? " · " + size : ""}</a>
+          <a href="${doc(file)}" tabindex="-1">PDF${size ? " · " + size : ""}</a>
           ${doKey ? `<a href="${DO}${doKey}" target="_blank" rel="noopener" tabindex="-1">Diário Oficial ↗</a>` : ""}
         </span>
       </li>`).join("") || `<li class="cmdk__empty">Nenhum documento encontrado.</li>`;
