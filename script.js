@@ -289,6 +289,17 @@
   $("#people").innerHTML = PEOPLE.map(([g, ps]) => `
     <div class="group"><h3>${g}</h3>${ps.map(([n, r, m, ls]) => `<div class="person"><strong>${esc(n)}</strong><span>${esc(r)}</span>${m ? `<a class="person__mail" href="mailto:${m}">${m}</a>` : ""}${docLinks(ls)}</div>`).join("")}</div>`).join("");
 
+  const peopleEl = $("#people"), groups = [...peopleEl.children];
+  const mqs = [matchMedia("(min-width: 760px)"), matchMedia("(min-width: 1040px)")];
+  const layoutPeople = () => {
+    const cols = Array.from({ length: 1 + mqs.filter((m) => m.matches).length }, () => Object.assign(document.createElement("div"), { className: "people__col" }));
+    peopleEl.replaceChildren(...cols);
+    groups.forEach((g) => cols.reduce((a, b) => (b.offsetHeight < a.offsetHeight ? b : a)).append(g));
+  };
+  layoutPeople();
+  mqs.forEach((m) => m.addEventListener("change", layoutPeople));
+  document.fonts.ready.then(layoutPeople);
+
   /* dev:start */
   /* ---------------- Flags (only in development; stripped by tools/build-prod.sh) ---------------- */
   const FLAGS = [
@@ -399,25 +410,32 @@
       doKey && `<a href="${DO}${doKey}" target="_blank" rel="noopener">Diário Oficial ↗</a>`].filter(Boolean).join(" · ");
     return `<li class="tl__doc"><strong>${esc(title || l)}</strong><span>${meta}</span></li>`;
   };
-  const lastPhase = TL.map((e) => !!e.phase).lastIndexOf(true);
-  $("#timeline").innerHTML = TL.map((e, i) => {
-    const early = i < lastPhase ? " data-early" : "";
-    if (e.phase) return `<li class="tl__phase"${early}>${e.phase}</li>`;
+  // Newest first: phases in reverse order, each keeping its header on top of its own reversed items.
+  const phases = [];
+  TL.forEach((e) => (e.phase ? phases.push([e]) : phases.at(-1).push(e)));
+  const tlNewest = phases.reverse().flatMap(([head, ...items]) => [head, ...items.reverse()]);
+  $("#timeline").innerHTML = tlNewest.map((e) => {
+    if (e.phase) return `<li class="tl__phase">${e.phase}</li>`;
     if (e.today) return `<li class="tl tl--today"><div class="tl__date">${now.toLocaleDateString("pt-BR")}</div><div class="tl__title">Hoje</div><p class="tl__text">Os documentos públicos analisados vão até 29/09/2026.</p></li>`;
     const future = e.future && parseBR(e.d) > now;
     const docs = (e.docs || []).map(tlDoc).join("");
-    return `<li class="tl ${e.key ? "tl--key" : ""} ${future ? "tl--future" : ""}"${early}>
+    return `<li class="tl ${e.key ? "tl--key" : ""} ${future ? "tl--future" : ""}">
       <div class="tl__date">${e.d}</div><div class="tl__title">${esc(e.t)}</div><p class="tl__text">${esc(e.x)}</p>${docs ? `<ul class="tl__docs">${docs}</ul>` : ""}</li>`;
   }).join("");
-  const tlList = $("#timeline"), tlToggle = $("#tl-toggle");
-  const earlyCount = tlList.querySelectorAll(".tl[data-early]").length;
-  const setTl = (open) => {
-    tlList.classList.toggle("is-collapsed", !open);
-    tlToggle.setAttribute("aria-expanded", String(open));
-    tlToggle.textContent = open ? "Mostrar só a fase atual" : `Ver as ${earlyCount} etapas anteriores, desde a vistoria de 15/10/2025`;
+  const tlMore = $("#tl-more"), tlRows = [...$("#timeline").children], TL_PAGE = 10;
+  const tlTotal = tlRows.filter((li) => li.matches(".tl")).length;
+  let tlShown = 0;
+  const showTl = () => {
+    tlShown = Math.min(tlTotal, tlShown ? tlShown + TL_PAGE : 5);
+    let n = 0;
+    // A phase header sits right before its first item, so it shows exactly when that item does.
+    tlRows.forEach((li) => { li.hidden = n >= tlShown; if (li.matches(".tl")) n++; });
+    const left = tlTotal - tlShown;
+    if (!left) return tlMore.remove();
+    tlMore.textContent = `Ver mais ${Math.min(TL_PAGE, left)} etapas anteriores`;
   };
-  tlToggle.addEventListener("click", () => setTl(tlList.classList.contains("is-collapsed")));
-  setTl(false);
+  tlMore.addEventListener("click", showTl);
+  showTl();
 
   /* ---------------- Document search (⌘K) ---------------- */
   const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
