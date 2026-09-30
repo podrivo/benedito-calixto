@@ -103,7 +103,7 @@ h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.6em; }
 
 /* ---------- TOC ---------- */
 .toc { position: sticky; top: 0; z-index: 20; background: rgba(250, 251, 249, .94); backdrop-filter: saturate(1.4) blur(8px); border-bottom: 1px solid var(--line); }
-.toc__inner { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-top: 8px; padding-bottom: 8px; }
+.toc__inner { position: relative; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-top: 8px; padding-bottom: 8px; }
 .toc__inner::-webkit-scrollbar { display: none; }
 .toc a { flex: none; font-family: var(--f-display); font-weight: 600; font-size: .9rem; text-decoration: none; color: var(--ink); padding: 8px 12px; border-radius: 99px; }
 .toc a:hover { background: var(--concrete); }

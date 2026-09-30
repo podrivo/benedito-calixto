@@ -402,13 +402,15 @@
   [wall, $("#months"), $("#bids")].forEach((el) => io.observe(el));
 
   const links = [...document.querySelectorAll(".toc a")];
+  const tocBar = $(".toc__inner");
   const spy = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
       if (!en.isIntersecting) return;
       links.forEach((a) => {
         const on = a.getAttribute("href") === "#" + en.target.id;
         a.classList.toggle("is-active", on);
-        if (on) a.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+        // scrollIntoView would also scroll the page and fight the user's own scrolling.
+        if (on) tocBar.scrollTo({ left: a.offsetLeft - (tocBar.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
       });
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
