@@ -1,0 +1,195 @@
+##### /Users/pivo/Sites/benedito-calixto/tools/../research/pages/Scan_2026_08_28_161236532/p001.jpg
+PREFEITURA DO MUNICÍPIO DE SÃO PAULO
+NOTA DE EMPENHO
+N°
+91609
+Estimativo
+Data de Emissão:
+28/08/2026
+Processo: 6050.2026/0010848-0
+SUB-PI
+ADM-SUB
+CNPJ: 05.649.898/0001-47
+Identificação de Unidade
+Orgão:
+51.00
+- Subprefeitura Pinheiros
+Unidade:
+51.10
+- Administração da Subprefeitura
+Endereço:
+Avenida das Nações Unidas - de 7067/7068 - 7123 - - Pinheiros - São Paulo - SP - 05425070
+Telefone:
+(11) 3095-9595
+Identificação do Credor
+Credor:
+CONSTRUTORA PROGREDIOR LTDA
+Endereço:
+R. MICHIGAN 135 - 135 - - Cidade Monções - São Paulo - SP - 04566000
+Dados Bancários:
+Identificação da Dotação
+Banco - 1
+Agência - 3.336 -7
+Conta Corrente -
+CNPJ / CPF: 56.838.949/0001-10
+Telefone:
+(11) 5543-5022
+000.001.645-4
+Programática:
+Despesa:
+Fonte de Recurso:
+Tipo Créd. Orçam.:
+Fonte Rec. Exec.:
+51.10.15.451.4020.1170
+4.4.90.51.00
+00.1.500.9551
+0 - Inicial
+00.1.500.9551
+- Intervenção, Urbanização e Melhoria de Bairros - Plano de Obras das Subprefeituras
+- Obras e Instalações
+- Recursos destinados ao Orçamento Cidadão - SUB PI
+- Recursos destinados ao Orçamento Cidadão - SUB PI
+Especificação da Despesa
+SubElemento:
+89
+- Obras em Andamento - Uso Comum do Povo
+Item:
+16
+- Praças, Parques e Jardins
+Histórico:
+oncorrência Presencial 90002/2026-Contratação de empresa especializada em engenharia para execução de obras o
+e vitalização em área publica, com manutenção de equipamentos e correção de acessibilidade, Na Praça Benedito Calixto
+Pinheiros.
+Fundam. Legal - Amparo Legal:
+106 - Art. 28 - Inciso II Lei Federal 14.133/202
+Modalidade de Licitação: 4 - Concorrência
+Valor:
+R$ 1.439.886,76 Um Milhão e Quatrocentos e Trinta e Nove Mil e Oitocentos e Oitenta e Seis Reais e Setenta e Seis Centavos
+Demonstrativo de Saldos na inclusão
+Operação Anterior
+Saldo Anterior da Dotação:
+Saldo Anterior da Reserva:
+Valor do Empenho:
+Saldo Disponível da Dotação:
+Saldo Disponível da Reserva:
+R$ 9.300.000,00
+R$ 1.439.886,76
+R$ 1.439.886,76
+R$ 7.860.113,24
+R$ 0,00
+Reserva: 47637/2026
+Contratação : 27585/2026
+Programação da Liquidação
+Condições de Pagamento:
+Prazo(em dias) : 120
+Mês
+Jan
+Fev
+Mar
+Valor
+0,00
+0,00
+0,00
+Código
+Descrição
+30 dias corridos após o adimplemento total do contrato, inclusive docume
+Inicio da Vigência :
+Mês
+Abr
+Mai
+Jun
+Valor
+0,00
+0,00
+0,00
+Mês
+Jul
+Ago
+Set
+Valor
+0,00
+0,00
+0,00
+Mês
+Out
+Nov
+Dez
+Valor
+411.188,24
+496.199,52
+532.499,00
+Sergio Mar nis Pinto
+Responsáve pela Area Contabil
+Incluído no Sistema por D733242
+ISFNOC
+##### /Users/pivo/Sites/benedito-calixto/tools/../research/pages/Scan_2026_08_28_161236532/p002.jpg
+PREFIXO
+ADM-SUB
+ORDEM
+1
+PREFEITURA DO MUNICÍPIO DE SÃO PAULO
+Subprefeitura Pinheiros
+ANEXO DA NOTA DE EMPENHO
+DOTAÇÃO
+51.10.15.451.4020.1.170.44905100.00
+NÚMERO DO PROCESSO
+6050.2026/0010848-0
+IDENTIFICAÇÃO DA UNIDADE ORÇAMENTÁRIA
+NOME
+Administração da Subprefeitura
+DADOS COMPLEMENTARES DA NOTA DE EMPENHO
+QTDE
+1,00
+UNID
+UN
+DESCRIÇÃO
+Contratação de empresa especializada em engenharia para
+execução de obras de revitalização em área publica, com
+manutenção de equipamentos e correção de
+acessibilidade, Na Praça Benedito Calixto-Pinheiros,
+conforme estabelecido no Edital Concorrência
+90002/2026-SUB-PI/2026.
+PRAZO DE EXECUÇÃO DOS SERVIÇOS:
+Em até 120 (cento e vinte dias) a contar da data fixada na
+Ordem de Inicio dos Serviços
+FOLHA
+1 de 2
+N° DO EMPENHO
+91609/2026
+TELEFONE
+(11) 3095-9595
+PREÇO UNITÁRIO VALOR TOTAL
+1.439.886,7600000
+1.439.886,76
+DATA DE EMISSÃO
+28/08/2026
+R$
+1.439.886,76
+Continua...
+Usuário responsável pela Inclusão: D733242
+[SFN001R2
+##### /Users/pivo/Sites/benedito-calixto/tools/../research/pages/Scan_2026_08_28_161236532/p003.jpg
+PREFIXO
+ADM-SUB
+PREFEITURA DO MUNICÍPIO DE SÃO PAULO
+Subprefeitura Pinheiros
+ANEXO DA NOTA DE EMPENHO
+DOTAÇÃO
+51.10.15.451.4020.1.170.44905100.00
+NÚMERO DO PROCESSO
+6050.2026/0010848-0
+IDENTIFICAÇÃO DA UNIDADE ORÇAMENTÁRIA
+NOME
+Administração da Subprefeitura
+FOLHA
+2 de 2
+N° DO EMPENHO
+91609/2026
+TELEFONE
+1(11) 3095-9595
+DADOS COMPLEMENTARES DA NOTA DE EMPENHO
+Observações do Anexo / Local de Entrega e ou Execução de Serviço
+Gestão e Fiscalização: Fiscal Titular: Niwton Gilberto de Jesus - RF 557.554-1 - Fiscal Suplente: Rosa Maria de Castro
+Menegali RF 563.910-7
+Usuário responsável pela Inclusão: D733242
+[SFN001R2]

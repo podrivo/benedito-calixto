@@ -1,0 +1,6 @@
+.venv/
+research/pages/
+research/sheets/
+research/shots/
+tools/ocr
+.DS_Store

@@ -1,0 +1,471 @@
+
+===== PAGE 1 =====
+1 
+ 
+ 
+ 
+ 
+MATRIZ DE RISCOS 
+ 
+ à CONTRATANTE E CONTRATADA: riscos que devem ser discutidos, avaliados, assumidos e gerenciados por ambos em conjunto para maior 
+eficiência de mitigação. 
+ 
+ 
+ITEM 
+ 
+BASE 
+ 
+RISCO 
+ 
+DANOS 
+ 
+PROBABILIDAD
+E 
+ 
+IMPACTO 
+ 
+NIVEL DE 
+RISCO 
+ 
+AÇÕES PREVENTIVAS 
+ 
+ALOCAÇÃ
+O 
+ 
+ 
+A 
+ 
+ 
+ 
+Projeto Básico 
+✓ Inadequação para 
+provimento dos serviços 
+na qualidade,  quantidade 
+e prazo. 
+✓ Projeto incompatível com a 
+planilha de preços. 
+- Variação dos custos 
+de implantação, 
+quantitativos e 
+inadequação dos 
+serviços. 
+ 
+Médio 
+(3) 
+ 
+ 
+Baixo / 
+Médio 
+(2) 
+ 
+ 
+6 
+✓ Contratação de 
+seguro; 
+✓ Fornecimento dos 
+elementos necesários 
+de projeto;. 
+ 
+ 
+ 
+Contratante 
+ 
+ 
+ 
+ 
+ 
+B 
+ 
+ 
+ 
+ 
+Projeto 
+Executivo 
+✓ Inadequação para 
+provimento dos serviços 
+na qualidade, quantidade 
+e prazo. 
+✓ Dificuldades para 
+aprovação dos projetos 
+nos órgãos competentes 
+visando a obtenção dos 
+alvarás. 
+- Variação dos custos 
+de 
+implantação, 
+quantitativos 
+e 
+inadequação 
+dos 
+serviços. 
+- Atraso no cronograma. 
+ 
+ 
+Improvavel 
+(2) 
+ 
+ 
+Médio 
+(3) 
+ 
+ 
+6 
+✓ Avaliação para não 
+pagamento enquanto  
+os níveis de  serviço 
+não sejam atingidos; 
+✓ Contratação de 
+seguro; 
+✓ Fornecimento dos 
+elementos de projeto 
+necessários; 
+✓ Remuneração do 
+risco. 
+ 
+ 
+ 
+ 
+Contratada 
+ 
+C 
+ 
+ 
+ 
+ 
+Ações de Meio 
+Ambiente. 
+✓ Dificuldades para obtenção 
+da Licença de Instalação
+(LI). 
+✓ Entraves para execução e
+implementação dos Planos
+Básicos 
+Ambientais
+(PBAs). 
+✓ Dificuldades para obtenção 
+TCA 
+Termo 
+de 
+Compensação Ambiental.  
+- Variação dos custos 
+de 
+implantação, 
+quantitativos 
+e 
+inadequação 
+dos 
+serviços. 
+ 
+Rara 
+(1) 
+ 
+Médio 
+(3) 
+ 
+ 
+3 
+✓ Avaliação para não 
+pagamento enquanto  
+os níveis de  serviço 
+não sejam atingidos; 
+✓ Contratação de 
+seguro; 
+✓ Remuneração do 
+risco. 
+ 
+ 
+ 
+ 
+Contratada 
+
+===== PAGE 2 =====
+2 
+ 
+ 
+ 
+ 
+MATRIZ DE RISCOS 
+ 
+✓ Necessidade de 
+complementação de 
+estudos 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Id 
+Risco
+Tipo de Risco 
+Descrição 
+Materialização 
+Probabilidade 
+Impacto Nivel de Risco 
+Mitigação 
+Alocação 
+ 
+D 
+ 
+Clima / Chuvas 
+e Drenagem. 
+✓ Risco de ocorrerem 
+eventos relacionados ao 
+clima durante a construção 
+que impeçam o 
+cumprimento do prazo ou 
+que aumentem os custos. 
+✓ Atraso no início das 
+obras. 
+✓ Refazimento de 
+serviços incompletos 
+✓ Atraso no 
+cronograma. 
+✓ Variação dos custos. 
+ 
+ 
+Média 
+(3) 
+ 
+ 
+Médio / Alto 
+(4) 
+ 
+ 
+12 
+✓ Contratada deverá 
+propor plano de 
+otimização da obra. 
+✓ Contratação de 
+seguro 
+✓ Remuneração do 
+risco 
+✓ Deve procurar 
+concentrar esforços 
+em abrir novas 
+frentes de serviço. 
+Contratada 
+E 
+ 
+ 
+ 
+Risco Geológico 
+✓ Risco de haver acréscimos 
+nos volumes de escavação 
+das contenções / OAEs. 
+✓ Necessidade de 
+tratamentos especiais com 
+maior consumo de aço ou 
+concreto. 
+✓ Atraso no 
+cronograma. 
+✓ Alteração na técnica 
+de construção 
+prevista 
+✓ Variação nos custos. 
+ 
+ 
+Média 
+(3) 
+ 
+ 
+Médio / Alto 
+(4) 
+ 
+ 
+12 
+✓ Remuneração do 
+risco. 
+✓ Contratação de 
+seguro 
+✓ Avaliação para 
+pagamento quando  
+os níveis de  serviço 
+sejam atingidos; 
+ 
+ 
+ 
+Contratada 
+ 
+F 
+ 
+ 
+ 
+ 
+Risco 
+Geotécnico 
+✓ Acréscimos de serviços 
+necessários à 
+estabilização de taludes. 
+✓ Aumento do comprimento 
+ou volume nas fundações. 
+✓ Acréscimos de serviços 
+necessários ao tratamento 
+✓ Atraso no início das 
+obras. 
+✓ Atraso no 
+cronograma. 
+✓ Variação dos custos. 
+ 
+ 
+Improvavel 
+(2) 
+ 
+Médio 
+(3) 
+ 
+ 
+ 
+ 
+6 
+✓ Remuneração do 
+risco. 
+✓ Contratação de 
+seguro 
+✓ Avaliação para 
+pagamento quando  
+os níveis de  serviço  
+ 
+ 
+ 
+ 
+Contratada 
+
+===== PAGE 3 =====
+3 
+ 
+ 
+ 
+ 
+MATRIZ DE RISCOS 
+ 
+de fundações 
+inadequadas. 
+sejam atingidos; 
+ 
+G 
+Roubos e furtos 
+ 
+✓ Aumento de custos de 
+execução. 
+✓ Eventuais atrasos para a 
+aquisição de novos bens. 
+✓ Eventuais danos às 
+instalações do canteiro de 
+obras 
+✓ Aumento de custos 
+de execução. 
+✓ Eventuais atrasos 
+para a aquisição de 
+novos bens. 
+✓ Eventuais danos às 
+instalações do 
+canteiro de obras. 
+ 
+Rara 
+(1) 
+ 
+Médio 
+(3) 
+3 
+✓ Deixar os materiais 
+dentro das 
+dependências do 
+deposito 
+preferencialmente em 
+uma área iluminada e 
+coberta por câmeras . 
+ 
+ 
+Contratada 
+ 
+H 
+ 
+Caso fortuito ou 
+força  maior 
+✓ Situações de obra que 
+configurem caso fortuito 
+ou força maior 
+✓ Greves que afetem meios 
+de transportes coletivos ou 
+transportes de materiais, 
+que se extendam por duas 
+semanas.  
+- Aumento de custos de 
+execução. 
+- Atraso no cronograma 
+ 
+ 
+ 
+Improvavel 
+(2) 
+Baixo / 
+Médio 
+(2) 
+ 
+ 
+4 
+✓ Pandemia 
+✓ Contratação de 
+seguro 
+✓ Deixar os materiais 
+dentro das 
+dependências do 
+deposito, 
+preferencialmente 
+em uma área 
+iluminada e coberta 
+por câmeras. 
+✓ Contratar meios de 
+locomoção para os 
+funcionários e para 
+transporte de material 
+ 
+ 
+ 
+ 
+ 
+Contratada/ 
+Contratante 
+I 
+Econômico e 
+financeiro  
+✓ Inflação/flutuação do 
+cambio. Aumento 
+desproporcional de 
+insumos. Diminuição da 
+lucratividade, perda da 
+performance de fluxo de 
+caixa 
+✓ Eventuais aumentos 
+inflacionários ou 
+variação cambial pelo 
+menos duas vezes 
+superior à inflação, do 
+custo com insumos 
+2 
+4 
+8 
+✓ Reajuste;  
+✓ Reequilibrio 
+econômico financeiro 
+Contratant
+e / 
+contratada 
+ 
+
+===== PAGE 4 =====
+4 
+ 
+ 
+ 
+ 
+MATRIZ DE RISCOS 
+ 
+ 

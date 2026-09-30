@@ -1,0 +1,416 @@
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const brl = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  const brlShort = (v) => v >= 1e6
+    ? "R$ " + (v / 1e6).toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " mi"
+    : "R$ " + Math.round(v / 1e3).toLocaleString("pt-BR") + " mil";
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const fmtDate = (iso) => iso ? iso.split("-").reverse().join("/") : "s/d";
+  const DO = "https://diariooficial.prefeitura.sp.gov.br/md_epubli_visualizar.php?";
+
+  /* ---------------- Progress bar ---------------- */
+  const START = new Date(2026, 8, 1), END = new Date(2026, 11, 31, 23, 59);
+  const now = new Date();
+  const pct = Math.min(1, Math.max(0, (now - START) / (END - START)));
+  const day = Math.floor((now - START) / 864e5) + 1;
+  const total = Math.round((END - START) / 864e5);
+  requestAnimationFrame(() => {
+    $("#progress-fill").style.width = pct * 100 + "%";
+    $("#progress-today").style.left = pct * 100 + "%";
+  });
+  $("#progress-today-label").textContent = "hoje, " + now.toLocaleDateString("pt-BR");
+  $("#progress-status").textContent =
+    now < START ? "A obra ainda não começou"
+    : now > END ? "Prazo do contrato encerrado"
+    : `Dia ${day} de ${total} · ${Math.round(pct * 100)}% do prazo`;
+  if (pct > .82) $("#progress-today span").style.transform = "translateX(-100%)";
+  if (pct < .12) $("#progress-today span").style.transform = "translateX(0)";
+
+  /* ---------------- Budget ---------------- */
+  const CATS = [
+    { k: "calcada", name: "Calçadas e passeios", v: 554544.14, ref: 578631.72 },
+    { k: "demol", name: "Demolições e retiradas", v: 322276.14, ref: 336274.76 },
+    { k: "orla", name: "Recuperação de orlas (paralelepípedos)", v: 159545.59, ref: 166475.71 },
+    { k: "paisagismo", name: "Paisagismo", v: 126457.04, ref: 131949.91 },
+    { k: "quadra", name: "Quadra", v: 104689.75, ref: 109237.11 },
+    { k: "prelim", name: "Serviços preliminares", v: 82583.12, ref: 86170.27 },
+    { k: "adm", name: "Administração local", v: 51247.64, ref: 53473.67 },
+    { k: "drenagem", name: "Drenagem", v: 29530.88, ref: 30813.60 },
+    { k: "projeto", name: "Projeto executivo", v: 5132.94, ref: 5333.14 },
+    { k: "acess", name: "Acessibilidade", v: 3879.52, ref: 4048.04 },
+  ];
+  const TOTAL = CATS.reduce((a, c) => a + c.v, 0);
+
+  // Largest-remainder rounding so the stones add up exactly to the contract / 10k.
+  const STONES = Math.round(TOTAL / 1e4);
+  const raw = CATS.map((c) => (c.v / TOTAL) * STONES);
+  const counts = raw.map(Math.floor);
+  let left = STONES - counts.reduce((a, b) => a + b, 0);
+  raw.map((r, i) => [r - counts[i], i]).sort((a, b) => b[0] - a[0]).slice(0, left).forEach(([, i]) => counts[i]++);
+  CATS.forEach((c, i) => { c.stones = Math.max(1, counts[i]); });
+
+  const wall = $("#wall");
+  let idx = 0;
+  wall.innerHTML = CATS.map((c) =>
+    Array.from({ length: c.stones }, () => `<span class="stone" data-k="${c.k}" style="--c:var(--c-${c.k});--i:${idx++}"></span>`).join("")
+  ).join("");
+
+  const readout = document.createElement("p");
+  readout.className = "legend-readout";
+  readout.setAttribute("aria-live", "polite");
+  $("#legend").after(readout);
+
+  $("#legend").innerHTML = CATS.map((c) =>
+    `<li><button type="button" data-k="${c.k}" aria-pressed="false"><i class="dot" style="--c:var(--c-${c.k})"></i>${esc(c.name)}</button></li>`
+  ).join("");
+
+  const tbody = $("#money-table tbody");
+  tbody.innerHTML = CATS.map((c) => `
+    <tr data-k="${c.k}">
+      <td><i class="dot" style="--c:var(--c-${c.k})"></i>${esc(c.name)}</td>
+      <td class="r num">${brl(c.v)}</td>
+      <td class="r num ref">${brl(c.ref)}</td>
+      <td class="r num">${(c.v / TOTAL * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%</td>
+    </tr>`).join("");
+
+  let focused = null;
+  const setFocus = (k) => {
+    focused = k;
+    wall.classList.toggle("has-focus", !!k);
+    wall.querySelectorAll(".stone").forEach((s) => s.classList.toggle("is-on", s.dataset.k === k));
+    document.querySelectorAll("#legend button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === k)));
+    tbody.querySelectorAll("tr").forEach((r) => r.classList.toggle("is-on", r.dataset.k === k));
+    const c = CATS.find((x) => x.k === k);
+    readout.textContent = c
+      ? `${c.name}: ${brl(c.v)} · ${c.stones} pedras · ${(c.v / TOTAL * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% do contrato`
+      : `Cada pedra ≈ R$ 10 mil · total ${brl(TOTAL)}`;
+  };
+  setFocus(null);
+  $("#legend").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    setFocus(focused === b.dataset.k ? null : b.dataset.k);
+  });
+  const hoverable = window.matchMedia("(hover: hover)").matches;
+  if (hoverable) {
+    wall.addEventListener("mouseover", (e) => { const s = e.target.closest(".stone"); if (s) setFocus(s.dataset.k); });
+    wall.addEventListener("mouseleave", () => setFocus(null));
+    tbody.addEventListener("mouseover", (e) => { const r = e.target.closest("tr"); if (r) setFocus(r.dataset.k); });
+    tbody.addEventListener("mouseleave", () => setFocus(null));
+  }
+  wall.addEventListener("click", (e) => { const s = e.target.closest(".stone"); if (s) setFocus(focused === s.dataset.k ? null : s.dataset.k); });
+
+  const TOP = [
+    ["Passeio de concreto armado (fck 30 MPa), com lastro de brita", "323,91 m³", 395905.47, "calcada"],
+    ["Demolição manual de concreto armado", "269,67 m³", 139643.21, "demol"],
+    ["Fornecimento e assentamento de paralelepípedos", "206,64 m²", 71082.09, "orla"],
+    ["Remoção de entulho em caçamba metálica", "", 67769.15, "demol"],
+    ["Apicoamento mecânico do piso da quadra", "282 m²", 53337.48, "quadra"],
+    ["Limpeza de juntas de dilatação", "1.349,66 m", 47750.97, "calcada"],
+    ["Destinação final de entulho em aterro", "350,57 t", 43568.83, "demol"],
+    ["Aluguel de compressor portátil", "270 h", 27045.90, "prelim"],
+    ["Terra preparada para plantio", "", 22859.60, "paisagismo"],
+    ["Tubo de ferro fundido para esgoto (75 mm)", "48 m", 21899.04, "drenagem"],
+    ["Bombeamento de concreto", "", 20630.46, "calcada"],
+    ["Banco em concreto aparente, tipo PMSP", "44 m", 15491.08, "paisagismo"],
+    ["Mudas de dracena", "225 un.", 14485.50, "paisagismo"],
+  ];
+  $("#top-items").innerHTML = TOP.map(([n, q, v, k]) => `
+    <li style="--c:var(--c-${k})">
+      <span class="item-name">${esc(n)}</span>
+      <span class="item-val">${brl(v)}</span>
+      ${q ? `<span class="item-qty">${q}</span>` : ""}
+      <span class="bar"><i style="width:${(v / TOP[0][2] * 100).toFixed(1)}%"></i></span>
+    </li>`).join("");
+
+  const DIRECT = 1250423.93;
+  const bdiRows = [
+    { label: "Orçamento da Prefeitura", total: 1502407.93, bdi: 251984.00, cls: "" },
+    { label: "Proposta da Progredior", total: 1439886.76, bdi: 189462.83, cls: "bdi__markup--low" },
+  ];
+  $("#bdi").innerHTML = bdiRows.map((r) => `
+    <div class="bdi__row">
+      <div class="bdi__label"><span>${r.label}</span><span class="num">${brl(r.total)}</span></div>
+      <div class="bdi__bar" role="img" aria-label="${r.label}: custo direto ${brl(DIRECT)} mais BDI ${brl(r.bdi)}">
+        <span class="bdi__direct" style="width:${DIRECT / 1502407.93 * 100}%">custo direto ${brl(DIRECT)}</span>
+        <span class="bdi__markup ${r.cls}" style="width:${r.bdi / 1502407.93 * 100}%">BDI</span>
+      </div>
+      <div class="bdi__sub num">BDI: ${brl(r.bdi)}</div>
+    </div>`).join("");
+
+  const MONTHS = [["Mês 1 · set", 411188.24], ["Mês 2 · out", 496199.51], ["Mês 3 · nov", 311496.92], ["Mês 4 · dez", 221002.08]];
+  const maxM = Math.max(...MONTHS.map((m) => m[1]));
+  $("#months").innerHTML = MONTHS.map(([l, v]) => `
+    <div class="month"><span class="month__val">${brlShort(v)}</span><div class="month__bar" data-h="${(v / maxM * 100).toFixed(1)}"></div><span class="month__lbl">${l}</span></div>`).join("");
+
+  /* ---------------- Bidding ---------------- */
+  const BIDDERS = [
+    ["Construtora Progredior Ltda.", "56.838.949/0001-10", "win", "Vencedora", "Habilitada. Menor preço: R$ 1.439.886,76."],
+    ["Stein Incorporações", "17.861.752/0001-40", "ok", "2º lugar", "Habilitada. Lance final de R$ 1.444.264,00, R$ 4.377,24 acima da vencedora."],
+    ["Dekton", "06.297.348/0001-79", "ok", "3º lugar", "Habilitada. Lance final de R$ 1.457.335,25."],
+    ["DPT Engenharia", "34.730.331/0001-07", "ok", "4º lugar", "Habilitada. Proposta de R$ 1.464.895,21. Não enviou representante à sessão de lances."],
+    ["S.C. Engenharia", "10.599.775/0001-89", "out", "Inabilitada", "Atestados técnicos sem as quantidades mínimas exigidas em paralelepípedo, apicoamento, juntas, dracena e arrancamento."],
+    ["Amaral Engenharia", "34.223.533/0001-54", "out", "Inabilitada", "Atestados técnicos insuficientes em itens semelhantes, além de destinação de resíduo Classe II B."],
+    ["THI Engenharia", "09.195.930/0001-12", "out", "Inabilitada", "Atestados técnicos insuficientes em paralelepípedo, apicoamento, transporte de terra e arrancamento."],
+    ["Tobias & Figueiredo", "68.382.498/0001-38", "out", "Inabilitada", "Atestados técnicos insuficientes em paralelepípedo, Classe II B, juntas, arrancamento, demolição e acabamento bambolê."],
+    ["Macor", "57.646.374/0001-04", "out", "Inabilitada", "Excluída já na 1ª sessão (12/08) por não apresentar a certidão negativa de falência."],
+  ];
+  $("#bidders").innerHTML = BIDDERS.map(([n, c, s, l, w]) => `
+    <li class="bidder">
+      <div class="bidder__head"><span class="bidder__name">${esc(n)}</span><span class="status status--${s}">${l}</span></div>
+      <div class="bidder__cnpj">CNPJ ${c}</div>
+      <p class="bidder__why">${esc(w)}</p>
+    </li>`).join("");
+
+  const REF = 1502407.93, MIN = 1400000;
+  const BIDS = [
+    ["Progredior", 1439886.76, "manteve a proposta inicial", true],
+    ["Stein", 1444264.00, "inicial R$ 1.494.882,58"],
+    ["Dekton", 1457335.25, "inicial R$ 1.502.407,93 (= orçamento)"],
+    ["DPT", 1464895.21, "sem lances"],
+  ];
+  const scale = (v) => ((v - MIN) / (REF + 10000 - MIN)) * 100;
+  $("#bids").innerHTML = BIDS.map(([n, v, note, win]) => `
+    <div class="bid ${win ? "bid--win" : ""}">
+      <div class="bid__top"><strong>${n}</strong><span class="num">${brl(v)}</span></div>
+      <div class="bid__track"><div class="bid__bar" data-w="${scale(v).toFixed(2)}"></div><i class="bid__ref" style="left:${scale(REF)}%"></i></div>
+      <span class="bid__note">${note}</span>
+    </div>`).join("") +
+    `<span class="bids__legend">▎linha vermelha = orçamento da Prefeitura (R$ 1.502.407,93) · escala a partir de R$ 1,4 mi</span>`;
+
+  /* ---------------- Videos (click-to-load) ---------------- */
+  document.querySelectorAll(".video__facade").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const f = document.createElement("iframe");
+      f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0`;
+      f.title = btn.getAttribute("aria-label");
+      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      f.allowFullscreen = true;
+      btn.replaceWith(f);
+    });
+  });
+
+  /* ---------------- Timeline ---------------- */
+  const TL = [
+    { phase: "Origem" },
+    { d: "15/10/2025", t: "Vistoria técnica na praça", x: "A Supervisão Técnica de Projetos e Obras fotografa pisos quebrados, bancos soltos, canteiros e a quadra.", docs: [["Relatório de vistoria", "relatorio-de-vistoria.pdf"], ["Solicitação", "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf"]] },
+    { d: "06/11/2025", t: "Reunião do Conselho Participativo Municipal", x: "A praça entra na pauta do orçamento participativo. A associação AMJA – Praça Benedito Calixto participa.", docs: [["Ata", "pdf-6050-2023-0007906-9.pdf"]] },
+    { d: "s/d", t: "Proposta da comunidade: Orçamento Participativo 2026", x: "Prancha com o projeto em duas fases, uma estrutural e outra de paisagismo.", docs: [["Projeto", "projeto-pc-bc-subpi-1.pdf"]] },
+    { phase: "Preparação" },
+    { d: "19/05/2026", t: "Comissão de licitação nomeada", x: "A Portaria 23/SUB-PI/GAB/2026 designa os agentes de contratação e a equipe de apoio.", docs: [["Portaria", "portaria-licitacao-2026.pdf"]] },
+    { d: "23/06/2026", t: "Estudo técnico, termo de referência e orçamento", x: "A área técnica fecha o pacote: orçamento de R$ 1.502.407,93 e prazo de 120 dias.", docs: [["ETP", "sei-pmsp-159491882-estudo-tecnico-preliminar-etp.pdf"], ["TR", "sei-pmsp-159492184-termo-de-referencia.pdf"], ["Planilha", "orcamento-final-praca-benedito-calixto-4-xls.pdf"]] },
+    { d: "24/06/2026", t: "Dinheiro reservado", x: "Nota de reserva 47.637/2026, da verba do Orçamento Cidadão da Subprefeitura.", docs: [["Nota de reserva", "scanned-document-2.pdf"]] },
+    { d: "26/06/2026", t: "Parecer jurídico favorável", x: "A Assessoria Jurídica aprova a fase preparatória.", docs: [["Parecer", "sei-pmsp-160111990-manifestacao.pdf"]] },
+    { d: "27/06/2026", t: "Subprefeito autoriza a licitação", x: "O despacho de Ygor Lucas Gomes da Costa autoriza a concorrência presencial.", docs: [["Despacho (DO)", "arquip-dosp-160141757-despacho-deferido.pdf"]], key: true },
+    { d: "30/06/2026", t: "Edital publicado", x: "Concorrência Presencial 90002/SUB-PI/2026, registrada também no PNCP e no Compras.gov.", docs: [["Edital", "sei-pmsp-160252510-edital.pdf"], ["Aviso (DO)", "arquip-dosp-160265181-abertura-np.pdf"], ["Estadão", "cad-b-br-8-estado-economia-paginas-b08-02-07-26.pdf"]] },
+    { phase: "Licitação" },
+    { d: "12/08/2026", t: "1ª sessão pública: abertura dos envelopes", x: "Nove empresas entregam documentos. A Macor é excluída. A sessão foi gravada.", docs: [["Ata", "ata-sessao-publica-12082026.pdf"], ["Vídeo", "https://youtu.be/XsBawk9-Krc"]], key: true },
+    { d: "18/08/2026", t: "2ª sessão: resultado da análise técnica", x: "Quatro empresas são habilitadas e quatro inabilitadas por atestados insuficientes. Abre-se prazo de 3 dias úteis para recurso, e ninguém recorre.", docs: [["Ata", "ata-segunda-sessao.pdf"]] },
+    { d: "26/08/2026", t: "3ª sessão: preços e lances", x: "A Progredior vence com R$ 1.439.886,76. A sessão foi gravada.", docs: [["Ata", "ata-terceira-sessao-sessao.pdf"], ["Vídeo", "https://www.youtube.com/watch?v=lEEdOZTc-Mc"]], key: true },
+    { d: "27/08/2026", t: "Adjudicação e homologação", x: "O agente de contratação recomenda a Progredior e o Subprefeito homologa. Publicado no Diário Oficial de 28/08, p. 578.", docs: [["Homologação (DO)", "arquip-dosp-163965930-despacho.pdf"], ["DO p. 578", "edicao-217-de-28-agosto-2026-pdf-protegido.pdf"]] },
+    { phase: "Contrato e obra" },
+    { d: "28/08/2026", t: "Nota de empenho 91609/2026", x: "R$ 1.439.886,76 comprometidos em três parcelas: outubro, novembro e dezembro.", docs: [["Nota de empenho", "scan-2026-08-28-161236532.pdf"]] },
+    { d: "01/09/2026", t: "Contrato assinado e ordem de início", x: "Contrato 014/SUB-PI/2026 e Ordem de Início 013/SUB-PI/CPO/STPO/2026. Começam a contar os 120 dias.", docs: [["Contrato", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"], ["Ordem de início", "ordem-de-inicio.pdf"]], key: true },
+    { d: "04/09/2026", t: "Extrato do contrato no Diário Oficial", x: "Publicado na p. 501.", docs: [["Extrato (DO)", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]] },
+    { d: "17/09/2026", t: "Bancas atrapalham a obra", x: "O fiscal relata que estruturas de permissionários ocupam as áreas de trabalho. A Assessoria Jurídica dá parecer favorável à suspensão das permissões.", docs: [["Relato", "sei-pmsp-165312590-encaminhamento.pdf"], ["Parecer", "sei-pmsp-165323457-manifestacao.pdf"]] },
+    { d: "24/09/2026", t: "Portaria 30: permissões de uso suspensas", x: "Os Termos de Permissão de Uso (TPUs) nas áreas da obra ficam suspensos só durante o período da obra, sem serem cancelados.", docs: [["Portaria (DO)", "arquip-dosp-165388683-portaria.pdf"]], key: true },
+    { today: true },
+    { d: "31/12/2026", t: "Fim do prazo contratual", x: "Término previsto na ordem de início.", future: true },
+  ];
+  const parseBR = (s) => { const [d, m, y] = s.split("/").map(Number); return new Date(y, m - 1, d); };
+  $("#timeline").innerHTML = TL.map((e) => {
+    if (e.phase) return `<li class="tl__phase">${e.phase}</li>`;
+    if (e.today) return `<li class="tl tl--today"><div class="tl__date">${now.toLocaleDateString("pt-BR")}</div><div class="tl__title">Hoje</div><p class="tl__text">Os documentos públicos analisados vão até 29/09/2026.</p></li>`;
+    const future = e.future && parseBR(e.d) > now;
+    const links = (e.docs || []).map(([l, h]) => `<a href="${h.startsWith("http") ? h : "docs/" + h}"${h.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${l}</a>`).join("");
+    return `<li class="tl ${e.key ? "tl--key" : ""} ${future ? "tl--future" : ""}">
+      <div class="tl__date">${e.d}</div><div class="tl__title">${esc(e.t)}</div><p class="tl__text">${esc(e.x)}</p>${links ? `<div class="tl__docs">${links}</div>` : ""}</li>`;
+  }).join("");
+
+  /* ---------------- People ---------------- */
+  const PEOPLE = [
+    ["Decisão", [
+      ["Ygor Lucas Gomes da Costa", "Subprefeito de Pinheiros. Autorizou a licitação, homologou o resultado, assinou o contrato e a Portaria 30."],
+    ]],
+    ["Obra e fiscalização", [
+      ["Niwton Gilberto de Jesus", "Supervisor Técnico de Projetos e Obras. Fez a vistoria, o termo de referência e o orçamento, e é o fiscal do contrato."],
+      ["Rosa Maria Castro Menegali", "Coordenadora de Projetos e Obras. Gestora do contrato e fiscal suplente."],
+    ]],
+    ["Licitação", [
+      ["Ailton Lopes Omelczuk", "Agente de contratação. Conduziu as sessões públicas e recomendou a adjudicação."],
+      ["Robinson Alexandre Ferreira", "Agente de contratação (Portaria 23/2026)."],
+      ["Equipe de apoio", "Carmen Moreira Bertuccelli, Sandy Sthephany Gomes de Oliveira, Kenedi Oliveira e Silva, Maria Aparecida Raposa da Costa e Marcia Pagotti Pimentel."],
+    ]],
+    ["Administração e finanças", [
+      ["Kenedi Oliveira e Silva", "Coordenador de Administração e Finanças (CAF). Pediu a reserva do dinheiro."],
+      ["Marcia Pagotti Pimentel", "Supervisão de Finanças. Emitiu a nota de reserva."],
+      ["Carmen Moreira Bertuccelli", "Supervisão de Finanças. Nota de empenho e seguro-garantia."],
+      ["Sandy Sthephany Gomes de Oliveira", "Administração e Suprimentos. Elaborou o contrato e o extrato."],
+    ]],
+    ["Jurídico", [
+      ["Claudio R. Faustino", "Assessoria Jurídica. Parecer sobre o edital (26/06)."],
+      ["Leonardo Henrique Boy de Oliveira", "Assessoria Jurídica. Parecer e minuta da Portaria 30 (17/09)."],
+    ]],
+    ["Empresa contratada", [
+      ["Construtora Progredior Ltda.", "CNPJ 56.838.949/0001-10. Rua Michigan, 135, Brooklin Novo, São Paulo."],
+      ["Alexandre Grava", "Representante legal. Assinou o contrato e esteve nas sessões."],
+      ["Guilherme Leme Perazza", "Engenheiro civil e sócio-administrador."],
+    ]],
+    ["Comunidade", [
+      ["Conselho Participativo Municipal", "Indicou a obra, segundo a CAF."],
+      ["AMJA – Praça Benedito Calixto", "Associação de moradores, representada por Maria Emília Carvalho na reunião de 06/11/2025."],
+    ]],
+  ];
+  $("#people").innerHTML = PEOPLE.map(([g, ps]) => `
+    <div class="group"><h3>${g}</h3>${ps.map(([n, r]) => `<div class="person"><strong>${esc(n)}</strong><span>${esc(r)}</span></div>`).join("")}</div>`).join("");
+
+  /* ---------------- Flags ---------------- */
+  const FLAGS = [
+    ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026.", "Memorial · TR · Edital · Contrato"],
+    ["Itens de outro projeto no Estudo Técnico", "O ETP cita playground, cachorródromo e academia ao ar livre, com totais de R$ 476.863,04 e R$ 490.396,55. Nada disso está na planilha de R$ 1,5 milhão da praça.", "ETP SEI 159491882"],
+    ["Planilhas com o nome de outra praça", "Duas versões da planilha e do cronograma trazem no cabeçalho “Praça Panamericana – Alto de Pinheiros”. Uma delas descreve o objeto como “obras de drenagem urbana”. Os valores são os mesmos da versão da Benedito Calixto.", "Orçamento (versões sem sufixo e cópia)"],
+    ["Outra Subprefeitura no termo de referência", "O TR menciona “Subprefeitura Vila Maria/Vila Guilherme” e “SMS/SP”, provavelmente de um modelo anterior.", "TR SEI 159492184"],
+    ["Duas origens para o dinheiro", "A CAF e as notas de reserva e de empenho falam em Orçamento Cidadão, por indicação do Conselho Participativo Municipal. O ETP e o TR falam em “recursos obtidos por emenda parlamentar”.", "Informação SEI 159995135 · ETP · TR"],
+    ["Pedidos da comunidade que não estão no orçamento", "Iluminação com braços duplos, novas lixeiras, retirada do orelhão e aumento da mureta da quadra não aparecem na planilha. O corrimão citado no memorial também não.", "Projeto OP 2026 · Planilha"],
+    ["Desconto só no BDI", "O custo direto da Progredior é idêntico, centavo por centavo, ao da Prefeitura (R$ 1.250.423,93). O desconto de 4,16% vem só da redução da margem (BDI). A proposta inicial da Dekton foi exatamente o valor de referência.", "Proposta Progredior · Ata 3ª sessão"],
+    ["Número de empenho e de processo no contrato", "O quadro-resumo do contrato cita a nota de empenho 91608/2026, mas a cláusula 4.3 e a nota emitida são 91609/2026. O mesmo quadro traz o processo 6050.2026/0008794-6, que vem do modelo de contrato anexo ao edital, e não o 6050.2026/0010848-0.", "Termo de Contrato 014/2026"],
+    ["Portaria 30 pula o Art. 3º", "A Portaria que suspende as permissões de uso passa do Art. 2º direto para o Art. 4º.", "Portaria 30/SUB-PI/G/2026"],
+  ];
+  $("#flags").innerHTML = FLAGS.map(([t, p, s]) => `<article class="flag"><h3>${esc(t)}</h3><p>${esc(p)}</p><div class="src">Fonte: ${esc(s)}</div></article>`).join("");
+
+  /* ---------------- Library ---------------- */
+  const C = { p: "Planejamento", o: "Orçamento", l: "Licitação", e: "Propostas das empresas", c: "Contrato e execução", b: "Bancas (TPUs)", x: "Contexto" };
+  // [sortDate, displayDate, cat, title, description, file, sei, crc, doKey, sizeNote]
+  const DOCS = [
+    ["2025-10-15", "15/10/2025", "p", "Relatório de vistoria técnica", "148 fotos do estado da praça antes da obra.", "relatorio-de-vistoria.pdf", "", "", "", "20 MB"],
+    ["2025-10-15", "15/10/2025", "p", "Solicitação da obra", "Pedido técnico com imagens do Google Earth e do GeoSampa.", "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf"],
+    ["2025-11-06", "06/11/2025", "x", "Ata do Conselho Participativo Municipal", "Reunião do CPM de Pinheiros (processo 6050.2023/0007906-9).", "pdf-6050-2023-0007906-9.pdf"],
+    ["2025-11-07", "s/d", "p", "Projeto: planta de implantação 1:200", "A prancha do projeto, com a proposta do Orçamento Participativo 2026.", "projeto-pc-bc-subpi-1.pdf"],
+    ["2025-11-07", "s/d", "p", "Projeto: segunda cópia", "Mesmo conteúdo da prancha acima.", "1.pdf"],
+    ["2026-05-19", "19/05/2026", "l", "Portaria 23/SUB-PI/GAB/2026: comissão de licitação", "Designa agentes de contratação e equipe de apoio.", "portaria-licitacao-2026.pdf"],
+    ["2026-06-23", "23/06/2026", "p", "Estudo Técnico Preliminar (ETP)", "Justificativa e alternativas para a contratação.", "sei-pmsp-159491882-estudo-tecnico-preliminar-etp.pdf", "159491882", "1A1521CA"],
+    ["2026-06-23", "23/06/2026", "p", "Termo de Referência (TR)", "Regras técnicas, prazos, fiscalização e pagamento.", "sei-pmsp-159492184-termo-de-referencia.pdf", "159492184", "A2F4F2C4"],
+    ["2026-06-23", "23/06/2026", "p", "Requisição de serviços", "Pedido formal da área técnica.", "sei-pmsp-159637598-requisicao-de-servicos.pdf", "159637598", "CF4F635F"],
+    ["2026-06-23", "jun/2026", "p", "Memorial descritivo", "Lista dos serviços, categoria por categoria.", "memorial-descritivo.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Planilha orçamentária (versão final)", "Todos os itens, quantidades e preços: R$ 1.502.407,93.", "orcamento-final-praca-benedito-calixto-4-xls.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Memória de cálculo", "De onde saem as quantidades (áreas, volumes, horas).", "orcamento-final-praca-benedito-calixto-3-xls.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Cronograma físico-financeiro", "Distribuição do valor em 4 meses.", "orcamento-final-praca-benedito-calixto-2-xls.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Planilha orçamentária (cabeçalho “Praça Panamericana”)", "Mesmos valores, com o cabeçalho de outra praça.", "orcamento-final-praca-benedito-calixto-xls.pdf"],
+    ["2026-06-23", "jun/2026", "o", "Cronograma (cabeçalho “Praça Panamericana”)", "Mesmos valores, com o cabeçalho de outra praça.", "copia-de-orcamento-final-praca-benedito-calixto-xls.pdf"],
+    ["2026-06-24", "24/06/2026", "p", "Encaminhamento dos elementos técnicos", "Lista do pacote técnico enviado à CAF (Niwton).", "sei-pmsp-159990108-encaminhamento.pdf", "159990108", "0359B320"],
+    ["2026-06-24", "24/06/2026", "o", "Informação da CAF", "Indicação do Conselho Participativo e pedido de reserva (Kenedi).", "sei-pmsp-159995135-informacao.pdf", "159995135", "2A9726CC"],
+    ["2026-06-24", "24/06/2026", "o", "Nota de reserva 47.637/2026", "R$ 1.502.407,93 reservados na dotação do Orçamento Cidadão.", "scanned-document-2.pdf"],
+    ["2026-06-25", "25/06/2026", "o", "Encaminhamento da nota de reserva", "Supervisão de Finanças (Marcia Pagotti Pimentel).", "sei-pmsp-160028648-encaminhamento.pdf", "160028648", "AD66D67B"],
+    ["2026-06-25", "25/06/2026", "l", "Minuta do edital", "Versão preliminar do edital.", "sei-pmsp-160038043-minuta.pdf", "160038043", "3084D8B9"],
+    ["2026-06-25", "25/06/2026", "l", "Encaminhamento da CPL à área técnica", "Pedido de conferência da minuta.", "sei-pmsp-160065139-encaminhamento.pdf", "160065139", "4ACEAC82"],
+    ["2026-06-26", "26/06/2026", "l", "Parecer jurídico da fase preparatória", "Assessoria Jurídica (Claudio R. Faustino).", "sei-pmsp-160111990-manifestacao.pdf", "160111990", "5F11EFF1"],
+    ["2026-06-27", "pub. 01/07/2026", "l", "Despacho autorizando a licitação", "Subprefeito autoriza a concorrência presencial.", "arquip-dosp-160141757-despacho-deferido.pdf", "160141757", "07099A79", "jixOvari2aO2E2HopZV3vp_h4fmSLXBtCc1mqDLgU-_KJSO5BORDNwIFyVNz4QQRwez5-xOV5wvFtuGxIs0qm9KXo-DK95CXb39zuOCzYsCBdR9C9EL0RNYRiAFvDg7q"],
+    ["2026-06-30", "pub. 30/06/2026", "l", "Despacho autorizatório (seção Negócios)", "Mesma autorização, publicada na seção de Negócios.", "arquip-dosp-160203542-outras-np.pdf", "160203542", "A088031F", "wOETkvFoHyoFqoE_sOV4ExcTh-Ka32CeG9x8IX7Tn3oht0KrhUBIFXxLBZmADR83oX0Moms0PZ8VQ8tnn-NzX5ftlrfCtFUf0WRGSpjnioh55WEETAtG9_S1vKar4dlt"],
+    ["2026-06-30", "30/06/2026", "l", "Página do Diário Oficial com a autorização", "Inclui uma retificação de dotação de outro processo.", "documento-consulta-externa-2-php.pdf"],
+    ["2026-06-30", "30/06/2026", "l", "Edital da Concorrência 90002/SUB-PI/2026", "Regras da licitação, anexos e minuta do contrato.", "sei-pmsp-160252510-edital.pdf", "160252510", "F9D1D2E5"],
+    ["2026-06-30", "30/06/2026", "l", "Matriz de riscos", "Anexo do edital: riscos da obra e quem responde por eles.", "documento-consulta-externa-php.pdf"],
+    ["2026-06-30", "30/06/2026", "l", "Encaminhamento do edital", "Comissão Permanente de Licitações.", "sei-pmsp-160254728-encaminhamento.pdf", "160254728", "2B4EE6D8"],
+    ["2026-06-30", "30/06/2026", "l", "“Nada obsta”: área técnica", "Niwton libera o prosseguimento.", "sei-pmsp-160256126-encaminhamento.pdf", "160256126", "EEAA5B3F"],
+    ["2026-06-30", "30/06/2026", "l", "Registro no Compras.gov.br", "Contratação 928657-30/2026, PNCP 05649898000147-1-000029/2026.", "compras-gov-br-fase-interna.pdf"],
+    ["2026-07-01", "pub. 01/07/2026", "l", "Aviso de abertura da licitação", "Data, local e objeto da concorrência.", "arquip-dosp-160265181-abertura-np.pdf", "160265181", "18047B7F", "k5LLP1YFSrysy_0uP9F3j75uAKECS8VQREvJ1w7vqi-L7dSs2VwE1F4E1doRdTDurY6vYHEymzY-sgMbpPgle8lURxGHrv3fdRRX8lb_Y41XXWh9XVXFPpy2B6CzkIl-"],
+    ["2026-07-02", "02/07/2026", "l", "Aviso no jornal O Estado de S. Paulo", "Caderno de Economia, p. B8.", "cad-b-br-8-estado-economia-paginas-b08-02-07-26.pdf"],
+    ["2026-08-11", "11/08/2026", "e", "Progredior: proposta de preço", "Planilha de preços, BDI e cronograma da vencedora.", "progredior-proposta-de-preco.pdf", "", "", "", "8 MB"],
+    ["2026-08-11", "11/08/2026", "e", "Progredior: documentos de habilitação", "Contrato social, certidões e balanços.", "ilovepdf-merged-2026-08-14t163522-597.pdf", "", "", "", "21 MB"],
+    ["2026-08-11", "11/08/2026", "e", "Progredior: atestados técnicos", "Obras anteriores que comprovam capacidade técnica.", "documento-consulta-externa-5-php.pdf", "", "", "", "14 MB"],
+    ["2026-08-11", "11/08/2026", "e", "S.C. Engenharia: envelope de habilitação", "Documentos de uma das inabilitadas.", "documento-consulta-externa-3-php.pdf", "", "", "", "39 MB"],
+    ["2026-08-11", "11/08/2026", "e", "Amaral Engenharia: envelope de habilitação", "Documentos de uma das inabilitadas.", "documento-consulta-externa-4-php.pdf", "", "", "", "5 MB"],
+    ["2026-08-12", "12/08/2026", "l", "Ata da 1ª sessão pública (assinada)", "Abertura dos envelopes. Presentes e ocorrências.", "ata-sessao-publica-12082026.pdf"],
+    ["2026-08-12", "12/08/2026", "l", "Comunicado com o link do vídeo da 1ª sessão", "youtu.be/XsBawk9-Krc", "sei-pmsp-162951299-comunicado.pdf", "162951299", "BB9AC049"],
+    ["2026-08-13", "pub. 13/08/2026", "l", "Ata da 1ª sessão no Diário Oficial", "", "arquip-dosp-162950558-ata-da-licitacao-np.pdf", "162950558", "A704DAE1", "LfIb-JB1VVGwguELeSdYypugLtYDkviDPxW2QbxwetROw2VXke1Gptyxt_Fta5UuRohW94HcRVgJG9nuODN17jy12TqbqzaXOKDynety4mYTLvgfKA5uSnVDWSg-Kfxu"],
+    ["2026-08-18", "18/08/2026", "l", "Ata da 2ª sessão (assinada)", "Resultado da habilitação técnica.", "ata-segunda-sessao.pdf"],
+    ["2026-08-18", "18/08/2026", "l", "Ata da 2ª sessão (SEI)", "Motivos de cada inabilitação.", "sei-pmsp-163315678-ata-de-reuniao.pdf", "163315678", "B4AA8730"],
+    ["2026-08-18", "pub. 19/08/2026", "x", "Pedido de “Espaço Legal” na praça indeferido", "Pedido de uma danceteria para ocupar vaga na Praça Benedito Calixto, nº 167, negado com base em parecer da CET. É outro processo, sem relação com a obra.", "arquip-dosp-158234407-despacho-indeferido.pdf", "158234407", "E6D17117"],
+    ["2026-08-19", "pub. 19/08/2026", "l", "Ata da 2ª sessão no Diário Oficial", "", "arquip-dosp-163316093-ata-da-licitacao-np.pdf", "163316093", "98CD9C6E", "SQPwPOef7U7HHaKjPMVUgVnEi_eATwHhxIr4cSuiXCYI8MrbidfBsMrzKH2qsVsPSbcGO7a0fOpkol5Ctz8S-zA2dq71krKSyU_c1R-qNvy65t2rIT3sAddBN-Rbnubh"],
+    ["2026-08-26", "26/08/2026", "l", "Ata da 3ª sessão (assinada)", "Propostas, lances e classificação final.", "ata-terceira-sessao-sessao.pdf"],
+    ["2026-08-27", "27/08/2026", "l", "Informação com o link do vídeo da 3ª sessão", "youtube.com/watch?v=lEEdOZTc-Mc", "sei-pmsp-163915791-informacao.pdf", "163915791", "A28A5531"],
+    ["2026-08-27", "27/08/2026", "l", "Manifestação do agente de contratação", "Recomenda adjudicar à Progredior.", "sei-pmsp-163918195-manifestacao.pdf", "163918195", "F4468009"],
+    ["2026-08-27", "27/08/2026", "l", "Minuta do despacho de homologação", "", "sei-pmsp-163924950-minuta.pdf", "163924950", "5C144B0E"],
+    ["2026-08-27", "27/08/2026", "c", "Encaminhamento da CAF para a obra", "", "sei-pmsp-163932498-encaminhamento.pdf", "163932498", "64004911"],
+    ["2026-08-28", "pub. 28/08/2026", "l", "Ata da 3ª sessão no Diário Oficial", "", "arquip-dosp-163887970-ata-da-licitacao-np.pdf", "163887970", "757895CD", "fvvBGA6LN3KRQtyg2UUlxZPUDDI4jh7P7OAUsKK7cYtlZkasv0mxaKdoPovsY4_ith-Rox5CJYLxmytIy4grxaTLOZhaPEhhTYrPBxf-VzaoEntH2OHDxM2PlrsybaNV"],
+    ["2026-08-28", "pub. 28/08/2026", "l", "Despacho de homologação", "O Subprefeito homologa e adjudica à Progredior.", "arquip-dosp-163965930-despacho.pdf", "163965930", "63D9BE7C", "-yswG7plzqAn0Mb_a_UIBHOinBKMVxFsii7Xwz23C-QLm0ehTwryKvtqWoiwfNjMXMg6UBpUk_mbwlGTwIyjuENzYhW2-grHOXNRSJPHNfJk_xBKq2Khb3FFM44NScDP"],
+    ["2026-08-28", "pub. 28/08/2026", "l", "Homologação (seção Negócios)", "", "arquip-dosp-163978276-outras-np.pdf", "163978276", "80E26879", "5V7_g4m_D8Tv0Iy8o8DqcCAg86vm_YPQzBaFBrLyyahCt4zy5vrWEsMd-Jwc3B7wGSw3W36nAncLLpnZJnONLZ3kddF0cfVnkvGHnXqq2owwXChzGn_ftlYZSp4W3cHG"],
+    ["2026-08-28", "28/08/2026", "l", "Diário Oficial ed. 217, p. 578", "Página impressa com a homologação.", "edicao-217-de-28-agosto-2026-pdf-protegido.pdf"],
+    ["2026-08-28", "28/08/2026", "c", "Pedido de celeridade para a ordem de início", "Kenedi Oliveira e Silva (CAF).", "sei-pmsp-164048895-encaminhamento.pdf", "164048895", "077354CD"],
+    ["2026-08-28", "28/08/2026", "c", "Nota de empenho 91609/2026", "R$ 1.439.886,76 em três parcelas (out/nov/dez).", "scan-2026-08-28-161236532.pdf"],
+    ["2026-08-31", "31/08/2026", "c", "E-mail à Progredior: empenho e seguro-garantia", "", "e-mail-de-smsub-envio-de-nota-de-empenho-e-seguro-garantia-sei-6050-2026-0010848-0.pdf"],
+    ["2026-08-31", "31/08/2026", "c", "Encaminhamento para elaborar o contrato", "Seguro-garantia no processo 6050.2026/0016583-1.", "sei-pmsp-164096796-encaminhamento.pdf", "164096796", "E524EF14"],
+    ["2026-09-01", "01/09/2026", "c", "Termo de Contrato 014/SUB-PI/2026", "Contrato assinado com a Progredior.", "termo-de-contrato-014-sub-pi-2026-praca-benedito-calixto-construtora-progredior.pdf"],
+    ["2026-09-01", "01/09/2026", "c", "Ordem de Início 013/SUB-PI/CPO/STPO/2026", "Início 01/09, término 31/12/2026. Fiscal e suplente.", "ordem-de-inicio.pdf"],
+    ["2026-09-01", "01/09/2026", "c", "Ordem de Início (segunda digitalização)", "", "scanned-document.pdf"],
+    ["2026-09-04", "pub. 04/09/2026", "c", "Extrato do contrato", "", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf", "164428100", "549BC5C1", "zg8xbNT2KFgwtNNtJ5WiMOUESEJ3LU7g7ZyAkaQ9HDNrxcQIk2OYbtVfPYBQSql47eK2jJihyMft9c9XWM3-Dv2vYPpuE6ZvUVG9JLbxkIaRJInKeKo4eEU8C7bCi1Im"],
+    ["2026-09-04", "04/09/2026", "c", "Diário Oficial de 04/09/2026, p. 501", "Página impressa com o extrato.", "diario-oficial-edicao-de-04-09-2026-pag-501.pdf"],
+    ["2026-09-09", "09/09/2026", "c", "Encaminhamento para ART, responsável técnico e acompanhamento", "", "sei-pmsp-164707979-encaminhamento.pdf", "164707979", "C9F1FA09"],
+    ["2026-09-17", "17/09/2026", "b", "Relato do fiscal: bancas nas áreas da obra", "Processo 6050.2026/0017937-9.", "sei-pmsp-165312590-encaminhamento.pdf", "165312590", "9041344F"],
+    ["2026-09-17", "17/09/2026", "b", "Parecer jurídico sobre suspensão das TPUs", "", "sei-pmsp-165323457-manifestacao.pdf", "165323457", "8823ED74"],
+    ["2026-09-17", "17/09/2026", "b", "Minuta da Portaria 30", "", "sei-pmsp-165331383-minuta.pdf", "165331383", "FF1E42D7"],
+    ["2026-09-24", "pub. 24/09/2026", "b", "Portaria 30/SUB-PI/G/2026", "Suspende temporariamente as permissões de uso nas áreas da obra.", "arquip-dosp-165388683-portaria.pdf", "165388683", "B9FA27CC"],
+    ["2026-09-29", "29/09/2026", "b", "Situação no Portal de Processos", "O processo 6050.2026/0017937-9 está no Gabinete do Subprefeito.", "portal-de-processos-administrativos.pdf"],
+  ];
+
+  const lib = $("#library"), search = $("#lib-search"), chips = $("#lib-chips"), count = $("#lib-count");
+  let cat = "";
+  chips.innerHTML = [["", "Todos"], ...Object.entries(C)].map(([k, l]) => `<button type="button" data-c="${k}" aria-pressed="${k === ""}">${l}</button>`).join("");
+  const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+  const render = () => {
+    const q = norm(search.value.trim());
+    const rows = DOCS
+      .filter((d) => (!cat || d[2] === cat) && (!q || norm(d.join(" ") + " " + C[d[2]]).includes(q)))
+      .sort((a, b) => a[0].localeCompare(b[0]));
+    count.textContent = `${rows.length} de ${DOCS.length} documentos`;
+    lib.innerHTML = rows.map(([, dd, c, t, desc, file, sei, crc, doKey, size]) => `
+      <li class="doc">
+        <div class="doc__date">${dd}</div>
+        <div>
+          <div class="doc__cat">${C[c]}</div>
+          <div class="doc__title"><a href="docs/${file}">${esc(t)}</a></div>
+          ${desc ? `<p class="doc__desc">${esc(desc)}</p>` : ""}
+          ${sei ? `<div class="doc__meta">SEI <b>${sei}</b> · CRC <b>${crc}</b></div>` : ""}
+        </div>
+        <div class="doc__links">
+          <a href="docs/${file}">PDF${size ? " · " + size : ""}</a>
+          ${doKey ? `<a href="${DO}${doKey}" target="_blank" rel="noopener">Diário Oficial ↗</a>` : ""}
+        </div>
+      </li>`).join("") || `<li class="doc"><p class="doc__desc">Nenhum documento encontrado.</p></li>`;
+  };
+  search.addEventListener("input", render);
+  chips.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    cat = b.dataset.c;
+    chips.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    render();
+  });
+  render();
+  const libLead = document.querySelector("#documentos .lead");
+  libLead.innerHTML = libLead.innerHTML.replace(/São \d+ arquivos/, `São ${DOCS.length} arquivos`);
+
+  /* ---------------- Reveal + active nav ---------------- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      const el = en.target;
+      if (el === wall) wall.classList.add("is-in");
+      el.querySelectorAll?.("[data-h]").forEach((b) => (b.style.height = b.dataset.h + "%"));
+      el.querySelectorAll?.("[data-w]").forEach((b) => (b.style.width = b.dataset.w + "%"));
+      io.unobserve(el);
+    });
+  }, { threshold: 0.25 });
+  [wall, $("#months"), $("#bids")].forEach((el) => io.observe(el));
+
+  const links = [...document.querySelectorAll(".toc a")];
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      links.forEach((a) => {
+        const on = a.getAttribute("href") === "#" + en.target.id;
+        a.classList.toggle("is-active", on);
+        if (on) a.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+      });
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  document.querySelectorAll("main section[id]").forEach((s) => spy.observe(s));
+})();
