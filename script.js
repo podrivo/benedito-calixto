@@ -197,7 +197,7 @@
   const TL = [
     { phase: "Origem" },
     { d: "15/10/2025", t: "Vistoria técnica na praça", x: "A Supervisão Técnica de Projetos e Obras fotografa pisos quebrados, bancos soltos, canteiros e a quadra.", docs: [["Relatório de vistoria", "relatorio-de-vistoria.pdf"], ["Solicitação", "microsoft-word-solicitacao-praca-benedito-calixto-docx.pdf"]] },
-    { d: "06/11/2025", t: "Reunião do Conselho Participativo Municipal", x: "A praça entra na pauta do orçamento participativo. A associação AMJA – Praça Benedito Calixto participa.", docs: [["Ata", "pdf-6050-2023-0007906-9.pdf"]] },
+    { d: "06/11/2025", t: "Reunião do Conselho Participativo Municipal", x: "A praça entra na pauta do orçamento participativo. Participam representantes de associações de moradores, entre elas a AMJA.", docs: [["Ata", "pdf-6050-2023-0007906-9.pdf"]] },
     { d: "s/d", t: "Proposta da comunidade: Orçamento Participativo 2026", x: "Prancha com o projeto em duas fases, uma estrutural e outra de paisagismo.", docs: [["Projeto", "projeto-pc-bc-subpi-1.pdf"]] },
     { phase: "Preparação" },
     { d: "19/05/2026", t: "Comissão de licitação nomeada", x: "A Portaria 23/SUB-PI/GAB/2026 designa os agentes de contratação e a equipe de apoio.", docs: [["Portaria", "portaria-licitacao-2026.pdf"]] },
@@ -220,16 +220,6 @@
     { today: true },
     { d: "31/12/2026", t: "Fim do prazo contratual", x: "Término previsto na ordem de início.", future: true },
   ];
-  const parseBR = (s) => { const [d, m, y] = s.split("/").map(Number); return new Date(y, m - 1, d); };
-  $("#timeline").innerHTML = TL.map((e) => {
-    if (e.phase) return `<li class="tl__phase">${e.phase}</li>`;
-    if (e.today) return `<li class="tl tl--today"><div class="tl__date">${now.toLocaleDateString("pt-BR")}</div><div class="tl__title">Hoje</div><p class="tl__text">Os documentos públicos analisados vão até 29/09/2026.</p></li>`;
-    const future = e.future && parseBR(e.d) > now;
-    const links = (e.docs || []).map(([l, h]) => `<a href="${h.startsWith("http") ? h : "docs/" + h}"${h.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>${l}</a>`).join("");
-    return `<li class="tl ${e.key ? "tl--key" : ""} ${future ? "tl--future" : ""}">
-      <div class="tl__date">${e.d}</div><div class="tl__title">${esc(e.t)}</div><p class="tl__text">${esc(e.x)}</p>${links ? `<div class="tl__docs">${links}</div>` : ""}</li>`;
-  }).join("");
-
   /* ---------------- People ---------------- */
   const D = {
     memorial: "memorial-descritivo.pdf",
@@ -396,42 +386,122 @@
     ["2026-09-29", "29/09/2026", "b", "Situação no Portal de Processos", "O processo 6050.2026/0017937-9 está no Gabinete do Subprefeito.", "portal-de-processos-administrativos.pdf"],
   ];
 
-  const lib = $("#library"), search = $("#lib-search"), chips = $("#lib-chips"), count = $("#lib-count");
-  let cat = "";
-  chips.innerHTML = [["", "Todos"], ...Object.entries(C)].map(([k, l]) => `<button type="button" data-c="${k}" aria-pressed="${k === ""}">${l}</button>`).join("");
-  const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const byFile = Object.fromEntries(DOCS.map((d) => [d[5], d]));
 
-  const render = () => {
-    const q = norm(search.value.trim());
-    const rows = DOCS
-      .filter((d) => (!cat || d[2] === cat) && (!q || norm(d.join(" ") + " " + C[d[2]]).includes(q)))
-      .sort((a, b) => a[0].localeCompare(b[0]));
-    count.textContent = `${rows.length} de ${DOCS.length} documentos`;
-    lib.innerHTML = rows.map(([, dd, c, t, desc, file, sei, crc, doKey, size]) => `
-      <li class="doc">
-        <div class="doc__date">${dd}</div>
-        <div>
-          <div class="doc__cat">${C[c]}</div>
-          <div class="doc__title"><a href="docs/${file}">${esc(t)}</a></div>
-          ${desc ? `<p class="doc__desc">${esc(desc)}</p>` : ""}
-          ${sei ? `<div class="doc__meta">SEI <b>${sei}</b> · CRC <b>${crc}</b></div>` : ""}
-        </div>
-        <div class="doc__links">
-          <a href="docs/${file}">PDF${size ? " · " + size : ""}</a>
-          ${doKey ? `<a href="${DO}${doKey}" target="_blank" rel="noopener">Diário Oficial ↗</a>` : ""}
-        </div>
-      </li>`).join("") || `<li class="doc"><p class="doc__desc">Nenhum documento encontrado.</p></li>`;
+  /* ---------------- Timeline render ---------------- */
+  const parseBR = (s) => { const [d, m, y] = s.split("/").map(Number); return new Date(y, m - 1, d); };
+  const tlDoc = ([l, h]) => {
+    if (h.startsWith("http")) return `<li class="tl__doc"><a href="${h}" target="_blank" rel="noopener">${esc(l)} ↗</a></li>`;
+    const [, , , title, , , sei, , doKey, size] = byFile[h] || [];
+    const meta = [`<a href="docs/${h}">PDF${size ? " · " + size : ""}</a>`, sei && `SEI ${sei}`,
+      doKey && `<a href="${DO}${doKey}" target="_blank" rel="noopener">Diário Oficial ↗</a>`].filter(Boolean).join(" · ");
+    return `<li class="tl__doc"><a href="docs/${h}">${esc(title || l)}</a><span>${meta}</span></li>`;
   };
-  search.addEventListener("input", render);
-  chips.addEventListener("click", (e) => {
-    const b = e.target.closest("button"); if (!b) return;
-    cat = b.dataset.c;
-    chips.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    render();
+  const lastPhase = TL.map((e) => !!e.phase).lastIndexOf(true);
+  $("#timeline").innerHTML = TL.map((e, i) => {
+    const early = i < lastPhase ? " data-early" : "";
+    if (e.phase) return `<li class="tl__phase"${early}>${e.phase}</li>`;
+    if (e.today) return `<li class="tl tl--today"><div class="tl__date">${now.toLocaleDateString("pt-BR")}</div><div class="tl__title">Hoje</div><p class="tl__text">Os documentos públicos analisados vão até 29/09/2026.</p></li>`;
+    const future = e.future && parseBR(e.d) > now;
+    const docs = (e.docs || []).map(tlDoc).join("");
+    return `<li class="tl ${e.key ? "tl--key" : ""} ${future ? "tl--future" : ""}"${early}>
+      <div class="tl__date">${e.d}</div><div class="tl__title">${esc(e.t)}</div><p class="tl__text">${esc(e.x)}</p>${docs ? `<ul class="tl__docs">${docs}</ul>` : ""}</li>`;
+  }).join("");
+  const tlList = $("#timeline"), tlToggle = $("#tl-toggle");
+  const earlyCount = tlList.querySelectorAll(".tl[data-early]").length;
+  const setTl = (open) => {
+    tlList.classList.toggle("is-collapsed", !open);
+    tlToggle.setAttribute("aria-expanded", String(open));
+    tlToggle.textContent = open ? "Mostrar só a fase atual" : `Ver as ${earlyCount} etapas anteriores, desde a vistoria de 15/10/2025`;
+  };
+  tlToggle.addEventListener("click", () => setTl(tlList.classList.contains("is-collapsed")));
+  setTl(false);
+
+  /* ---------------- Document search (⌘K) ---------------- */
+  const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const isMac = /Mac|iPhone|iPad/.test(navigator.platform);
+  document.querySelectorAll(".kbd-mod").forEach((k) => (k.textContent = isMac ? "⌘K" : "Ctrl K"));
+  const docsLead = $("#docs-lead");
+  docsLead.innerHTML = docsLead.innerHTML.replace(/Os \d+ documentos/, `Os ${DOCS.length} documentos`);
+  $("#doc-cats").innerHTML = Object.entries(C).map(([k, l]) =>
+    `<button type="button" data-cmdk data-c="${k}">${l} <span>${DOCS.filter((d) => d[2] === k).length}</span></button>`).join("");
+
+  const cmdk = $("#cmdk"), cInput = $("#cmdk-input"), cList = $("#cmdk-list"), cChips = $("#cmdk-chips"), cCount = $("#cmdk-count");
+  let cCat = "", cRows = [], cActive = 0;
+  cChips.innerHTML = [["", "Todos"], ...Object.entries(C)].map(([k, l]) => `<button type="button" data-c="${k}">${l}</button>`).join("");
+  const setActive = (i, scroll = true) => {
+    cActive = Math.max(0, Math.min(cRows.length - 1, i));
+    cList.querySelectorAll(".cmdk__item").forEach((li, j) => li.setAttribute("aria-selected", String(j === cActive)));
+    const li = cList.children[cActive];
+    cInput.setAttribute("aria-activedescendant", li?.id || "");
+    if (scroll) li?.scrollIntoView({ block: "nearest" });
+  };
+  const cRender = () => {
+    const q = norm(cInput.value.trim());
+    cChips.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.c === cCat)));
+    cRows = DOCS
+      .filter((d) => (!cCat || d[2] === cCat) && (!q || norm(d.slice(1, 9).join(" ") + " " + C[d[2]]).includes(q)))
+      .sort((a, b) => b[0].localeCompare(a[0]));
+    cCount.textContent = `${cRows.length} de ${DOCS.length}`;
+    cList.innerHTML = cRows.map(([, dd, c, t, desc, file, sei, crc, doKey, size], i) => `
+      <li class="cmdk__item" id="cmdk-${i}" role="option" aria-selected="false" data-i="${i}">
+        <a class="cmdk__main" href="docs/${file}" tabindex="-1">
+          <span class="cmdk__meta">${dd} · ${C[c]}</span>
+          <span class="cmdk__title">${esc(t)}</span>
+          ${desc ? `<span class="cmdk__desc">${esc(desc)}</span>` : ""}
+          ${sei ? `<span class="cmdk__meta">SEI ${sei} · CRC ${crc}</span>` : ""}
+        </a>
+        <span class="cmdk__links">
+          <a href="docs/${file}" tabindex="-1">PDF${size ? " · " + size : ""}</a>
+          ${doKey ? `<a href="${DO}${doKey}" target="_blank" rel="noopener" tabindex="-1">Diário Oficial ↗</a>` : ""}
+        </span>
+      </li>`).join("") || `<li class="cmdk__empty">Nenhum documento encontrado.</li>`;
+    setActive(0, false);
+    cList.scrollTop = 0;
+  };
+  const openCmdk = (c = "") => {
+    cCat = c;
+    cInput.value = "";
+    cRender();
+    if (!cmdk.open) cmdk.showModal();
+    cInput.focus();
+  };
+
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("[data-cmdk]");
+    if (t) openCmdk(t.dataset.c || "");
+    if (e.target.closest("[data-cmdk-close]") || e.target === cmdk) cmdk.close();
   });
-  render();
-  const libLead = document.querySelector("#documentos .lead");
-  libLead.innerHTML = libLead.innerHTML.replace(/São \d+ arquivos/, `São ${DOCS.length} arquivos`);
+  document.addEventListener("keydown", (e) => {
+    const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName);
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      e.preventDefault();
+      cmdk.open ? cmdk.close() : openCmdk();
+    } else if (e.key === "/" && !typing && !zoom.open) {
+      e.preventDefault();
+      openCmdk();
+    }
+  });
+  cInput.addEventListener("input", cRender);
+  cInput.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      setActive(cActive + (e.key === "ArrowDown" ? 1 : -1));
+    } else if (e.key === "Enter" && cRows.length) {
+      e.preventDefault();
+      cList.children[cActive].querySelector(".cmdk__main").click();
+    }
+  });
+  cChips.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    cCat = b.dataset.c;
+    cRender();
+    cInput.focus();
+  });
+  cList.addEventListener("mousemove", (e) => {
+    const li = e.target.closest(".cmdk__item");
+    if (li && +li.dataset.i !== cActive) setActive(+li.dataset.i, false);
+  });
 
   /* ---------------- Reveal + active nav ---------------- */
   const io = new IntersectionObserver((entries) => {

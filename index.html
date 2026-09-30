@@ -50,10 +50,10 @@
     <a href="#licitacao">Licitação</a>
     <a href="#videos">Vídeos</a>
     <a href="#linha-do-tempo">Linha do tempo</a>
-    <a href="#pessoas">Quem é quem</a>
-    <a href="#atencao">Pontos de atenção</a>
-    <a href="#documentos">Documentos</a>
-    <a href="#conferir">Conferir online</a>
+    <a href="#pessoas">Responsáveis</a>
+    <a href="#atencao">Atenção</a>
+    <a href="#conferir">Conferir</a>
+    <button type="button" class="toc__search" data-cmdk aria-label="Buscar documentos">Buscar <kbd class="kbd-mod">⌘K</kbd></button>
   </div>
 </nav>
 
@@ -240,16 +240,17 @@
 <section id="linha-do-tempo" class="section">
   <div class="wrap">
     <p class="kicker">Linha do tempo</p>
-    <h2>Da vistoria à ordem de início</h2>
-    <ol class="timeline" id="timeline"></ol>
+    <h2>Da vistoria à obra</h2>
+    <button type="button" class="tl-toggle" id="tl-toggle" aria-controls="timeline" aria-expanded="false"></button>
+    <ol class="timeline is-collapsed" id="timeline"></ol>
   </div>
 </section>
 
 <!-- ============ PESSOAS ============ -->
 <section id="pessoas" class="section section--paper">
   <div class="wrap">
-    <p class="kicker">Quem é quem</p>
-    <h2>Os responsáveis</h2>
+    <p class="kicker">Responsáveis</p>
+    <h2>Assinaturas e responsabilidades</h2>
     <p class="lead">Nomes e cargos como aparecem nas assinaturas dos documentos. Os e-mails são os funcionais, publicados nos documentos da obra ou na <a href="https://prefeitura.sp.gov.br/web/pinheiros/w/lista-de-servidores-e-contatos" target="_blank" rel="noopener">lista oficial de servidores e contatos</a> da Subprefeitura. Para falar sobre a obra, o canal geral é a Subprefeitura de Pinheiros: Av. Dra. Ruth Cardoso, 7123, Alto de Pinheiros, <a href="mailto:pinheiros@smsub.prefeitura.sp.gov.br">pinheiros@smsub.prefeitura.sp.gov.br</a>, (11) 3095-9595 ou o telefone 156.</p>
     <div class="people" id="people"></div>
   </div>
@@ -258,45 +259,37 @@
 <!-- ============ ATENÇÃO ============ -->
 <section id="atencao" class="section">
   <div class="wrap">
-    <p class="kicker">Pontos de atenção</p>
+    <p class="kicker">Atenção</p>
     <h2>Divergências encontradas nos documentos</h2>
     <p class="lead">Lendo os documentos lado a lado, aparecem informações que não batem entre si. Muitas parecem restos de modelos reaproveitados de outros processos. Estão listadas aqui para quem quiser perguntar à Subprefeitura, não como acusação.</p>
     <div class="flags" id="flags"></div>
   </div>
 </section>
 
-<!-- ============ DOCUMENTOS ============ -->
-<section id="documentos" class="section section--paper">
-  <div class="wrap">
-    <p class="kicker">Biblioteca</p>
-    <h2>Todos os documentos</h2>
-    <p class="lead">São 67 arquivos, em ordem cronológica. Os documentos com código SEI podem ser autenticados no <a href="https://processos.prefeitura.sp.gov.br" target="_blank" rel="noopener">Portal de Processos</a> com o código verificador e o código CRC indicados. As publicações também estão na <a href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=materias_pesquisar" target="_blank" rel="noopener">busca do Diário Oficial</a>: pesquise “Praça Benedito Calixto”.</p>
-    <div class="lib-controls">
-      <label class="search"><span class="sr">Buscar</span><input type="search" id="lib-search" placeholder="Buscar: edital, contrato, Progredior, 163965930…" autocomplete="off"></label>
-      <div class="chips" id="lib-chips" role="group" aria-label="Filtrar por etapa"></div>
-    </div>
-    <p class="small" id="lib-count"></p>
-    <ul class="library" id="library"></ul>
-  </div>
-</section>
-
 <!-- ============ CONFERIR ============ -->
 <section id="conferir" class="section section--dark">
   <div class="wrap">
-    <p class="kicker">Conferir online</p>
+    <p class="kicker">Conferir</p>
     <h2>Onde checar tudo isso</h2>
+    <p class="lead" id="docs-lead">Os 68 documentos públicos da obra estão salvos neste site. Os principais aparecem na <a href="#linha-do-tempo">linha do tempo</a>, e todos estão na busca.</p>
+    <button type="button" class="doc-search" data-cmdk>
+      <span>Buscar por nome, número SEI, empresa ou assunto…</span><kbd class="kbd-mod">⌘K</kbd>
+    </button>
+    <div class="chips doc-cats" id="doc-cats" role="group" aria-label="Abrir a busca por etapa"></div>
+
+    <h3 class="h3-sep">Nos sites oficiais</h3>
     <div class="links">
-      <a class="link-card link-card--main" href="https://processos.prefeitura.sp.gov.br/Forms/ConsultarProcessos.aspx?numeroprocesso=6050202600108480#!" target="_blank" rel="noopener">
+      <a class="link-card" href="https://processos.prefeitura.sp.gov.br/Forms/ConsultarProcessos.aspx?numeroprocesso=6050202600108480#!" target="_blank" rel="noopener">
         <span class="link-card__k">Portal de Processos · processo principal</span>
         <strong>SEI 6050.2026/0010848-0</strong>
         <span>Licitação, contrato e execução da obra. Veja a aba “Documentos”.</span>
       </a>
-      <a class="link-card link-card--main" href="https://processos.prefeitura.sp.gov.br/Forms/ConsultarProcessos.aspx?numeroprocesso=6050202600179379#!" target="_blank" rel="noopener">
+      <a class="link-card" href="https://processos.prefeitura.sp.gov.br/Forms/ConsultarProcessos.aspx?numeroprocesso=6050202600179379#!" target="_blank" rel="noopener">
         <span class="link-card__k">Portal de Processos · permissionários</span>
         <strong>SEI 6050.2026/0017937-9</strong>
         <span>Suspensão temporária das bancas (TPUs) durante a obra.</span>
       </a>
-      <a class="link-card link-card--main" href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=materias_pesquisar" target="_blank" rel="noopener">
+      <a class="link-card" href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=materias_pesquisar" target="_blank" rel="noopener">
         <span class="link-card__k">Diário Oficial da Cidade · busca</span>
         <strong>Pesquise “Praça Benedito Calixto”</strong>
         <span>Todas as publicações: atas, homologação, extrato do contrato, Portaria 30.</span>
@@ -317,14 +310,14 @@
         <span>Propostas e lances.</span>
       </a>
     </div>
-    <p class="small">O Portal de Processos pede um captcha. Se o link abrir a tela de busca vazia, digite o número do processo (por exemplo 6050.2026/0010848-0) e os caracteres da imagem.</p>
+    <p class="small">O Portal de Processos pede um captcha. Se o link abrir a tela de busca vazia, digite o número do processo (por exemplo 6050.2026/0010848-0) e os caracteres da imagem. O site do PNCP às vezes fica fora do ar; nesse caso, o <a href="docs/compras-gov-br-fase-interna.pdf">registro no Compras.gov.br</a> salvo aqui traz os mesmos números.</p>
 
-    <div class="howto">
+    <div class="howto" id="autenticar">
       <h3>Como conferir se um documento é autêntico</h3>
       <ol>
         <li>Acesse <a href="https://processos.prefeitura.sp.gov.br" target="_blank" rel="noopener">processos.prefeitura.sp.gov.br</a>.</li>
         <li>Escolha “Conferir autenticidade de documento”.</li>
-        <li>Digite o <strong>código verificador</strong> (o número SEI, por exemplo 163965930) e o <strong>código CRC</strong> (por exemplo 63D9BE7C). Os dois estão no rodapé de cada documento e na biblioteca acima.</li>
+        <li>Digite o <strong>código verificador</strong> (o número SEI, por exemplo 163965930) e o <strong>código CRC</strong> (por exemplo 63D9BE7C). Os dois estão no rodapé de cada documento e na busca de documentos acima.</li>
       </ol>
     </div>
   </div>
@@ -339,6 +332,16 @@
   </div>
 </footer>
 
+<dialog class="cmdk" id="cmdk" aria-label="Buscar documentos">
+  <div class="cmdk__head">
+    <input type="search" id="cmdk-input" placeholder="Buscar: edital, contrato, Progredior, 163965930…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="cmdk-list" aria-autocomplete="list">
+    <button type="button" class="cmdk__close" data-cmdk-close aria-label="Fechar">Esc</button>
+  </div>
+  <div class="chips cmdk__chips" id="cmdk-chips" role="group" aria-label="Filtrar por etapa"></div>
+  <ul class="cmdk__list" id="cmdk-list" role="listbox" aria-label="Documentos"></ul>
+  <p class="cmdk__note">Documentos com número SEI podem ser autenticados no Portal de Processos com o SEI e o CRC. <a href="#autenticar" data-cmdk-close>Como conferir</a> · <a href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=materias_pesquisar" target="_blank" rel="noopener">Busca do Diário Oficial ↗</a></p>
+  <p class="cmdk__foot"><span>↑↓ navegar · Enter abrir</span><span id="cmdk-count"></span></p>
+</dialog>
 <dialog class="zoom" id="zoom" aria-labelledby="zoom-title">
   <div class="zoom__bar">
     <p class="zoom__title"><span id="zoom-count" class="zoom__count"></span><span id="zoom-title"></span></p>
