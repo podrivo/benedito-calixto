@@ -536,6 +536,33 @@
   const toTop = $(".to-top");
   new IntersectionObserver(([en]) => toTop.classList.toggle("is-on", !en.isIntersecting)).observe($(".hero"));
 
+  /* ---------------- Abbreviations ---------------- */
+  const ABBR = {
+    BDI: "Benefícios e Despesas Indiretas: margem que cobre administração central, impostos e lucro da empresa",
+    SEI: "Sistema Eletrônico de Informações, onde tramitam os processos da Prefeitura",
+    CRC: "Código verificador impresso no rodapé de cada documento SEI, usado para autenticá-lo",
+    PNCP: "Portal Nacional de Contratações Públicas",
+    CAF: "Coordenadoria de Administração e Finanças da Subprefeitura",
+    ETP: "Estudo Técnico Preliminar",
+    TR: "Termo de Referência",
+    TPU: "Termo de Permissão de Uso: autorização para bancas e barracas ocuparem o espaço público",
+    CPM: "Conselho Participativo Municipal",
+    AMJA: "Associação Amigos da Joaquim Antunes",
+    EDIF: "Tabela de custos de edificações da Prefeitura (SIURB)",
+    INFRA: "Tabela de custos de infraestrutura da Prefeitura (SIURB)",
+  };
+  const abbrRe = new RegExp(`\\b(${Object.keys(ABBR).join("|")})s?\\b`, "g");
+  const texts = document.createTreeWalker($("main"), NodeFilter.SHOW_TEXT, {
+    acceptNode: (n) => n.parentElement.closest("a, button, abbr, [role=img]") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+  });
+  const hits = [];
+  while (texts.nextNode()) if (texts.currentNode.data.match(abbrRe)) hits.push(texts.currentNode);
+  hits.forEach((n) => {
+    const t = document.createElement("template");
+    t.innerHTML = esc(n.data).replace(abbrRe, (m, k) => `<abbr title="${ABBR[k]}">${m}</abbr>`);
+    n.replaceWith(t.content);
+  });
+
   /* ---------------- Zoom viewer (plan + photos) ---------------- */
   const zoom = $("#zoom"), stage = $("#zoom-stage"), zImg = $("#zoom-img"), zLevel = $("#zoom-level");
   const zTitle = $("#zoom-title"), zCount = $("#zoom-count"), zHelp = $("#zoom-help");

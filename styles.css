@@ -44,6 +44,7 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--green); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
+abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
 :focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; border-radius: 3px; }
 
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
