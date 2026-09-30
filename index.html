@@ -51,7 +51,7 @@
     <a href="#videos">Vídeos</a>
     <a href="#linha-do-tempo">Linha do tempo</a>
     <a href="#pessoas">Responsáveis</a>
-    <a href="#atencao">Atenção</a>
+    <!-- dev:start --><a href="#atencao">Atenção</a><!-- dev:end -->
     <a href="#conferir">Conferir</a>
     <button type="button" class="toc__search" data-cmdk aria-label="Buscar documentos">Buscar <kbd class="kbd-mod">⌘K</kbd></button>
   </div>
@@ -99,7 +99,7 @@
       </article>
       <article class="work">
         <h3><i class="dot" style="--c:var(--c-acess)"></i>Acessibilidade</h3>
-        <p>Piso podotátil nos pontos de travessia. O memorial também cita corrimão, mas ele não aparece na planilha de preços (<a href="#atencao">ver pontos de atenção</a>).</p>
+        <p>Piso podotátil nos pontos de travessia. O memorial também cita corrimão, mas ele não aparece na planilha de preços<!-- dev:start --> (<a href="#atencao">ver pontos de atenção</a>)<!-- dev:end -->.</p>
       </article>
     </div>
 
@@ -183,7 +183,7 @@
         <li><strong>Nota de empenho 91609/2026</strong> (28/08/2026): R$ 1.439.886,76. Antes dela a dotação tinha R$ 9,3 milhões. <a href="docs/scan-2026-08-28-161236532.pdf">PDF</a></li>
         <li><strong>Garantia de execução</strong>: seguro-garantia de 5%, ou R$ 71.994,34, tratado no processo SEI 6050.2026/0016583-1.</li>
       </ul>
-      <p class="small">A informação da coordenadoria administrativa diz que a obra foi “indicação do Conselho Participativo Municipal”. O Estudo Técnico Preliminar e o Termo de Referência falam em “emenda parlamentar”. Veja os <a href="#atencao">pontos de atenção</a>.</p>
+      <p class="small">A informação da coordenadoria administrativa diz que a obra foi “indicação do Conselho Participativo Municipal”. O Estudo Técnico Preliminar e o Termo de Referência falam em “emenda parlamentar”.<!-- dev:start --> Veja os <a href="#atencao">pontos de atenção</a>.<!-- dev:end --></p>
     </div>
   </div>
 </section>
@@ -256,7 +256,8 @@
   </div>
 </section>
 
-<!-- ============ ATENÇÃO ============ -->
+<!-- dev:start -->
+<!-- ============ ATENÇÃO (only in development; stripped by tools/build-prod.sh) ============ -->
 <section id="atencao" class="section">
   <div class="wrap">
     <p class="kicker">Atenção</p>
@@ -265,6 +266,7 @@
     <div class="flags" id="flags"></div>
   </div>
 </section>
+<!-- dev:end -->
 
 <!-- ============ CONFERIR ============ -->
 <section id="conferir" class="section section--dark">

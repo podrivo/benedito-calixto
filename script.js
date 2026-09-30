@@ -289,7 +289,8 @@
   $("#people").innerHTML = PEOPLE.map(([g, ps]) => `
     <div class="group"><h3>${g}</h3>${ps.map(([n, r, m, ls]) => `<div class="person"><strong>${esc(n)}</strong><span>${esc(r)}</span>${m ? `<a class="person__mail" href="mailto:${m}">${m}</a>` : ""}${docLinks(ls)}</div>`).join("")}</div>`).join("");
 
-  /* ---------------- Flags ---------------- */
+  /* dev:start */
+  /* ---------------- Flags (only in development; stripped by tools/build-prod.sh) ---------------- */
   const FLAGS = [
     ["Três prazos diferentes", "O memorial descritivo e o item 13.2 do termo de referência dizem 90 dias. Os itens 7.1 e 15.1 do TR, o contrato e a ordem de início dizem 120 dias. O item 1.2 do edital diz 180 dias. Vale o contrato: 01/09 a 31/12/2026.",
       [["Memorial", D.memorial], ["TR", D.tr], ["Edital", D.edital], ["Contrato", D.contrato], ["Ordem de início", D.ordem]]],
@@ -311,6 +312,7 @@
       [["Portaria 30", "arquip-dosp-165388683-portaria.pdf"]]],
   ];
   $("#flags").innerHTML = FLAGS.map(([t, p, ls]) => `<article class="flag"><h3>${esc(t)}</h3><p>${esc(p)}</p><div class="src">Compare nos documentos:</div>${docLinks(ls)}</article>`).join("");
+  /* dev:end */
 
   /* ---------------- Library ---------------- */
   const C = { p: "Planejamento", o: "Orçamento", l: "Licitação", e: "Propostas das empresas", c: "Contrato e execução", b: "Bancas (TPUs)", x: "Contexto" };
@@ -395,7 +397,7 @@
     const [, , , title, , , sei, , doKey, size] = byFile[h] || [];
     const meta = [`<a href="docs/${h}">PDF${size ? " · " + size : ""}</a>`, sei && `SEI ${sei}`,
       doKey && `<a href="${DO}${doKey}" target="_blank" rel="noopener">Diário Oficial ↗</a>`].filter(Boolean).join(" · ");
-    return `<li class="tl__doc"><a href="docs/${h}">${esc(title || l)}</a><span>${meta}</span></li>`;
+    return `<li class="tl__doc"><strong>${esc(title || l)}</strong><span>${meta}</span></li>`;
   };
   const lastPhase = TL.map((e) => !!e.phase).lastIndexOf(true);
   $("#timeline").innerHTML = TL.map((e, i) => {
