@@ -1,9 +1,6 @@
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const brl = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-  const brlShort = (v) => v >= 1e6
-    ? "R$ " + (v / 1e6).toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " mi"
-    : "R$ " + Math.round(v / 1e3).toLocaleString("pt-BR") + " mil";
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const fmtDate = (iso) => iso ? iso.split("-").reverse().join("/") : "s/d";
   const DO = "https://diariooficial.prefeitura.sp.gov.br/md_epubli_visualizar.php?";
@@ -48,7 +45,8 @@
   ];
   const TOTAL = CATS.reduce((a, c) => a + c.v, 0);
 
-  const pctOf = (v) => (v / TOTAL * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + "%";
+  const DIRECT = 1250423.93;
+  const pctOf = (v, of = TOTAL) => (v / of * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + "%";
 
   const bar = $("#budget-bar");
   bar.innerHTML = CATS.map((c) =>
@@ -63,6 +61,21 @@
   const barTip = Object.assign(document.createElement("div"), { className: "abbr-tip bar-tip", hidden: true });
   document.body.append(barTip);
 
+  const TOP = [
+    ["Passeio de concreto armado com lastro de brita", "323,91 m³", 395905.47, "calcada"],
+    ["Demolição manual de concreto armado", "269,67 m³", 139643.21, "demol"],
+    ["Fornecimento e assentamento de paralelepípedos", "206,64 m²", 71082.09, "orla"],
+    ["Remoção de entulho em caçamba metálica", "", 67769.15, "demol"],
+    ["Apicoamento mecânico do piso da quadra", "282 m²", 53337.48, "quadra"],
+    ["Limpeza de juntas de dilatação", "1.349,66 m", 47750.97, "calcada"],
+    ["Destinação final de entulho em aterro", "350,57 t", 43568.83, "demol"],
+    ["Aluguel de compressor portátil", "270 h", 27045.90, "prelim"],
+    ["Terra preparada para plantio", "", 22859.60, "paisagismo"],
+    ["Tubo de ferro fundido para esgoto (75 mm)", "48 m", 21899.04, "drenagem"],
+    ["Bombeamento de concreto", "", 20630.46, "calcada"],
+    ["Banco em concreto aparente, tipo PMSP", "44 m", 15491.08, "paisagismo"],
+    ["Mudas de dracena", "225 un.", 14485.50, "paisagismo"],
+  ];
   const tbody = $("#money-table tbody");
   tbody.innerHTML = CATS.map((c) => `
     <tr data-k="${c.k}">
@@ -70,7 +83,13 @@
       <td class="r num">${brl(c.v)}</td>
       <td class="r num ref">${brl(c.ref)}</td>
       <td class="r num">${pctOf(c.v)}</td>
-    </tr>`).join("");
+    </tr>` + TOP.filter((t) => t[3] === c.k).map(([n, q, v]) => `
+    <tr class="sub" data-k="${c.k}">
+      <td>${esc(n)}${q ? ` <span class="sub__qty">${q}</span>` : ""}</td>
+      <td class="r num">${brl(v)}</td>
+      <td></td>
+      <td class="r num">${pctOf(v, DIRECT)}</td>
+    </tr>`).join("")).join("");
 
   const selected = new Set();
   let hovered = null;
@@ -80,10 +99,11 @@
     tbody.classList.toggle("has-focus", selected.size > 0 || !!hovered);
     bar.querySelectorAll(".seg").forEach((s) => s.classList.toggle("is-on", on(s.dataset.k)));
     tbody.querySelectorAll("tr").forEach((r) => r.classList.toggle("is-on", on(r.dataset.k)));
+    tbody.querySelectorAll("tr.sub").forEach((r) => (r.hidden = !selected.has(r.dataset.k)));
     const sel = CATS.filter((c) => selected.has(c.k)), sum = sel.reduce((a, c) => a + c.v, 0);
     readout.textContent = sel.length === 1 ? `${sel[0].name}: ${brl(sum)} · ${pctOf(sum)} do contrato`
       : sel.length ? `${sel.length} categorias: ${brl(sum)} · ${pctOf(sum)} do contrato`
-      : `Total do contrato: ${brl(TOTAL)}`;
+      : `Total do contrato: ${brl(TOTAL)} · clique numa categoria para ver os maiores itens`;
   };
   renderFocus();
   const toggle = (k) => { selected.has(k) ? selected.delete(k) : selected.add(k); renderFocus(); };
@@ -109,32 +129,8 @@
     tbody.addEventListener("mouseover", (e) => { const r = e.target.closest("tr"); if (r) hover(r.dataset.k); });
     tbody.addEventListener("mouseleave", () => hover(null));
   }
-  tbody.addEventListener("click", (e) => { const r = e.target.closest("tr"); if (r) toggle(r.dataset.k); });
+  tbody.addEventListener("click", (e) => { const r = e.target.closest("tr:not(.sub)"); if (r) toggle(r.dataset.k); });
 
-  const TOP = [
-    ["Passeio de concreto armado com lastro de brita", "323,91 m³", 395905.47, "calcada"],
-    ["Demolição manual de concreto armado", "269,67 m³", 139643.21, "demol"],
-    ["Fornecimento e assentamento de paralelepípedos", "206,64 m²", 71082.09, "orla"],
-    ["Remoção de entulho em caçamba metálica", "", 67769.15, "demol"],
-    ["Apicoamento mecânico do piso da quadra", "282 m²", 53337.48, "quadra"],
-    ["Limpeza de juntas de dilatação", "1.349,66 m", 47750.97, "calcada"],
-    ["Destinação final de entulho em aterro", "350,57 t", 43568.83, "demol"],
-    ["Aluguel de compressor portátil", "270 h", 27045.90, "prelim"],
-    ["Terra preparada para plantio", "", 22859.60, "paisagismo"],
-    ["Tubo de ferro fundido para esgoto (75 mm)", "48 m", 21899.04, "drenagem"],
-    ["Bombeamento de concreto", "", 20630.46, "calcada"],
-    ["Banco em concreto aparente, tipo PMSP", "44 m", 15491.08, "paisagismo"],
-    ["Mudas de dracena", "225 un.", 14485.50, "paisagismo"],
-  ];
-  $("#top-items").innerHTML = TOP.map(([n, q, v, k]) => `
-    <li style="--c:var(--c-${k})">
-      <span class="item-name" title="${esc(n)}">${esc(n)}</span>
-      <span class="item-val">${brl(v)}</span>
-      ${q ? `<span class="item-qty">${q}</span>` : ""}
-      <span class="bar"><i style="width:${(v / TOP[0][2] * 100).toFixed(1)}%"></i></span>
-    </li>`).join("");
-
-  const DIRECT = 1250423.93;
   const bdiRows = [
     { label: "Orçamento da Prefeitura", total: 1502407.93, bdi: 251984.00, cls: "" },
     { label: "Proposta da Progredior", total: 1439886.76, bdi: 189462.83, cls: "bdi__markup--low" },
@@ -148,11 +144,6 @@
       </div>
       <div class="bdi__sub num">BDI: ${brl(r.bdi)}</div>
     </div>`).join("");
-
-  const MONTHS = [["Mês 1 · set", 411188.24], ["Mês 2 · out", 496199.51], ["Mês 3 · nov", 311496.92], ["Mês 4 · dez", 221002.08]];
-  const maxM = Math.max(...MONTHS.map((m) => m[1]));
-  $("#months").innerHTML = MONTHS.map(([l, v]) => `
-    <div class="month"><span class="month__val">${brlShort(v)}</span><div class="month__bar" data-h="${(v / maxM * 100).toFixed(1)}"></div><span class="month__lbl">${l}</span></div>`).join("");
 
   /* ---------------- Bidding ---------------- */
   const BIDDERS = [
@@ -664,12 +655,11 @@
     entries.forEach((en) => {
       if (!en.isIntersecting) return;
       const el = en.target;
-      el.querySelectorAll?.("[data-h]").forEach((b) => (b.style.height = b.dataset.h + "%"));
       el.querySelectorAll?.("[data-w]").forEach((b) => (b.style.width = b.dataset.w + "%"));
       io.unobserve(el);
     });
   }, { threshold: 0.25 });
-  [$("#months"), $("#bids")].forEach((el) => io.observe(el));
+  io.observe($("#bids"));
 
   const links = [...document.querySelectorAll(".toc a")];
   const tocBar = $(".toc__inner");
