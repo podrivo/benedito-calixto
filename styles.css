@@ -61,7 +61,6 @@ em { font-style: italic; }
 h1, h2, h3 { font-family: var(--f-display); line-height: 1.1; margin: 0 0 .5em; letter-spacing: -.01em; }
 h2 { font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 800; font-variation-settings: "wdth" 88; }
 h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.6em; }.h3-sep { margin-top: 2.6em; font-size: 1.45rem; }
-.kicker { font-family: var(--f-mono); font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 .6rem; }
 .lead { font-size: 1.2rem; max-width: 46em; }
 
 /* ---------- Hero ---------- */
@@ -118,7 +117,12 @@ h1 + .hero__lede { margin-top: 20px; }
 .is-dev .toc a[data-dev]::after { content: "dev"; font: 700 .62rem/1 var(--f-mono); text-transform: uppercase; padding: 3px 5px; border-radius: 4px; background: var(--c-projeto); color: #fff; }
 .toc__search { flex: none; display: grid; place-items: center; width: 39px; height: 39px; padding: 0; color: var(--ink); border: 0; border-radius: 99px; background: transparent; cursor: pointer; }
 .toc__search:hover { background: var(--concrete); }
-@media (min-width: 1000px) { .toc__search { order: 1; margin-left: auto; } }
+.toc__search-label { display: none; }
+@media (min-width: 1000px) {
+  .toc__search { order: 1; margin-left: auto; display: inline-flex; align-items: center; gap: 8px; width: auto; padding: 0 14px 0 12px; background: var(--concrete); font: 600 .9rem var(--f-display); }
+  .toc__search:hover { background: var(--line); }
+  .toc__search-label { display: inline; }
+}
 kbd { font: 500 .7rem/1 var(--f-mono); padding: 4px 6px; border-radius: 5px; background: var(--concrete); color: var(--muted); border: 1px solid var(--line); }
 @media (hover: none) { .kbd-mod { display: none; } }
 
@@ -127,7 +131,7 @@ kbd { font: 500 .7rem/1 var(--f-mono); padding: 4px 6px; border-radius: 5px; bac
 .section--paper { background: var(--paper); }
 .section--dark { background: var(--granite); color: #eef0ec; }
 .section--dark a { color: var(--yellow); }
-.section--dark .kicker, .section--dark .small { color: #aab2ad; }
+.section--dark .small { color: #aab2ad; }
 
 .grid-2 { display: grid; gap: 40px; }
 @media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; gap: 56px; } }

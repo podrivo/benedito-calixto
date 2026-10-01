@@ -103,7 +103,7 @@
     const sel = CATS.filter((c) => selected.has(c.k)), sum = sel.reduce((a, c) => a + c.v, 0);
     readout.textContent = sel.length === 1 ? `${sel[0].name}: ${brl(sum)} · ${pctOf(sum)} do contrato`
       : sel.length ? `${sel.length} categorias: ${brl(sum)} · ${pctOf(sum)} do contrato`
-      : `Total do contrato: ${brl(TOTAL)} · clique numa categoria para ver os maiores itens`;
+      : `Total do contrato: ${brl(TOTAL)}`;
   };
   renderFocus();
   const toggle = (k) => { selected.has(k) ? selected.delete(k) : selected.add(k); renderFocus(); };
