@@ -117,8 +117,8 @@ h1 + .hero__lede { margin-top: 20px; }
 .is-dev [data-dev] { display: revert !important; outline: 2px dashed var(--c-projeto); outline-offset: -2px; }
 .is-dev .toc a[data-dev] { display: inline-flex !important; gap: 6px; }
 .is-dev .toc a[data-dev]::after { content: "dev"; font: 700 .62rem/1 var(--f-mono); text-transform: uppercase; padding: 3px 5px; border-radius: 4px; background: var(--c-projeto); color: #fff; }
-.toc__search { flex: none; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; color: var(--ink); border: 1px solid var(--line); border-radius: 50%; background: #fff; cursor: pointer; }
-.toc__search:hover { border-color: var(--ink); }
+.toc__search { flex: none; display: grid; place-items: center; width: 39px; height: 39px; padding: 0; color: var(--ink); border: 0; border-radius: 99px; background: transparent; cursor: pointer; }
+.toc__search:hover { background: var(--concrete); }
 kbd { font: 500 .7rem/1 var(--f-mono); padding: 4px 6px; border-radius: 5px; background: var(--concrete); color: var(--muted); border: 1px solid var(--line); }
 @media (hover: none) { .kbd-mod { display: none; } }
 
