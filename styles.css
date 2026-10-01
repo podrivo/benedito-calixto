@@ -22,9 +22,9 @@
   --c-projeto: #8457c9;
   --c-acess: #f2c230;
 
-  --f-display: "Archivo", system-ui, sans-serif;
-  --f-body: "Source Serif 4", Georgia, serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --f-display: "Inter", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, sans-serif;
+  --f-mono: "Inter", system-ui, sans-serif;
 
   --wrap: 1120px;
   --r: 10px;
@@ -59,7 +59,7 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
 em { font-style: italic; }
 
 h1, h2, h3 { font-family: var(--f-display); line-height: 1.1; margin: 0 0 .5em; letter-spacing: -.01em; }
-h2 { font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 800; font-variation-settings: "wdth" 88; }
+h2 { font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 800; letter-spacing: -.025em; }
 h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.6em; }.h3-sep { margin-top: 2.6em; font-size: 1.45rem; }
 .lead { font-size: 1.2rem; max-width: 46em; }
 
@@ -71,11 +71,10 @@ h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.6em; }.h3-sep { margin-t
 }
 .hero__inner { padding-top: 48px; padding-bottom: 44px; }
 .hero h1 {
-  font-size: clamp(2.6rem, 10vw, 6.2rem);
-  font-weight: 900;
-  font-variation-settings: "wdth" 72;
-  line-height: .92;
-  letter-spacing: -.02em;
+  font-size: clamp(2.2rem, 7.5vw, 4.25rem);
+  font-weight: 800;
+  line-height: .95;
+  letter-spacing: -.035em;
   text-transform: uppercase;
 }
 .hero h1 span { color: var(--yellow); }
