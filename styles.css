@@ -196,41 +196,22 @@ tfoot th { font-family: var(--f-display); border-bottom: 0; border-top: 2px soli
 .tag--no { background: #f6dcd4; color: #8b2f1c; }
 .tag--part { background: #fbeec2; color: #6d5200; }
 
-/* ---------- Cobblestone wall ---------- */
-.wall {
-  display: flex; flex-wrap: wrap; gap: 4px;
-  padding: 14px; margin: 28px 0 16px;
-  background: var(--granite); border-radius: var(--r);
-  box-shadow: inset 0 2px 8px rgba(0,0,0,.35);
-}
-.wall::after { content: ""; flex: 999 1 0; }
-.stone {
-  flex: 1 0 34px; height: 26px; border-radius: 5px 7px 4px 6px;
-  background: var(--c);
-  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2), inset 0 2px 0 rgba(255,255,255,.18);
-  transition: opacity .25s, transform .25s;
-  opacity: 0; transform: translateY(6px);
-}
-.stone:nth-child(3n) { flex-basis: 44px; border-radius: 7px 4px 6px 5px; }
-.stone:nth-child(5n+1) { flex-basis: 28px; }
-.wall.is-in .stone { opacity: 1; transform: none; transition-delay: calc(var(--i) * 6ms); }
-.wall.has-focus .stone { opacity: .18; transition-delay: 0s; }
-.wall.has-focus .stone.is-on { opacity: 1; transform: translateY(-2px); }
-@media (prefers-reduced-motion: reduce) {
-  .stone, .wall.is-in .stone { transition: none; opacity: 1; transform: none; }
-}
+/* ---------- Budget bar ---------- */
+.budget-bar { display: flex; gap: 2px; height: 40px; margin: 28px 0 16px; border-radius: 4px; overflow: hidden; }
+.seg { flex: 1 1 0; min-width: 3px; background: var(--c); transition: opacity .2s; cursor: pointer; }
+.budget-bar.has-focus .seg { opacity: .2; }
+.budget-bar.has-focus .seg.is-on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .seg { transition: none; } }
+.bar-tip { pointer-events: none; white-space: nowrap; font-family: var(--f-mono); font-size: .8rem; }
+.bar-tip strong { font-family: var(--f-display); font-size: .9rem; }
 
-.legend { list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 6px; }
-.legend button {
-  font: 500 .86rem/1 var(--f-display); display: inline-flex; align-items: center; gap: 8px;
-  padding: 8px 12px; border-radius: 99px; border: 1px solid var(--line); background: #fff; color: var(--ink); cursor: pointer;
-}
-.legend button[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: #fff; }
-.legend .dot { width: 12px; height: 12px; }
-.legend-readout { font-family: var(--f-mono); font-size: .95rem; min-height: 1.5em; margin: -10px 0 18px; }
+.legend-readout { font-family: var(--f-mono); font-size: .95rem; min-height: 1.5em; margin: 0 0 18px; }
 
-.money tbody tr { cursor: default; }
-.money tbody tr.is-on { background: #fff6d6; }
+.money tbody tr { cursor: pointer; }
+.money tbody tr { transition: opacity .2s; }
+.money tbody.has-focus tr { opacity: .35; }
+.money tbody.has-focus tr.is-on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .money tbody tr { transition: none; } }
 .money td:first-child .dot { margin-right: 8px; vertical-align: -1px; }
 .money .num { white-space: nowrap; }
 .money .ref { color: var(--muted); }

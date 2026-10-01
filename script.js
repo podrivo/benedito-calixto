@@ -48,28 +48,20 @@
   ];
   const TOTAL = CATS.reduce((a, c) => a + c.v, 0);
 
-  // Largest-remainder rounding so the stones add up exactly to the contract / 10k.
-  const STONES = Math.round(TOTAL / 1e4);
-  const raw = CATS.map((c) => (c.v / TOTAL) * STONES);
-  const counts = raw.map(Math.floor);
-  let left = STONES - counts.reduce((a, b) => a + b, 0);
-  raw.map((r, i) => [r - counts[i], i]).sort((a, b) => b[0] - a[0]).slice(0, left).forEach(([, i]) => counts[i]++);
-  CATS.forEach((c, i) => { c.stones = Math.max(1, counts[i]); });
+  const pctOf = (v) => (v / TOTAL * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + "%";
 
-  const wall = $("#wall");
-  let idx = 0;
-  wall.innerHTML = CATS.map((c) =>
-    Array.from({ length: c.stones }, () => `<span class="stone" data-k="${c.k}" style="--c:var(--c-${c.k});--i:${idx++}"></span>`).join("")
+  const bar = $("#budget-bar");
+  bar.innerHTML = CATS.map((c) =>
+    `<span class="seg" data-k="${c.k}" style="--c:var(--c-${c.k});flex-grow:${c.v}"></span>`
   ).join("");
 
   const readout = document.createElement("p");
   readout.className = "legend-readout";
   readout.setAttribute("aria-live", "polite");
-  $("#legend").after(readout);
+  bar.after(readout);
 
-  $("#legend").innerHTML = CATS.map((c) =>
-    `<li><button type="button" data-k="${c.k}" aria-pressed="false"><i class="dot" style="--c:var(--c-${c.k})"></i>${esc(c.name)}</button></li>`
-  ).join("");
+  const barTip = Object.assign(document.createElement("div"), { className: "abbr-tip bar-tip", hidden: true });
+  document.body.append(barTip);
 
   const tbody = $("#money-table tbody");
   tbody.innerHTML = CATS.map((c) => `
@@ -77,34 +69,47 @@
       <td><i class="dot" style="--c:var(--c-${c.k})"></i>${esc(c.name)}</td>
       <td class="r num">${brl(c.v)}</td>
       <td class="r num ref">${brl(c.ref)}</td>
-      <td class="r num">${(c.v / TOTAL * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%</td>
+      <td class="r num">${pctOf(c.v)}</td>
     </tr>`).join("");
 
-  let focused = null;
-  const setFocus = (k) => {
-    focused = k;
-    wall.classList.toggle("has-focus", !!k);
-    wall.querySelectorAll(".stone").forEach((s) => s.classList.toggle("is-on", s.dataset.k === k));
-    document.querySelectorAll("#legend button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === k)));
-    tbody.querySelectorAll("tr").forEach((r) => r.classList.toggle("is-on", r.dataset.k === k));
-    const c = CATS.find((x) => x.k === k);
-    readout.textContent = c
-      ? `${c.name}: ${brl(c.v)} · ${c.stones} pedras · ${(c.v / TOTAL * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% do contrato`
-      : `Cada pedra ≈ R$ 10 mil · total ${brl(TOTAL)}`;
+  const selected = new Set();
+  let hovered = null;
+  const renderFocus = () => {
+    const on = (k) => selected.has(k) || k === hovered;
+    bar.classList.toggle("has-focus", selected.size > 0 || !!hovered);
+    tbody.classList.toggle("has-focus", selected.size > 0 || !!hovered);
+    bar.querySelectorAll(".seg").forEach((s) => s.classList.toggle("is-on", on(s.dataset.k)));
+    tbody.querySelectorAll("tr").forEach((r) => r.classList.toggle("is-on", on(r.dataset.k)));
+    const sel = CATS.filter((c) => selected.has(c.k)), sum = sel.reduce((a, c) => a + c.v, 0);
+    readout.textContent = sel.length === 1 ? `${sel[0].name}: ${brl(sum)} · ${pctOf(sum)} do contrato`
+      : sel.length ? `${sel.length} categorias: ${brl(sum)} · ${pctOf(sum)} do contrato`
+      : `Total do contrato: ${brl(TOTAL)}`;
   };
-  setFocus(null);
-  $("#legend").addEventListener("click", (e) => {
-    const b = e.target.closest("button"); if (!b) return;
-    setFocus(focused === b.dataset.k ? null : b.dataset.k);
+  renderFocus();
+  const toggle = (k) => { selected.has(k) ? selected.delete(k) : selected.add(k); renderFocus(); };
+  const hover = (k) => { if (k !== hovered) { hovered = k; renderFocus(); } };
+
+  const showBarTip = (s, x) => {
+    const c = CATS.find((z) => z.k === s.dataset.k);
+    barTip.innerHTML = `<strong>${esc(c.name)}</strong><br>${brl(c.v)} · ${pctOf(c.v)}`;
+    barTip.hidden = false;
+    const w = barTip.offsetWidth, r = bar.getBoundingClientRect();
+    barTip.style.left = scrollX + Math.max(8, Math.min(innerWidth - w - 8, x - w / 2)) + "px";
+    barTip.style.top = scrollY + r.top - barTip.offsetHeight - 8 + "px";
+  };
+  bar.addEventListener("pointermove", (e) => {
+    const s = e.target.closest(".seg"); if (!s) return;
+    hover(s.dataset.k);
+    showBarTip(s, e.clientX);
   });
-  const hoverable = window.matchMedia("(hover: hover)").matches;
-  if (hoverable) {
-    wall.addEventListener("mouseover", (e) => { const s = e.target.closest(".stone"); if (s) setFocus(s.dataset.k); });
-    wall.addEventListener("mouseleave", () => setFocus(null));
-    tbody.addEventListener("mouseover", (e) => { const r = e.target.closest("tr"); if (r) setFocus(r.dataset.k); });
-    tbody.addEventListener("mouseleave", () => setFocus(null));
+  bar.addEventListener("pointerleave", () => { barTip.hidden = true; hover(null); });
+  addEventListener("scroll", () => (barTip.hidden = true), { passive: true });
+  bar.addEventListener("click", (e) => { const s = e.target.closest(".seg"); if (s) toggle(s.dataset.k); });
+  if (matchMedia("(hover: hover)").matches) {
+    tbody.addEventListener("mouseover", (e) => { const r = e.target.closest("tr"); if (r) hover(r.dataset.k); });
+    tbody.addEventListener("mouseleave", () => hover(null));
   }
-  wall.addEventListener("click", (e) => { const s = e.target.closest(".stone"); if (s) setFocus(focused === s.dataset.k ? null : s.dataset.k); });
+  tbody.addEventListener("click", (e) => { const r = e.target.closest("tr"); if (r) toggle(r.dataset.k); });
 
   const TOP = [
     ["Passeio de concreto armado (fck 30 MPa), com lastro de brita", "323,91 m³", 395905.47, "calcada"],
@@ -659,13 +664,12 @@
     entries.forEach((en) => {
       if (!en.isIntersecting) return;
       const el = en.target;
-      if (el === wall) wall.classList.add("is-in");
       el.querySelectorAll?.("[data-h]").forEach((b) => (b.style.height = b.dataset.h + "%"));
       el.querySelectorAll?.("[data-w]").forEach((b) => (b.style.width = b.dataset.w + "%"));
       io.unobserve(el);
     });
   }, { threshold: 0.25 });
-  [wall, $("#months"), $("#bids")].forEach((el) => io.observe(el));
+  [$("#months"), $("#bids")].forEach((el) => io.observe(el));
 
   const links = [...document.querySelectorAll(".toc a")];
   const tocBar = $(".toc__inner");
