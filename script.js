@@ -112,7 +112,7 @@
   tbody.addEventListener("click", (e) => { const r = e.target.closest("tr"); if (r) toggle(r.dataset.k); });
 
   const TOP = [
-    ["Passeio de concreto armado (fck 30 MPa), com lastro de brita", "323,91 m³", 395905.47, "calcada"],
+    ["Passeio de concreto armado com lastro de brita", "323,91 m³", 395905.47, "calcada"],
     ["Demolição manual de concreto armado", "269,67 m³", 139643.21, "demol"],
     ["Fornecimento e assentamento de paralelepípedos", "206,64 m²", 71082.09, "orla"],
     ["Remoção de entulho em caçamba metálica", "", 67769.15, "demol"],
@@ -128,7 +128,7 @@
   ];
   $("#top-items").innerHTML = TOP.map(([n, q, v, k]) => `
     <li style="--c:var(--c-${k})">
-      <span class="item-name">${esc(n)}</span>
+      <span class="item-name" title="${esc(n)}">${esc(n)}</span>
       <span class="item-val">${brl(v)}</span>
       ${q ? `<span class="item-qty">${q}</span>` : ""}
       <span class="bar"><i style="width:${(v / TOP[0][2] * 100).toFixed(1)}%"></i></span>
