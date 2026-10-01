@@ -118,7 +118,9 @@ h1 + .hero__lede { margin-top: 20px; }
 .toc__search { flex: none; display: grid; place-items: center; width: 39px; height: 39px; padding: 0; color: var(--ink); border: 0; border-radius: 99px; background: transparent; cursor: pointer; }
 .toc__search:hover { background: var(--concrete); }
 .toc__search-label { display: none; }
+.toc__search { margin-left: -10px; }
 @media (min-width: 1000px) {
+  .toc__search + a { margin-left: -12px; }
   .toc__search { order: 1; margin-left: auto; display: inline-flex; align-items: center; gap: 8px; width: auto; padding: 0 14px 0 12px; background: var(--concrete); font: 600 .9rem var(--f-display); }
   .toc__search:hover { background: var(--line); }
   .toc__search-label { display: inline; }
