@@ -8,6 +8,8 @@
   const fmtDate = (iso) => iso ? iso.split("-").reverse().join("/") : "s/d";
   const DO = "https://diariooficial.prefeitura.sp.gov.br/md_epubli_visualizar.php?";
 
+  if (["localhost", "127.0.0.1", ""].includes(location.hostname)) document.documentElement.classList.add("is-dev");
+
   /* ---------------- Progress bar ---------------- */
   const START = new Date(2026, 8, 1), END = new Date(2026, 11, 31, 23, 59);
   const now = new Date();
@@ -349,9 +351,13 @@
         [["Portaria 23", "portaria-licitacao-2026.pdf"]]],
       ["E-mail da licitação", "Canal indicado no edital para recursos.", "licitacao-pinheiros@smsub.prefeitura.sp.gov.br", [["Edital", "sei-pmsp-160252510-edital.pdf"]]],
     ]],
-    ["Administração e finanças", [
+    ["Administração", [
       ["Kenedi Oliveira e Silva", "Coordenador de Administração e Finanças (CAF). Pediu a reserva do dinheiro.", "ksilva@smsub.prefeitura.sp.gov.br",
         [["Página oficial", SUBPI], ["Pedido de reserva", "sei-pmsp-159995135-informacao.pdf"], ["Pedido de celeridade", "sei-pmsp-164048895-encaminhamento.pdf"]]],
+      ["Sandy Sthephany Gomes de Oliveira", "Administração e Suprimentos. Elaborou o contrato e o extrato.", "",
+        [["Extrato do contrato", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]]],
+    ]],
+    ["Finanças", [
       ["Sergio Martins Pinto", "Supervisor de Finanças. Assinou as notas de reserva e de empenho, como responsável pela área contábil, e o ofício que pediu o seguro-garantia.", "sergiomartins@smsub.prefeitura.sp.gov.br",
         [["Nota de reserva", "scanned-document-2.pdf"], ["Nota de empenho", "scan-2026-08-28-161236532.pdf"], ["Ofício 022", "scan-2026-08-28-161909006.pdf"]]],
       ["Marcia Pagotti Pimentel", "Supervisão de Finanças. Lançou a nota de reserva no sistema e a encaminhou à licitação.", "mpagotti@smsub.prefeitura.sp.gov.br",
@@ -362,8 +368,6 @@
         [["Portal de Processos", "portal-processo-6050-2026-0016583-1.pdf"]]],
       ["Secretaria Municipal da Fazenda", "A equipe de cauções (DIPED) recebeu e registrou o seguro-garantia em 02/09 (Yoshie Imada e Samuel Fernando Santos).", "",
         [["Formulário de caução", "72416.pdf"], ["Devolução", "sei-pmsp-164311737-encaminhamento.pdf"]]],
-      ["Sandy Sthephany Gomes de Oliveira", "Administração e Suprimentos. Elaborou o contrato e o extrato.", "",
-        [["Extrato do contrato", "arquip-dosp-164428100-extrato-de-contrato-nota-de-empenho-np.pdf"]]],
     ]],
     ["Jurídico", [
       ["Claudio R. Faustino", "Assessoria Jurídica. Parecer sobre o edital (26/06).", "", [["Parecer", "sei-pmsp-160111990-manifestacao.pdf"]]],
